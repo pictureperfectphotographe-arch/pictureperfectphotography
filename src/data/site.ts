@@ -55,7 +55,7 @@ export const siteConfig: SiteConfig = {
   socials: {
     instagram: "https://www.instagram.com/pictureperfectphotographe/",
     youtube: "https://www.youtube.com/@Pictureperfectphotographe",
-    googleBusiness: "https://share.google/tDO6SchxhahxFcaMf",
+    googleBusiness: "https://share.google/2zTzqZXhJE4oe5Ato",
     linkedin: "https://www.linkedin.com/in/srujan-patha-2924533a7/",
   },
   navLinks: [

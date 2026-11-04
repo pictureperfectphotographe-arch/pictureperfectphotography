@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { testimonialsData } from "@/data/testimonials";
+import { googleReviews } from "@/data/reviews";
 import { siteConfig } from "@/data/site";
 import { ArrowUpRight, Star, MessageSquare } from "lucide-react";
 
@@ -29,7 +29,8 @@ export default function ReviewsPage() {
             Every celebration entrusted to us is treated with genuine care. Read authentic words from families and couples who allowed us to document their most meaningful days.
           </p>
 
-          <div className="mt-8 flex items-center gap-4">
+          {/* Google Business Profile Action Buttons */}
+          <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href={siteConfig.socials.googleBusiness}
               target="_blank"
@@ -39,52 +40,100 @@ export default function ReviewsPage() {
               <span>VIEW GOOGLE REVIEWS</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
+            <a
+              href={siteConfig.socials.googleBusiness}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-[#111111] border border-[#DEDEDE] text-[12px] font-medium tracking-wider uppercase hover:border-[#111111] transition-colors"
+            >
+              <span>LEAVE A GOOGLE REVIEW</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Editorial Grid */}
+      {/* Verified Google Reviews Editorial Grid */}
       <section className="py-16 md:py-24">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonialsData.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white p-8 border border-[#E5E5E5] flex flex-col justify-between space-y-6 shadow-xs"
-              >
-                <div>
-                  <div className="flex items-center space-x-1 text-[#111111] mb-6">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="font-editorial text-[20px] md:text-[22px] text-[#222222] leading-snug italic">
-                    &ldquo;{item.quote}&rdquo;
-                  </blockquote>
-                </div>
+          {googleReviews.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {googleReviews.map((item) => (
+                <article
+                  key={item.id}
+                  className="bg-white p-8 border border-[#E5E5E5] flex flex-col justify-between space-y-6"
+                >
+                  <div>
+                    {/* Top: Actual Star Rating */}
+                    <div
+                      className="flex items-center space-x-1 text-[#111111] mb-6"
+                      aria-label={`${item.rating} out of 5 stars`}
+                    >
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 ${
+                            i < item.rating
+                              ? "fill-current text-[#111111]"
+                              : "text-[#D0D0D0]"
+                          }`}
+                        />
+                      ))}
+                    </div>
 
-                <div className="pt-4 border-t border-[#F0F0F0]">
-                  <p className="font-display text-[18px] uppercase tracking-tight text-[#111111]">
-                    {item.clientName}
-                  </p>
-                  <p className="text-[12px] text-[#707070] font-body">
-                    {item.event} • {item.location}
-                  </p>
-                  {item.sourceUrl && (
+                    {/* Middle: Genuine Customer Review Text */}
+                    <blockquote className="font-editorial text-[18px] md:text-[20px] text-[#222222] leading-snug italic">
+                      &ldquo;{item.text}&rdquo;
+                    </blockquote>
+                  </div>
+
+                  {/* Bottom: Reviewer Name, Date & Google Link */}
+                  <div className="pt-4 border-t border-[#F0F0F0]">
+                    <p className="font-display text-[18px] uppercase tracking-tight text-[#111111]">
+                      {item.reviewerName}
+                    </p>
+                    {item.publishedAt && (
+                      <p className="text-[12px] text-[#707070] font-body mt-0.5">
+                        {item.publishedAt}
+                      </p>
+                    )}
                     <a
-                      href={item.sourceUrl}
+                      href={item.reviewUrl || siteConfig.socials.googleBusiness}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[11px] text-[#888888] hover:text-black flex items-center gap-1 mt-2 tracking-wider uppercase font-medium"
+                      className="text-[11px] text-[#888888] hover:text-black flex items-center gap-1 mt-3 tracking-wider uppercase font-medium transition-colors"
                     >
-                      <span>{item.source}</span>
+                      <span>READ ON GOOGLE</span>
                       <ArrowUpRight className="w-3 h-3" />
                     </a>
-                  )}
-                </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div className="py-12 px-8 border border-dashed border-[#D0D0D0] text-center max-w-2xl mx-auto space-y-4">
+              <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase">
+                OFFICIAL GOOGLE BUSINESS PROFILE
+              </span>
+              <h3 className="font-display text-[26px] uppercase text-[#111111]">
+                AWAITING VERIFIED REVIEWS
+              </h3>
+              <p className="text-[14px] text-[#666666] font-body leading-relaxed">
+                In strict adherence to authenticity, placeholder reviews have been completely removed. Genuine reviews from our official Google Business Profile are being synchronized.
+              </p>
+              <div className="pt-2">
+                <a
+                  href={siteConfig.socials.googleBusiness}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#111111] text-white text-[12px] font-medium tracking-wider uppercase hover:bg-neutral-800 transition-colors"
+                >
+                  <span>READ ALL REVIEWS DIRECTLY ON GOOGLE</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
 
           {/* Submission CTA */}
           <div className="mt-16 p-8 bg-[#F8F8F8] border border-[#E5E5E5] text-center max-w-xl mx-auto space-y-3">
