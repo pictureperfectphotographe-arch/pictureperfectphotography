@@ -110,6 +110,7 @@ src/
 │   ├── site.ts                # Confirmed business details, phone, email & socials
 │   ├── services.ts            # Core services & production offerings
 │   ├── projects.ts            # Portfolio image metadata & categories
+│   ├── films.ts               # Approved YouTube cinematic wedding films
 │   └── reviews.ts             # Client feedback & Google reviews
 └── public/
     └── images/                # High-resolution original photography

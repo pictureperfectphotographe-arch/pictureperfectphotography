@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Play } from "lucide-react";
-import { filmsData, FilmItem } from "@/data/projects";
+import { filmsData, FilmItem } from "@/data/films";
 import VideoModal from "@/components/ui/VideoModal";
 
 export default function CinematicFilms() {
@@ -65,8 +65,8 @@ export default function CinematicFilms() {
 
               {/* Bottom Subtle Bar */}
               <div className="absolute inset-x-0 bottom-0 p-2.5 bg-gradient-to-t from-black/80 to-transparent flex items-center justify-between text-white text-[10px] tracking-wider uppercase font-medium">
-                <span className="truncate max-w-[80%]">{film.couple}</span>
-                <span className="text-neutral-400">{film.duration}</span>
+                <span className="truncate max-w-[75%]">{film.title}</span>
+                <span className="text-neutral-400 shrink-0 font-mono text-[9px]">{film.duration}</span>
               </div>
             </div>
           ))}

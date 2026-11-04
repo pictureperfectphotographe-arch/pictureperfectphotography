@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { filmsData, FilmItem } from "@/data/projects";
+import { filmsData, FilmItem } from "@/data/films";
 import VideoModal from "@/components/ui/VideoModal";
 import { Play, ArrowUpRight, Film, Music, Sparkles } from "lucide-react";
 
@@ -30,17 +30,17 @@ export default function FilmsPage() {
         </div>
       </section>
 
-      {/* Video Grid */}
+      {/* Video Grid - 2 columns on desktop, 1 on mobile */}
       <section className="py-16 md:py-24">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {filmsData.map((film) => (
               <div
                 key={film.id}
                 onClick={() => setActiveFilm(film)}
                 className="group flex flex-col cursor-pointer"
               >
-                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm">
+                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm border border-[#EBEBEB]">
                   <Image
                     src={film.thumbnail}
                     alt={film.title}
@@ -48,30 +48,33 @@ export default function FilmsPage() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
+                  <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors" />
 
-                  {/* Play Button */}
+                  {/* Circular Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-14 h-14 rounded-full bg-white/90 text-black flex items-center justify-center pl-1 transition-transform duration-300 group-hover:scale-110 group-hover:bg-white shadow-lg">
                       <Play className="w-5 h-5 fill-black text-black" />
                     </div>
                   </div>
 
-                  <span className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 text-[11px] text-white tracking-widest font-mono">
-                    {film.duration}
-                  </span>
+                  {/* Duration Badge */}
+                  {film.duration && (
+                    <span className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 text-[11px] text-white tracking-widest font-mono">
+                      {film.duration}
+                    </span>
+                  )}
                 </div>
 
-                <div className="mt-4 flex items-start justify-between">
+                <div className="mt-4 flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-display text-[22px] md:text-[26px] uppercase tracking-tight text-[#111111] group-hover:text-neutral-700 transition-colors">
+                    <h3 className="font-display text-[22px] md:text-[24px] uppercase tracking-tight text-[#111111] group-hover:text-neutral-700 transition-colors">
                       {film.title}
                     </h3>
                     <p className="text-[13px] text-[#707070] font-body mt-0.5">
-                      {film.couple} • {film.location}
+                      {film.category || "Cinematic Film"}
                     </p>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-[#111111] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="w-4 h-4 text-[#111111] shrink-0 mt-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
             ))}
@@ -116,7 +119,7 @@ export default function FilmsPage() {
         </div>
       </section>
 
-      {/* Video Modal */}
+      {/* Video Modal Player */}
       <VideoModal film={activeFilm} onClose={() => setActiveFilm(null)} />
     </div>
   );

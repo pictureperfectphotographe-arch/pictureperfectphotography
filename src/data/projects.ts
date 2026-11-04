@@ -132,51 +132,6 @@ export const portfolioProjects: Project[] = [
   },
 ];
 
-export interface FilmItem {
-  id: string;
-  title: string;
-  couple: string;
-  location: string;
-  duration: string;
-  thumbnail: string;
-  youtubeId: string;
-}
-
-export const filmsData: FilmItem[] = [
-  {
-    id: "film-1",
-    title: "Eternal Symphony — Muhurtham Highlights",
-    couple: "Harini & Vikram",
-    location: "Hyderabad, Telangana",
-    duration: "4:12",
-    thumbnail: "/images/film_thumb_1.jpg",
-    youtubeId: "dQw4w9WgXcQ", // Replaceable with studio's YouTube links
-  },
-  {
-    id: "film-2",
-    title: "Sunset Serenade — Pre-Wedding Cinema",
-    couple: "Ananya & Rohan",
-    location: "Ananthagiri Hills, Telangana",
-    duration: "3:45",
-    thumbnail: "/images/film_thumb_2.jpg",
-    youtubeId: "dQw4w9WgXcQ",
-  },
-  {
-    id: "film-3",
-    title: "Whispers of Joy — Bridal Story",
-    couple: "Divya & Sai Krishna",
-    location: "Banjara Hills, Hyderabad",
-    duration: "5:20",
-    thumbnail: "/images/film_thumb_3.jpg",
-    youtubeId: "dQw4w9WgXcQ",
-  },
-  {
-    id: "film-4",
-    title: "A Celebration of Sacred Traditions",
-    couple: "Sowmya & Praneeth",
-    location: "Vijayawada / Hyderabad",
-    duration: "6:10",
-    thumbnail: "/images/film_thumb_4.jpg",
-    youtubeId: "dQw4w9WgXcQ",
-  },
-];
+// Re-export films from dedicated data source
+export type { FilmItem } from "./films";
+export { filmsData } from "./films";
