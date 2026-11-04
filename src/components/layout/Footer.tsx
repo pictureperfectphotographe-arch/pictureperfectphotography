@@ -9,7 +9,7 @@ import { InstagramIcon, YoutubeIcon, LinkedinIcon } from "@/components/ui/Social
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-8 border-t border-[#1C1C1C]">
+    <footer id="footer" className="w-full bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-8 border-t border-[#1C1C1C]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16 border-b border-[#222222]">
@@ -147,15 +147,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Oversized Brand Logo Emblem (Span 3) */}
-          <div className="lg:col-span-3 flex items-center lg:justify-end select-none">
-            <Image
-              src="/logo/PP-Logo-White-trimmed.png"
-              alt="Picture Perfect Photography Emblem"
-              width={240}
-              height={240}
-              className="w-32 sm:w-40 md:w-52 h-auto object-contain opacity-25 hover:opacity-40 transition-opacity"
-            />
+          {/* Column 4: Oversized Editorial Brand Typography (Span 3) */}
+          <div className="lg:col-span-3 flex flex-col justify-end pt-6 md:pt-0">
+            <div className="font-display uppercase tracking-[-0.02em] leading-[0.88] text-[#444444] text-left text-[clamp(44px,13vw,62px)] md:text-[clamp(36px,4.8vw,46px)] lg:text-[clamp(32px,2.6vw,42px)] xl:text-[clamp(36px,2.9vw,48px)]">
+              <span className="block whitespace-nowrap">PICTURE</span>
+              <span className="block whitespace-nowrap">PERFECT</span>
+              <span className="block whitespace-nowrap">PHOTOGRAPHE</span>
+            </div>
           </div>
         </div>
 
