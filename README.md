@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Picture Perfect Photographe — Official Website
 
-## Getting Started
+> Contemporary editorial photography and cinematic filmmaking studio based in **Madhapur, Hyderabad**, serving couples and families across India since 2016.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16.4-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+
+---
+
+## 📸 Overview
+
+This repository contains the production website for **Picture Perfect Photographe**, built to exact pixel-level fidelity matching the approved editorial photography design direction.
+
+### Key Highlights
+- **Art-Directed Typography System:** Features monumental display headings in **Anton**, expressive accent phrases in **Bodoni Moda Italic**, and clean editorial metadata in **DM Sans**.
+- **Floating Hero Collage:** Asymmetric photographic framing around the signature brand wordmark with smooth entrance styling.
+- **Service Discovery (5 Core Disciplines):** Weddings, Pre-Weddings, Maternity & Seemantham, Baby & Cradle Ceremonies, and Events & Family.
+- **Asymmetric Portfolio Masonry:** Filterable gallery (`ALL`, `WEDDINGS`, `PRE-WEDDINGS`, `MATERNITY`, `BABY`, `EVENTS`) with interactive full-screen Lightbox.
+- **Cinematic Films Section:** 16:9 film previews with responsive YouTube modal playback.
+- **Interactive Production Accordion:** Candid Photography, Videography & Cinematic Films, Drone Coverage, Albums & Printing, and Event Coverage.
+- **Process Timeline:** Clean 4-step workflow connecting line (`Enquire` → `Plan` → `Capture` → `Deliver`).
+- **Lead Capture & WhatsApp Integration:** Direct WhatsApp quotation link (`+91 8919265544`) with structured event parameters so leads are never lost.
+- **Oversized Typographic Footer:** Architectural footer with verified business details and social channels.
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **Library:** [React 19](https://react.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/) + Custom Editorial SVGs
+- **Fonts:** Google Fonts via `@import` & `next/font` (Anton, Bodoni Moda, DM Sans)
+- **Automation / QA:** Headless Chromium + `puppeteer-core`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) v20 or higher
+- [npm](https://www.npmjs.com/) v10 or higher
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/pictureperfectphotographe-arch/pictureperfectphotography.git
+cd pictureperfectphotography
+
+# Install dependencies
+npm install
+
+# Start local development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build optimized production bundle
+npm run build
 
-## Learn More
+# Start production server
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── layout.tsx             # Root layout, Google Fonts & OpenGraph metadata
+│   ├── page.tsx               # Homepage matching approved reference UI
+│   ├── globals.css            # Tailwind CSS v4 tokens & typography utility classes
+│   ├── about/                 # Studio story, team & production capabilities
+│   ├── services/              # Services overview & equipment directory
+│   │   └── [slug]/            # Dedicated service deep-dives (Weddings, Maternity, etc.)
+│   ├── portfolio/             # Filterable photo archive with Lightbox
+│   ├── films/                 # Cinematic wedding films archive
+│   ├── reviews/               # Client reviews & Google Business feedback
+│   ├── contact/               # Studio location, WhatsApp chat & quotation form
+│   ├── privacy/               # Confidentiality & copyright terms
+│   └── terms/                 # Booking policies & deliverables
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx         # Two-line brand mark, nav & mobile drawer
+│   │   └── Footer.tsx         # Oversized display wordmark & contact columns
+│   ├── sections/
+│   │   ├── HeroCollage.tsx    # Floating 5-photo collage hero
+│   │   ├── Philosophy.tsx     # Editorial brand statement
+│   │   ├── ServiceDiscovery.tsx # 5-column vertical photo cards
+│   │   ├── FeaturedGallery.tsx# Asymmetric masonry with category filter
+│   │   ├── CinematicFilms.tsx # 4-column film thumbnail strip
+│   │   ├── OfferingsAccordion.tsx # Typographic accordion + camera portrait
+│   │   ├── ProcessTimeline.tsx# 4-stage process wave
+│   │   └── LeadEnquiry.tsx    # High-contrast charcoal lead quote form
+│   └── ui/
+│       ├── Lightbox.tsx       # Accessible full-screen photo viewer
+│       ├── VideoModal.tsx     # Clean video player popup
+│       └── SocialIcons.tsx    # Pixel-perfect social SVGs
+├── data/
+│   ├── site.ts                # Confirmed business details, phone, email & socials
+│   ├── services.ts            # Core services & production offerings
+│   ├── projects.ts            # Portfolio image metadata & categories
+│   └── testimonials.ts        # Client feedback & Google reviews
+└── public/
+    └── images/                # High-resolution original photography
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📍 Business Profile
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Brand:** Picture Perfect Photographe
+- **Established:** 2016
+- **Base Studio:** Madhapur, Hyderabad, Telangana, India
+- **Travel Coverage:** Available Pan-India
+- **WhatsApp / Phone:** [+91 8919265544](https://wa.me/918919265544)
+- **Email:** [pictureperfectphotographe@gmail.com](mailto:pictureperfectphotographe@gmail.com)
+- **Instagram:** [@pictureperfectphotographe](https://www.instagram.com/pictureperfectphotographe/)
+- **YouTube:** [@Pictureperfectphotographe](https://www.youtube.com/@Pictureperfectphotographe)
+- **Google Business:** [Google Profile](https://share.google/tDO6SchxhahxFcaMf)
+- **LinkedIn:** [Srujan Patha](https://www.linkedin.com/in/srujan-patha-2924533a7/)
+
+---
+
+## 📄 License
+
+© 2026 Picture Perfect Photographe. All rights reserved.
