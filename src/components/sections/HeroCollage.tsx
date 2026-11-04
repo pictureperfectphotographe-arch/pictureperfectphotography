@@ -71,16 +71,16 @@ export default function HeroCollage() {
             />
           </div>
 
-          {/* Center Monumental Brand Logo */}
-          <div className="relative z-20 py-4 md:py-6 select-none flex flex-col items-center justify-center">
-            <Image
-              src="/logo/PP-Logo-Black-trimmed.png"
-              alt="Picture Perfect Photography"
-              width={460}
-              height={440}
-              priority
-              className="w-[220px] sm:w-[320px] md:w-[400px] lg:w-[460px] h-auto object-contain transition-transform duration-700 hover:scale-[1.02]"
-            />
+          {/* Center Monumental Display Wordmark */}
+          <div className="relative z-20 py-4 md:py-6 select-none">
+            <h1 className="font-display text-[60px] sm:text-[88px] md:text-[118px] lg:text-[144px] leading-[0.88] tracking-[-0.02em] text-[#111111]">
+              PICTURE
+              <br />
+              PERFECT
+            </h1>
+            <p className="font-editorial text-[38px] sm:text-[54px] md:text-[74px] lg:text-[90px] text-[#111111] -mt-2.5 sm:-mt-5 md:-mt-7 lg:-mt-9 tracking-tight font-normal">
+              Photographe
+            </p>
           </div>
 
           {/* Bottom Right Floating Photo: Wedding Garland Couple */}
