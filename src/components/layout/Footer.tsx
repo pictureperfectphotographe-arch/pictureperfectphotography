@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
@@ -15,13 +16,14 @@ export default function Footer() {
           {/* Column 1: Brand Info & Socials (Span 4) */}
           <div className="lg:col-span-4 flex flex-col justify-between">
             <div>
-              <div className="mb-4">
-                <span className="font-display text-[22px] tracking-tight uppercase text-white block">
-                  PICTURE PERFECT
-                </span>
-                <span className="text-[10px] tracking-[0.25em] text-[#777777] uppercase block mt-0.5">
-                  PHOTOGRAPHE
-                </span>
+              <div className="mb-5">
+                <Image
+                  src="/logo/PP-Logo-White-trimmed.png"
+                  alt="Picture Perfect Photography"
+                  width={160}
+                  height={54}
+                  className="h-11 w-auto object-contain"
+                />
               </div>
               <p className="text-[13px] md:text-[14px] text-[#888888] leading-relaxed max-w-sm mb-6 font-body">
                 {siteConfig.tagline} Based in Hyderabad, documenting authentic celebrations across India.
@@ -145,13 +147,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Oversized Typographic Wordmark (Span 3) */}
+          {/* Column 4: Oversized Brand Logo Emblem (Span 3) */}
           <div className="lg:col-span-3 flex items-center lg:justify-end select-none">
-            <div className="font-display text-[48px] sm:text-[62px] md:text-[72px] lg:text-[84px] leading-[0.88] uppercase text-[#222222] lg:text-right hover:text-[#2A2A2A] transition-colors">
-              PICTURE
-              <br />
-              PERFECT
-            </div>
+            <Image
+              src="/logo/PP-Logo-White-trimmed.png"
+              alt="Picture Perfect Photography Emblem"
+              width={240}
+              height={240}
+              className="w-32 sm:w-40 md:w-52 h-auto object-contain opacity-25 hover:opacity-40 transition-opacity"
+            />
           </div>
         </div>
 

@@ -47,6 +47,13 @@ export default function AboutPage() {
 
             <div className="lg:col-span-6 space-y-8">
               <div>
+                <Image
+                  src="/logo/PP-Logo-Black-trimmed.png"
+                  alt="Picture Perfect Photography"
+                  width={140}
+                  height={50}
+                  className="h-10 w-auto object-contain mb-6"
+                />
                 <span className="block text-[11px] font-semibold tracking-[0.2em] text-[#707070] uppercase mb-2">
                   ESTABLISHED 2016
                 </span>

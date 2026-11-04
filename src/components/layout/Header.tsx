@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/site";
@@ -28,19 +29,21 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-xs py-3 border-b border-[#E5E5E5]"
-          : "bg-white py-5"
+          ? "bg-white/95 backdrop-blur-md shadow-xs py-2.5 border-b border-[#E5E5E5]"
+          : "bg-white py-4"
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Brand Logo - 2 Line Editorial */}
-        <Link href="/" className="group flex flex-col text-left">
-          <span className="font-display text-[20px] md:text-[22px] tracking-tight text-[#111111] leading-none transition-colors group-hover:text-neutral-700">
-            PICTURE PERFECT
-          </span>
-          <span className="text-[10px] md:text-[11px] tracking-[0.25em] font-medium text-[#707070] leading-tight uppercase font-body mt-0.5">
-            PHOTOGRAPHE
-          </span>
+        {/* Brand Logo */}
+        <Link href="/" className="group flex items-center py-0.5">
+          <Image
+            src="/logo/PP-Logo-Black-trimmed.png"
+            alt="Picture Perfect Photography"
+            width={160}
+            height={52}
+            priority
+            className="h-10 md:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+          />
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -92,19 +95,31 @@ export default function Header() {
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-[65px] bg-white z-40 px-6 py-8 flex flex-col justify-between md:hidden border-t border-[#E5E5E5] animate-fadeIn">
-          <nav className="flex flex-col space-y-5 text-left">
-            {siteConfig.navLinks.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={`font-display text-[28px] tracking-tight uppercase ${
-                  pathname === item.href ? "text-black underline underline-offset-8" : "text-[#111111]/80"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <div>
+            <div className="flex items-center pb-6 border-b border-[#E5E5E5] mb-6">
+              <Image
+                src="/logo/PP-Logo-Black-trimmed.png"
+                alt="Picture Perfect Photography"
+                width={140}
+                height={45}
+                className="h-10 w-auto object-contain"
+              />
+            </div>
+
+            <nav className="flex flex-col space-y-5 text-left">
+              {siteConfig.navLinks.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`font-display text-[26px] tracking-tight uppercase ${
+                    pathname === item.href ? "text-black underline underline-offset-8" : "text-[#111111]/80"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
 
           <div className="pt-8 border-t border-[#DEDEDE] space-y-4">
             <Link
