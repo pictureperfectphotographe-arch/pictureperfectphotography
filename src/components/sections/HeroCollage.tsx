@@ -5,107 +5,64 @@ import Image from "next/image";
 
 export default function HeroCollage() {
   return (
-    <section className="relative w-full bg-[#FAF9F6] pt-6 pb-16 md:pt-8 md:pb-24 overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 relative">
-        {/* Upper Zone: Metadata corners + Top 3 Floating Photographs */}
-        <div className="relative w-full min-h-[140px] sm:min-h-[170px] md:min-h-[190px] flex items-start justify-between">
-          {/* Top Left Metadata */}
-          <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#171717] select-none z-10 leading-tight">
-            <p>WEDDINGS</p>
-            <p>CELEBRATIONS</p>
-            <p>LIFE EVENTS</p>
-          </div>
+    <section className="relative w-full h-[100svh] min-h-[600px] sm:min-h-[660px] md:min-h-[720px] -mt-[72px] md:-mt-[80px] overflow-hidden flex flex-col justify-between select-none">
+      {/* Background Fullscreen Landscape Image */}
+      <Image
+        src="/images/films/film_sahithi_lalith.jpg"
+        alt="Picture Perfect Photography - Editorial Wedding Photography Hyderabad"
+        fill
+        priority
+        quality={90}
+        sizes="100vw"
+        className="object-cover object-center motion-safe:transition-opacity motion-safe:duration-700"
+      />
 
-          {/* Top Floating Photo 1: Couple Portrait */}
-          <div className="absolute left-[18%] sm:left-[22%] md:left-[25%] lg:left-[28%] top-0 w-[95px] sm:w-[120px] md:w-[145px] lg:w-[160px] aspect-[4/5] shadow-xs z-10 transition-transform duration-500 hover:scale-102">
-            <Image
-              src="/images/hero_couple_top_left.jpg"
-              alt="Candid couple portrait by Picture Perfect Photography"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 110px, 160px"
-            />
-          </div>
+      {/* Subtle Editorial Gradient Overlay for Typography Readability */}
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/65 pointer-events-none"
+        aria-hidden="true"
+      />
 
-          {/* Top Floating Photo 2: Baby Feet in Hands */}
-          <div className="absolute left-[41%] sm:left-[43%] md:left-[44%] lg:left-[45%] top-2 md:top-3 w-[85px] sm:w-[105px] md:w-[125px] lg:w-[135px] aspect-[4/3] shadow-xs z-10 transition-transform duration-500 hover:scale-102">
-            <Image
-              src="/images/hero_baby_feet.jpg"
-              alt="Baby milestone photography session"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 95px, 135px"
-            />
-          </div>
-
-          {/* Top Floating Photo 3: Maternity in Yellow */}
-          <div className="absolute right-[18%] sm:right-[20%] md:right-[23%] lg:right-[25%] top-0 w-[90px] sm:w-[115px] md:w-[135px] lg:w-[150px] aspect-[4/5] shadow-xs z-10 transition-transform duration-500 hover:scale-102">
-            <Image
-              src="/images/hero_maternity_yellow.jpg"
-              alt="Maternity photography session in Hyderabad"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 105px, 150px"
-            />
-          </div>
-
-          {/* Top Right Metadata */}
-          <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#171717] select-none text-right z-10 leading-tight">
-            <p>SINCE 2021</p>
-          </div>
+      {/* Upper Zone: Metadata Top Left & Top Right */}
+      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pt-[88px] sm:pt-[96px] md:pt-[104px] flex items-start justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/90 leading-tight">
+        {/* Top Left Metadata */}
+        <div>
+          <p>WEDDINGS</p>
+          <p>CELEBRATIONS</p>
+          <p className="text-white/70">LIFE EVENTS</p>
         </div>
 
-        {/* Center Zone: Monumental Wordmark + Flanking Lower Photos */}
-        <div className="relative w-full my-6 md:my-10 text-center">
-          {/* Bottom Left Floating Photo: Sunset Silhouette */}
-          <div className="absolute left-[1%] sm:left-[4%] md:left-[6%] lg:left-[8%] top-[25%] md:top-[20%] w-[105px] sm:w-[135px] md:w-[165px] lg:w-[185px] aspect-[4/3] shadow-xs z-10 transition-transform duration-500 hover:scale-102">
-            <Image
-              src="/images/hero_sunset_silhouette.jpg"
-              alt="Pre-wedding sunset silhouette portrait"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 120px, 185px"
-            />
-          </div>
+        {/* Top Right Metadata */}
+        <div className="text-right">
+          <p>SINCE 2021</p>
+        </div>
+      </div>
 
-          {/* Center Monumental Display Wordmark */}
-          <div className="relative z-20 py-4 md:py-6 select-none">
-            <h1 className="font-display text-[60px] sm:text-[88px] md:text-[118px] lg:text-[144px] leading-[0.88] tracking-[-0.02em] text-[#171717]">
-              PICTURE
-              <br />
-              PERFECT
-            </h1>
-            <p className="font-editorial italic font-normal text-[38px] sm:text-[54px] md:text-[74px] lg:text-[90px] text-[#171717] -mt-2.5 sm:-mt-5 md:-mt-7 lg:-mt-9 tracking-tight">
-              Photography
-            </p>
-          </div>
+      {/* Center Zone: Monumental Brand Wordmark */}
+      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 text-center my-auto py-4">
+        <h1 className="font-display text-[60px] sm:text-[88px] md:text-[118px] lg:text-[144px] leading-[0.88] tracking-[-0.02em] text-white drop-shadow-md">
+          PICTURE
+          <br />
+          PERFECT
+        </h1>
+        <p className="font-editorial italic font-normal text-[38px] sm:text-[54px] md:text-[74px] lg:text-[90px] text-white -mt-2.5 sm:-mt-5 md:-mt-7 lg:-mt-9 tracking-tight drop-shadow-md">
+          Photography
+        </p>
+      </div>
 
-          {/* Bottom Right Floating Photo: Wedding Garland Couple */}
-          <div className="absolute right-[1%] sm:right-[4%] md:right-[6%] lg:right-[8%] top-[20%] md:top-[15%] w-[100px] sm:w-[125px] md:w-[150px] lg:w-[170px] aspect-[4/5] shadow-xs z-10 transition-transform duration-500 hover:scale-102">
-            <Image
-              src="/images/hero_wedding_garland.jpg"
-              alt="Indian wedding muhurtham garland photography"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 110px, 170px"
-            />
-          </div>
+      {/* Bottom Zone: Metadata Bottom Left & Bottom Right */}
+      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pb-8 sm:pb-10 md:pb-12 flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/90 leading-tight">
+        {/* Bottom Left Metadata */}
+        <div>
+          <p>MANIKONDA, HYDERABAD /</p>
+          <p className="text-white/70">AVAILABLE PAN-INDIA</p>
         </div>
 
-        {/* Bottom Metadata Row */}
-        <div className="flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#171717] select-none pt-4 md:pt-6 z-10 leading-tight">
-          <div>
-            <p>MANIKONDA, HYDERABAD /</p>
-            <p className="text-[#777777]">AVAILABLE PAN-INDIA</p>
-          </div>
-          <div className="text-right">
-            <p>PHOTOGRAPHY</p>
-            <p>FILMS</p>
-            <p className="text-[#777777]">STORIES</p>
-          </div>
+        {/* Bottom Right Metadata */}
+        <div className="text-right">
+          <p>PHOTOGRAPHY</p>
+          <p>FILMS</p>
+          <p className="text-white/70">STORIES</p>
         </div>
       </div>
     </section>
