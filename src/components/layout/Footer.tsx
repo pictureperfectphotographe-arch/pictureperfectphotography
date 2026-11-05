@@ -9,7 +9,7 @@ import { InstagramIcon, YoutubeIcon, LinkedinIcon } from "@/components/ui/Social
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full bg-[#111111] text-white pt-16 md:pt-24 pb-8 border-t border-[#222222]">
+    <footer id="footer" className="w-full bg-[#171717] text-white pt-16 md:pt-24 pb-8 border-t border-[#222222]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16 border-b border-[#222222]">

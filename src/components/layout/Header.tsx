@@ -20,16 +20,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile drawer on route change
-  useEffect(() => {
+  // Close mobile drawer on route change during render
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
     setMobileMenuOpen(false);
-  }, [pathname]);
+  }
 
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-xs py-2.5 border-b border-[#E5E5E5]"
+          ? "bg-white/95 backdrop-blur-md shadow-xs py-2.5 border-b border-[#D8D2CA]"
           : "bg-white py-4"
       }`}
     >
@@ -48,7 +50,7 @@ export default function Header() {
 
         {/* Desktop Navigation Links */}
         <nav
-          className="hidden md:flex items-center space-x-7 lg:space-x-9 text-[12px] lg:text-[13px] font-medium tracking-[0.14em] font-body text-[#111111]"
+          className="hidden md:flex items-center space-x-7 lg:space-x-9 text-[12px] lg:text-[13px] font-medium tracking-[0.14em] font-body text-[#171717]"
           aria-label="Main Navigation"
         >
           {siteConfig.navLinks.map((item) => {
@@ -58,12 +60,12 @@ export default function Header() {
                 key={item.label}
                 href={item.href}
                 className={`relative py-1 transition-colors duration-200 ${
-                  isActive ? "text-[#111111] font-semibold" : "text-[#737373] hover:text-[#111111]"
+                  isActive ? "text-[#171717] font-semibold" : "text-[#777777] hover:text-[#171717]"
                 }`}
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#111111]" />
+                  <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#171717]" />
                 )}
               </Link>
             );
@@ -74,7 +76,7 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full border border-[#111111] text-[12px] font-medium tracking-[0.1em] text-[#111111] uppercase hover:bg-[#111111] hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full border border-[#171717] text-[12px] font-medium tracking-[0.1em] text-[#171717] uppercase hover:bg-[#171717] hover:text-white transition-all duration-300"
           >
             <span>GET A QUOTE</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -84,7 +86,7 @@ export default function Header() {
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-[#111111] focus:outline-hidden"
+          className="md:hidden p-2 text-[#171717] focus:outline-hidden"
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileMenuOpen}
         >
@@ -94,9 +96,9 @@ export default function Header() {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[65px] bg-white z-40 px-6 py-8 flex flex-col justify-between md:hidden border-t border-[#E5E5E5] animate-fadeIn">
+        <div className="fixed inset-0 top-[65px] bg-white z-40 px-6 py-8 flex flex-col justify-between md:hidden border-t border-[#D8D2CA] animate-fadeIn">
           <div>
-            <div className="flex items-center pb-6 border-b border-[#E5E5E5] mb-6">
+            <div className="flex items-center pb-6 border-b border-[#D8D2CA] mb-6">
               <Image
                 src="/logo/PP-Logo-Black-trimmed.png"
                 alt="Picture Perfect Photography"
@@ -112,7 +114,7 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={`font-display text-[26px] tracking-tight uppercase ${
-                    pathname === item.href ? "text-[#111111] underline underline-offset-8" : "text-[#737373] hover:text-[#111111]"
+                    pathname === item.href ? "text-[#171717] underline underline-offset-8" : "text-[#777777] hover:text-[#171717]"
                   }`}
                 >
                   {item.label}
@@ -121,10 +123,10 @@ export default function Header() {
             </nav>
           </div>
 
-          <div className="pt-8 border-t border-[#E5E5E5] space-y-4">
+          <div className="pt-8 border-t border-[#D8D2CA] space-y-4">
             <Link
               href="/contact"
-              className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#111111] text-white text-[13px] font-medium tracking-wider uppercase rounded-sm"
+              className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#171717] text-white text-[13px] font-medium tracking-wider uppercase rounded-sm"
             >
               <span>GET A QUOTE</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -134,13 +136,13 @@ export default function Header() {
               href={siteConfig.contact.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-3.5 border border-[#111111] text-[#111111] text-[13px] font-medium tracking-wider uppercase rounded-sm hover:bg-neutral-50"
+              className="w-full flex items-center justify-center gap-2 py-3.5 border border-[#171717] text-[#171717] text-[13px] font-medium tracking-wider uppercase rounded-sm hover:bg-[#FAF9F6]"
             >
               <Phone className="w-4 h-4" />
               <span>CHAT ON WHATSAPP</span>
             </a>
 
-            <div className="text-center text-[12px] text-[#737373] pt-2">
+            <div className="text-center text-[12px] text-[#777777] pt-2">
               Manikonda, Hyderabad • Pan-India Coverage
             </div>
           </div>

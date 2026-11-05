@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { filmsData, FilmItem } from "@/data/films";
 import VideoModal from "@/components/ui/VideoModal";
 import { Play, ArrowUpRight, Film, Music, Sparkles } from "lucide-react";
@@ -13,18 +12,18 @@ export default function FilmsPage() {
   return (
     <div className="w-full bg-white">
       {/* Header */}
-      <section className="py-16 md:py-24 border-b border-[#E5E5E5]">
+      <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
+          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             CINEMATIC WEDDING FILMS
           </span>
-          <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight max-w-4xl">
+          <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             STORIES IN{" "}
             <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
               motion.
             </span>
           </h1>
-          <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
+          <p className="font-body text-[16px] md:text-[18px] text-[#777777] max-w-2xl mt-6 leading-relaxed">
             Our filmmaking philosophy is rooted in cinematic narrative structure, authentic ambient soundscapes, and color science that evokes timeless emotion.
           </p>
         </div>
@@ -40,7 +39,7 @@ export default function FilmsPage() {
                 onClick={() => setActiveFilm(film)}
                 className="group flex flex-col cursor-pointer"
               >
-                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm border border-[#E5E5E5]">
+                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm border border-[#D8D2CA]">
                   <Image
                     src={film.thumbnail}
                     alt={film.title}
@@ -67,14 +66,14 @@ export default function FilmsPage() {
 
                 <div className="mt-4 flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-display text-[22px] md:text-[24px] uppercase tracking-tight text-[#111111] group-hover:text-neutral-700 transition-colors">
+                    <h3 className="font-display text-[22px] md:text-[24px] uppercase tracking-tight text-[#171717] group-hover:text-[#777777] transition-colors">
                       {film.title}
                     </h3>
-                    <p className="text-[13px] text-[#707070] font-body mt-0.5">
+                    <p className="text-[13px] text-[#777777] font-body mt-0.5">
                       {film.category || "Cinematic Film"}
                     </p>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-[#111111] shrink-0 mt-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="w-4 h-4 text-[#171717] shrink-0 mt-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
             ))}
@@ -83,35 +82,35 @@ export default function FilmsPage() {
       </section>
 
       {/* Filmmaking Approach */}
-      <section className="py-16 md:py-24 bg-[#FAFAFA] border-t border-[#EAEAEA]">
+      <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-white border border-[#E5E5E5] space-y-3">
-              <Film className="w-7 h-7 text-[#111111] stroke-1" />
-              <h3 className="font-display text-[20px] uppercase text-[#111111]">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-3">
+              <Film className="w-7 h-7 text-[#171717] stroke-1" />
+              <h3 className="font-display text-[20px] uppercase text-[#171717]">
                 NARRATIVE EDITING
               </h3>
-              <p className="text-[13px] text-[#666666] leading-relaxed">
+              <p className="text-[13px] text-[#777777] leading-relaxed">
                 Rather than generic music video montages, our films are carefully paced narratives built around vows, speeches, and authentic audio.
               </p>
             </div>
 
-            <div className="p-6 bg-white border border-[#E5E5E5] space-y-3">
-              <Music className="w-7 h-7 text-[#111111] stroke-1" />
-              <h3 className="font-display text-[20px] uppercase text-[#111111]">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-3">
+              <Music className="w-7 h-7 text-[#171717] stroke-1" />
+              <h3 className="font-display text-[20px] uppercase text-[#171717]">
                 BESPOKE SOUND DESIGN
               </h3>
-              <p className="text-[13px] text-[#666666] leading-relaxed">
+              <p className="text-[13px] text-[#777777] leading-relaxed">
                 Licensed music matched to your taste, coupled with professional multi-track audio capture of priests, vows, and familial laughter.
               </p>
             </div>
 
-            <div className="p-6 bg-white border border-[#E5E5E5] space-y-3">
-              <Sparkles className="w-7 h-7 text-[#111111] stroke-1" />
-              <h3 className="font-display text-[20px] uppercase text-[#111111]">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-3">
+              <Sparkles className="w-7 h-7 text-[#171717] stroke-1" />
+              <h3 className="font-display text-[20px] uppercase text-[#171717]">
                 COLOR MASTERY
               </h3>
-              <p className="text-[13px] text-[#666666] leading-relaxed">
+              <p className="text-[13px] text-[#777777] leading-relaxed">
                 Individual shot color grading in DaVinci Resolve, balancing natural skin tones and rich Indian ceremonial palettes.
               </p>
             </div>

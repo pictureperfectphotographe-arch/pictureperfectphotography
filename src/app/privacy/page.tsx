@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
 export const metadata = {
@@ -12,20 +11,20 @@ export default function PrivacyPage() {
     <div className="w-full bg-white py-16 md:py-24">
       <div className="max-w-[840px] mx-auto px-6 md:px-12 space-y-10">
         <div>
-          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase block mb-2 font-body">
+          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2 font-body">
             CLIENT CONFIDENTIALITY & DATA
           </span>
-          <h1 className="font-display text-[44px] md:text-[60px] uppercase tracking-tight text-[#111111] leading-tight">
+          <h1 className="font-display text-[44px] md:text-[60px] uppercase tracking-tight text-[#171717] leading-tight">
             PRIVACY POLICY
           </h1>
-          <p className="text-[13px] text-[#737373] font-body mt-2">
+          <p className="text-[13px] text-[#777777] font-body mt-2">
             Last updated: November 2026 • Picture Perfect Photography, Manikonda, Hyderabad
           </p>
         </div>
 
         <div className="prose prose-neutral max-w-none space-y-6 text-[15px] text-[#444444] font-body leading-relaxed">
           <section className="space-y-3">
-            <h2 className="font-display text-[22px] uppercase text-[#111111]">
+            <h2 className="font-display text-[22px] uppercase text-[#171717]">
               1. Information We Collect
             </h2>
             <p>
@@ -34,7 +33,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-display text-[22px] uppercase text-[#111111]">
+            <h2 className="font-display text-[22px] uppercase text-[#171717]">
               2. Photography & Client Privacy
             </h2>
             <p>
@@ -43,7 +42,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-display text-[22px] uppercase text-[#111111]">
+            <h2 className="font-display text-[22px] uppercase text-[#171717]">
               3. Data Security & Archival Storage
             </h2>
             <p>
@@ -52,16 +51,16 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-display text-[22px] uppercase text-[#111111]">
+            <h2 className="font-display text-[22px] uppercase text-[#171717]">
               4. Contact Us
             </h2>
             <p>
               If you have any questions regarding your data or image usage, please contact us at{" "}
-              <a href={`mailto:${siteConfig.contact.email}`} className="text-black underline">
+              <a href={`mailto:${siteConfig.contact.email}`} className="text-[#171717] underline">
                 {siteConfig.contact.email}
               </a>{" "}
               or via WhatsApp at{" "}
-              <a href={siteConfig.contact.whatsappLink} className="text-black underline">
+              <a href={siteConfig.contact.whatsappLink} className="text-[#171717] underline">
                 {siteConfig.contact.phoneDisplay}
               </a>
               .

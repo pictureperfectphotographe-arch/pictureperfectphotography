@@ -187,12 +187,15 @@ Recommended easing: `cubic-bezier(0.22, 1, 0.36, 1)`. Respect `prefers-reduced-m
 ```css
 :root {
   /* Colours */
+  --color-ivory: #FAF9F6;
   --color-bg: #FFFFFF;
-  --color-text: #111111;
-  --color-charcoal: #242424;
-  --color-muted: #707070;
-  --color-surface: #F2F2F2;
-  --color-border: #DEDEDE;
+  --color-text: #171717;
+  --color-black: #171717;
+  --color-grey: #777777;
+  --color-stone: #D8D2CA;
+  --color-surface: #FAF9F6;
+  --color-border: #D8D2CA;
+  --color-champagne: #B8A27A;
 
   /* Fonts — load separately */
   --font-display: "Anton", Impact, sans-serif;

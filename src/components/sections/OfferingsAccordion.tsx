@@ -14,23 +14,23 @@ export default function OfferingsAccordion() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Typographic Accordion (Span 7) */}
           <div className="lg:col-span-7">
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-2">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-2">
               OUR OFFERINGS
             </span>
-            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em] mb-10">
+            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em] mb-10">
               YOUR DAY,{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#111111]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
                 your way.
               </span>
             </h2>
 
             {/* Accordion List */}
-            <div className="divide-y divide-[#E5E5E5] border-t border-b border-[#E5E5E5]">
+            <div className="divide-y divide-[#D8D2CA] border-t border-b border-[#D8D2CA]">
               {productionOfferings.map((item, idx) => {
                 const isOpen = openIndex === idx;
                 return (
@@ -41,18 +41,18 @@ export default function OfferingsAccordion() {
                       aria-expanded={isOpen}
                     >
                       <div className="flex items-baseline gap-4 md:gap-6">
-                        <span className="text-[12px] md:text-[13px] font-medium tracking-widest text-[#737373] font-body">
+                        <span className="text-[12px] md:text-[13px] font-medium tracking-widest text-[#777777] font-body">
                           {item.number}
                         </span>
-                        <h3 className="font-display text-[22px] sm:text-[26px] md:text-[30px] uppercase text-[#111111] tracking-tight group-hover:text-neutral-700 transition-colors">
+                        <h3 className="font-display text-[22px] sm:text-[26px] md:text-[30px] uppercase text-[#171717] tracking-tight group-hover:text-[#777777] transition-colors">
                           {item.title}
                         </h3>
                       </div>
-                      <div className="p-1 rounded-full text-[#111111] transition-transform duration-300">
+                      <div className="p-1 rounded-full text-[#171717] transition-transform duration-300">
                         {isOpen ? (
-                          <Minus className="w-5 h-5 text-[#111111]" />
+                          <Minus className="w-5 h-5 text-[#171717]" />
                         ) : (
-                          <Plus className="w-5 h-5 text-[#111111] group-hover:scale-110" />
+                          <Plus className="w-5 h-5 text-[#171717] group-hover:scale-110" />
                         )}
                       </div>
                     </button>
@@ -63,7 +63,7 @@ export default function OfferingsAccordion() {
                         <p className="mb-4">{item.description}</p>
                         <Link
                           href={`/services#${item.slug}`}
-                          className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wider uppercase text-[#111111] hover:underline"
+                          className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wider uppercase text-[#171717] hover:underline"
                         >
                           <span>Explore Details</span>
                           <ArrowUpRight className="w-3.5 h-3.5" />
@@ -81,7 +81,7 @@ export default function OfferingsAccordion() {
             <div className="relative w-full aspect-[4/5] bg-neutral-900 overflow-hidden shadow-xs">
               <Image
                 src="/images/offerings_photographer.jpg"
-                alt="Picture Perfect Photographe Camera and Team in Hyderabad"
+                alt="Picture Perfect Photography Camera and Team in Hyderabad"
                 fill
                 priority
                 loading="eager"

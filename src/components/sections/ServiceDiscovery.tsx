@@ -8,16 +8,16 @@ import { servicesData } from "@/data/services";
 
 export default function ServiceDiscovery() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-8 md:mb-12">
-          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#111111] uppercase">
+          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#171717] uppercase">
             EXPLORE OUR SERVICES
           </span>
           <Link
             href="/services"
-            className="group flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#111111] uppercase hover:text-neutral-600 transition-colors"
+            className="group flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
           >
             <span>VIEW ALL SERVICES</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -35,7 +35,7 @@ export default function ServiceDiscovery() {
               {/* Photograph */}
               <Image
                 src={service.image}
-                alt={`${service.title} by Picture Perfect Photographe`}
+                alt={`${service.title} by Picture Perfect Photography`}
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"

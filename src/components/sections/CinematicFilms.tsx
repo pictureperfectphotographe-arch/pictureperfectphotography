@@ -11,17 +11,17 @@ export default function CinematicFilms() {
   const [activeFilm, setActiveFilm] = useState<FilmItem | null>(null);
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
           <div>
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-2">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-2">
               OUR FILMS
             </span>
-            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em]">
+            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
               PRESS PLAY ON{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#111111]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
                 love.
               </span>
             </h2>
@@ -30,7 +30,7 @@ export default function CinematicFilms() {
           <div>
             <Link
               href="/films"
-              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#111111] uppercase hover:text-neutral-600 transition-colors"
+              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
             >
               <span>WATCH ALL FILMS</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

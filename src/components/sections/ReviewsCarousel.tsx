@@ -213,13 +213,13 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
       aria-label="Genuine Google Client Reviews"
     >
       {/* Top Header Controls Bar */}
-      <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#F0F0F0]">
+      <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#D8D2CA]">
         <div className="flex items-center gap-2">
-          <span className="text-[11px] font-semibold tracking-[0.2em] text-[#737373] uppercase">
+          <span className="text-[11px] font-semibold tracking-[0.2em] text-[#777777] uppercase">
             VERIFIED EXPERIENCES
           </span>
-          <span className="text-[#D0D0D0]">•</span>
-          <span className="text-[12px] font-medium text-[#111111]">
+          <span className="text-[#D8D2CA]">•</span>
+          <span className="text-[12px] font-medium text-[#171717]">
             0{activeLogicalIndex + 1} / 0{total}
           </span>
         </div>
@@ -230,7 +230,7 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
             onClick={handlePrev}
             type="button"
             aria-label="Previous review card"
-            className="w-10 h-10 border border-[#E5E5E5] bg-white flex items-center justify-center text-[#222222] hover:border-[#111111] hover:text-[#111111] hover:bg-[#FAFAFA] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#111111]"
+            className="w-10 h-10 border border-[#D8D2CA] bg-white flex items-center justify-center text-[#171717] hover:border-[#171717] hover:text-[#171717] hover:bg-[#FAF9F6] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#171717]"
           >
             <ChevronLeft className="w-4 h-4" strokeWidth={1.5} />
           </button>
@@ -238,7 +238,7 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
             onClick={handleNext}
             type="button"
             aria-label="Next review card"
-            className="w-10 h-10 border border-[#E5E5E5] bg-white flex items-center justify-center text-[#222222] hover:border-[#111111] hover:text-[#111111] hover:bg-[#FAFAFA] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#111111]"
+            className="w-10 h-10 border border-[#D8D2CA] bg-white flex items-center justify-center text-[#171717] hover:border-[#171717] hover:text-[#171717] hover:bg-[#FAF9F6] transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#171717]"
           >
             <ChevronRight className="w-4 h-4" strokeWidth={1.5} />
           </button>
@@ -272,7 +272,7 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
               }
             >
               {/* Minimal Bordered Review Card */}
-              <article className="h-full flex flex-col justify-between bg-white p-7 sm:p-8 md:p-9 border border-[#E5E5E5] transition-colors hover:border-[#CCCCCC]">
+              <article className="h-full flex flex-col justify-between bg-white p-7 sm:p-8 md:p-9 border border-[#D8D2CA] transition-colors hover:border-[#777777]">
                 <div>
                   {/* TOP: Actual Star Rating in #B8A27A Muted Champagne Gold */}
                   <div
@@ -288,21 +288,21 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
                   </div>
 
                   {/* MIDDLE: Genuine Customer Review Quotation */}
-                  <blockquote className="font-editorial text-[17px] sm:text-[18px] md:text-[19px] leading-[1.65] text-[#222222] italic">
+                  <blockquote className="font-editorial text-[17px] sm:text-[18px] md:text-[19px] leading-[1.65] text-[#171717] italic">
                     &ldquo;{item.text}&rdquo;
                   </blockquote>
                 </div>
 
                 {/* BOTTOM: Reviewer Display Name (DM Sans SemiBold) & Subtle Google Link */}
-                <div className="pt-6 mt-6 border-t border-[#F0F0F0] flex flex-col gap-1.5">
-                  <p className="font-sans font-semibold text-[15px] md:text-[16px] text-[#111111] tracking-[0.01em]">
+                <div className="pt-6 mt-6 border-t border-[#D8D2CA] flex flex-col gap-1.5">
+                  <p className="font-sans font-semibold text-[15px] md:text-[16px] text-[#171717] tracking-[0.01em]">
                     {item.displayName}
                   </p>
                   <a
                     href={item.reviewUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-medium tracking-[0.08em] text-[#737373] hover:text-[#111111] uppercase transition-colors group w-fit"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium tracking-[0.08em] text-[#777777] hover:text-[#171717] uppercase transition-colors group w-fit"
                     title={`Read original Google review by ${item.reviewerName}`}
                     aria-label={`Read original Google review by ${item.reviewerName} on Google Business Profile`}
                   >
@@ -326,10 +326,10 @@ export default function ReviewsCarousel({ reviews }: ReviewsCarouselProps) {
               onClick={() => goToLogicalIndex(i)}
               type="button"
               aria-label={`Go to review ${i + 1} of ${total}: ${rev.displayName}`}
-              className={`h-2 transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#111111] ${
+              className={`h-2 transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#171717] ${
                 isActive
                   ? "w-6 bg-[#B8A27A] rounded-full"
-                  : "w-2 bg-[#E5E5E5] hover:bg-[#CCCCCC] rounded-full"
+                  : "w-2 bg-[#D8D2CA] hover:bg-[#777777] rounded-full"
               }`}
             />
           );

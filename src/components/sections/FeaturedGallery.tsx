@@ -35,17 +35,17 @@ export default function FeaturedGallery() {
   const mandapVenue = portfolioProjects.find((p) => p.id === "garden-mandap-aisle");
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-2">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-2">
               OUR WORK
             </span>
-            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em]">
+            <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
               THE GOOD{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#111111]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
                 stuff.
               </span>
             </h2>
@@ -54,7 +54,7 @@ export default function FeaturedGallery() {
           <div>
             <Link
               href="/portfolio"
-              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#111111] uppercase hover:text-neutral-600 transition-colors"
+              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
             >
               <span>EXPLORE FULL GALLERY</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -72,8 +72,8 @@ export default function FeaturedGallery() {
                 onClick={() => setActiveFilter(cat)}
                 className={`px-4 py-1.5 rounded-full text-[11px] font-medium tracking-[0.14em] uppercase transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-[#111111] text-white border border-[#111111]"
-                    : "bg-white text-[#111111] border border-[#E5E5E5] hover:border-[#111111]"
+                    ? "bg-[#171717] text-white border border-[#171717]"
+                    : "bg-white text-[#171717] border border-[#D8D2CA] hover:border-[#171717]"
                 }`}
               >
                 {cat}
@@ -220,9 +220,9 @@ export default function FeaturedGallery() {
               )}
 
               {/* Typographic Block matching reference */}
-              <div className="py-6 px-4 md:py-10 border-t border-[#E5E5E5] flex flex-col justify-end">
-                <span className="block w-6 h-[1.5px] bg-[#111111] mb-4" />
-                <h3 className="font-display text-[20px] md:text-[24px] lg:text-[28px] uppercase tracking-tight text-[#111111] leading-[1.05]">
+              <div className="py-6 px-4 md:py-10 border-t border-[#D8D2CA] flex flex-col justify-end">
+                <span className="block w-6 h-[1.5px] bg-[#171717] mb-4" />
+                <h3 className="font-display text-[20px] md:text-[24px] lg:text-[28px] uppercase tracking-tight text-[#171717] leading-[1.05]">
                   A COLLECTION
                   <br />
                   OF MOMENTS

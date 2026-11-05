@@ -33,18 +33,6 @@ export default function LeadEnquiry() {
 
     setStatus("submitting");
 
-    // Construct direct WhatsApp message url for backup guarantee
-    const waText = encodeURIComponent(
-      `Hello Picture Perfect Photography!\n\nI would like to request a quote for an upcoming event:\n\n` +
-      `• Name: ${formData.name}\n` +
-      `• Phone: ${formData.phone}\n` +
-      `• Event: ${formData.eventType}\n` +
-      `• Date: ${formData.eventDate || "TBD"}\n` +
-      `• Location: ${formData.eventLocation || "Hyderabad"}\n` +
-      (formData.message ? `• Note: ${formData.message}\n` : "")
-    );
-    const waUrl = `https://wa.me/918919265544?text=${waText}`;
-
     // Simulate lead submission and save to local state / open WA option
     setTimeout(() => {
       setStatus("success");
@@ -54,7 +42,7 @@ export default function LeadEnquiry() {
   };
 
   return (
-    <section id="enquiry" className="w-full bg-[#111111] text-white py-20 md:py-28">
+    <section id="enquiry" className="w-full bg-[#171717] text-white py-20 md:py-28">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column (Span 5) */}
@@ -223,7 +211,7 @@ export default function LeadEnquiry() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-4 bg-white text-[#111111] font-semibold text-[13px] tracking-[0.14em] uppercase flex items-center justify-center gap-2 hover:bg-neutral-200 transition-colors duration-200 cursor-pointer disabled:opacity-50"
+                    className="w-full py-4 bg-white text-[#171717] font-semibold text-[13px] tracking-[0.14em] uppercase flex items-center justify-center gap-2 hover:bg-[#FAF9F6] transition-colors duration-200 cursor-pointer disabled:opacity-50"
                   >
                     <span>{status === "submitting" ? "SENDING ENQUIRY..." : "GET A QUOTE"}</span>
                     <ArrowUpRight className="w-4 h-4" />

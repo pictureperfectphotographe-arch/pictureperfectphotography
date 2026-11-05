@@ -10,7 +10,7 @@ export default function HeroCollage() {
     <section className="relative w-full bg-white pt-5 pb-16 md:pt-8 md:pb-24 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 relative">
         {/* Top Metadata Row: Guaranteed zero collision on mobile */}
-        <div className="flex items-start justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#111111] select-none leading-tight z-30 relative">
+        <div className="flex items-start justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#171717] select-none leading-tight z-30 relative">
           <div>
             <p>WEDDINGS</p>
             <p>CELEBRATIONS</p>
@@ -75,24 +75,24 @@ export default function HeroCollage() {
 
           {/* Center Monumental Display Wordmark & Content */}
           <div className="relative z-20 py-2 sm:py-4 md:py-6 select-none flex flex-col items-center">
-            <h1 className="font-display text-[54px] sm:text-[76px] md:text-[90px] lg:text-[116px] xl:text-[144px] leading-[0.88] tracking-[-0.02em] text-[#111111]">
+            <h1 className="font-display text-[54px] sm:text-[76px] md:text-[90px] lg:text-[116px] xl:text-[144px] leading-[0.88] tracking-[-0.02em] text-[#171717]">
               PICTURE
               <br />
               PERFECT
             </h1>
-            <p className="font-editorial italic font-normal text-[32px] sm:text-[46px] md:text-[54px] lg:text-[70px] xl:text-[84px] text-[#111111] -mt-1.5 sm:-mt-3 md:-mt-5 lg:-mt-7 tracking-tight">
+            <p className="font-editorial italic font-normal text-[32px] sm:text-[46px] md:text-[54px] lg:text-[70px] xl:text-[84px] text-[#171717] -mt-1.5 sm:-mt-3 md:-mt-5 lg:-mt-7 tracking-tight">
               Photography
             </p>
 
             {/* Studio Tagline */}
-            <p className="font-editorial italic text-[14px] sm:text-[16px] md:text-[18px] text-[#737373] mt-2.5 sm:mt-3 md:mt-4 max-w-md">
+            <p className="font-editorial italic text-[14px] sm:text-[16px] md:text-[18px] text-[#777777] mt-2.5 sm:mt-3 md:mt-4 max-w-md">
               Timeless imagery. Honest emotions.
             </p>
 
             {/* Minimal Editorial CTA */}
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-1.5 text-[11px] md:text-[12px] font-semibold tracking-[0.16em] uppercase text-[#111111] border-b border-[#111111] pb-0.5 hover:text-[#737373] hover:border-[#737373] transition-colors group mt-3 sm:mt-4 md:mt-5"
+              className="inline-flex items-center gap-1.5 text-[11px] md:text-[12px] font-semibold tracking-[0.16em] uppercase text-[#171717] border-b border-[#171717] pb-0.5 hover:text-[#777777] hover:border-[#777777] transition-colors group mt-3 sm:mt-4 md:mt-5"
             >
               <span>EXPLORE OUR WORK</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -134,15 +134,15 @@ export default function HeroCollage() {
         </div>
 
         {/* Bottom Metadata Row */}
-        <div className="flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#111111] select-none pt-4 md:pt-6 z-10 leading-tight">
+        <div className="flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#171717] select-none pt-4 md:pt-6 z-10 leading-tight">
           <div>
             <p>MANIKONDA, HYDERABAD /</p>
-            <p className="text-[#737373]">AVAILABLE PAN-INDIA</p>
+            <p className="text-[#777777]">AVAILABLE PAN-INDIA</p>
           </div>
           <div className="text-right">
             <p>PHOTOGRAPHY</p>
             <p>FILMS</p>
-            <p className="text-[#737373]">STORIES</p>
+            <p className="text-[#777777]">STORIES</p>
           </div>
         </div>
       </div>

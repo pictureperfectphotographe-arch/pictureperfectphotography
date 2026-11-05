@@ -2,10 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { servicesData, Service } from "@/data/services";
+import { servicesData } from "@/data/services";
 import { portfolioProjects } from "@/data/projects";
-import { ArrowUpRight, Check, ArrowLeft, Phone, Calendar, MapPin } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { ArrowUpRight, ArrowLeft, Phone } from "lucide-react";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -37,30 +36,30 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <div className="w-full bg-white">
       {/* Top Breadcrumb */}
-      <div className="border-b border-[#EFEFEF] py-4">
+      <div className="border-b border-[#D8D2CA] py-4">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
           <Link
             href="/services"
-            className="inline-flex items-center gap-1.5 text-[12px] font-medium tracking-wider uppercase text-[#707070] hover:text-[#111111]"
+            className="inline-flex items-center gap-1.5 text-[12px] font-medium tracking-wider uppercase text-[#777777] hover:text-[#171717]"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Back to All Services</span>
           </Link>
-          <span className="text-[12px] font-medium tracking-widest text-[#707070] uppercase">
+          <span className="text-[12px] font-medium tracking-widest text-[#777777] uppercase">
             SERVICE {service.number} / 05
           </span>
         </div>
       </div>
 
       {/* Hero Section */}
-      <section className="py-14 md:py-20 border-b border-[#EFEFEF]">
+      <section className="py-14 md:py-20 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase block">
+              <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block">
                 {service.subtitle}
               </span>
-              <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight">
+              <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight">
                 {service.title}
               </h1>
               <p className="font-body text-[16px] md:text-[18px] text-[#555555] leading-relaxed max-w-xl">
@@ -70,7 +69,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#111111] text-white text-[12px] font-medium tracking-wider uppercase hover:bg-neutral-800 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#171717] text-white text-[12px] font-medium tracking-wider uppercase hover:bg-neutral-800 transition-colors"
                 >
                   <span>BOOK THIS SERVICE</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -81,7 +80,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3.5 border border-[#111111] text-[#111111] text-[12px] font-medium tracking-wider uppercase hover:bg-neutral-50 transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-3.5 border border-[#171717] text-[#171717] text-[12px] font-medium tracking-wider uppercase hover:bg-[#FAF9F6] transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span>WHATSAPP CONSULTATION</span>
@@ -104,25 +103,25 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       {/* Deliverables & Deliverable Highlights */}
-      <section className="py-16 md:py-24 bg-[#FAFAFA] border-b border-[#EFEFEF]">
+      <section className="py-16 md:py-24 bg-[#FAF9F6] border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
           <div className="max-w-xl mb-12">
-            <span className="text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase block mb-2">
+            <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2">
               DELIVERABLES & PROCESS
             </span>
-            <h2 className="font-display text-[36px] md:text-[46px] uppercase tracking-tight text-[#111111]">
+            <h2 className="font-display text-[36px] md:text-[46px] uppercase tracking-tight text-[#171717]">
               WHAT IS INCLUDED
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {service.features.map((feature, i) => (
-              <div key={feature} className="bg-white p-6 border border-[#E5E5E5] space-y-2">
+              <div key={feature} className="bg-white p-6 border border-[#D8D2CA] space-y-2">
                 <span className="text-[12px] font-semibold text-[#999999]">0{i + 1}</span>
-                <h3 className="font-display text-[18px] uppercase tracking-tight text-[#111111]">
+                <h3 className="font-display text-[18px] uppercase tracking-tight text-[#171717]">
                   {feature}
                 </h3>
-                <p className="text-[13px] text-[#666666] font-body leading-relaxed">
+                <p className="text-[13px] text-[#777777] font-body leading-relaxed">
                   Carefully coordinated and documented by seasoned professionals equipped with prime glass, high dynamic range sensors, and backup bodies.
                 </p>
               </div>
@@ -137,16 +136,16 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div className="max-w-[1280px] mx-auto px-6 md:px-12">
             <div className="flex items-end justify-between mb-10">
               <div>
-                <span className="text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase block mb-1">
+                <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-1">
                   FEATURED WORK
                 </span>
-                <h2 className="font-display text-[36px] md:text-[48px] uppercase tracking-tight text-[#111111]">
+                <h2 className="font-display text-[36px] md:text-[48px] uppercase tracking-tight text-[#171717]">
                   RECENT {service.title}
                 </h2>
               </div>
               <Link
                 href="/portfolio"
-                className="text-[11px] font-semibold tracking-wider uppercase text-[#111111] hover:underline flex items-center gap-1"
+                className="text-[11px] font-semibold tracking-wider uppercase text-[#171717] hover:underline flex items-center gap-1"
               >
                 <span>EXPLORE ALL WORK</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -177,7 +176,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       )}
 
       {/* Bottom Quote Banner */}
-      <section className="py-16 bg-[#181818] text-white">
+      <section className="py-16 bg-[#171717] text-white">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="font-display text-[32px] md:text-[40px] uppercase tracking-tight">
@@ -189,7 +188,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
           <Link
             href="/contact"
-            className="px-8 py-3.5 bg-white text-black text-[12px] font-semibold tracking-wider uppercase hover:bg-neutral-200 transition-colors"
+            className="px-8 py-3.5 bg-white text-[#171717] text-[12px] font-semibold tracking-wider uppercase hover:bg-[#FAF9F6] transition-colors"
           >
             REQUEST A QUOTE
           </Link>
