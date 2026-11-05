@@ -3,8 +3,8 @@ import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
 export const metadata = {
-  title: "Terms & Conditions | Picture Perfect Photographe",
-  description: "Terms and conditions, booking guidelines, and deliverables for Picture Perfect Photographe.",
+  title: "Terms & Conditions | Picture Perfect Photography",
+  description: "Terms and conditions, booking guidelines, and deliverables for Picture Perfect Photography.",
 };
 
 export default function TermsPage() {
@@ -19,7 +19,7 @@ export default function TermsPage() {
             TERMS & CONDITIONS
           </h1>
           <p className="text-[13px] text-[#737373] font-body mt-2">
-            Picture Perfect Photographe • Madhapur, Hyderabad, Telangana
+            Picture Perfect Photography • Manikonda, Hyderabad, Telangana
           </p>
         </div>
 

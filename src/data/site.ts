@@ -33,16 +33,16 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Picture Perfect Photographe",
+  name: "Picture Perfect Photography",
   shortName: "PICTURE PERFECT",
   tagline: "Revisiting photography, cinematic films & exclusive coverage.",
   established: 2021,
   location: {
     city: "Hyderabad",
-    area: "Madhapur",
+    area: "Manikonda",
     state: "Telangana",
     country: "India",
-    label: "Madhapur, Hyderabad",
+    label: "Manikonda, Hyderabad",
     coverage: "Available Pan-India",
   },
   contact: {

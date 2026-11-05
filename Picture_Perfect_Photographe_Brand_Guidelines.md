@@ -13,7 +13,7 @@
 |---|---|
 | Brand | Picture Perfect Photographe |
 | Established | 2021 |
-| Location | Madhapur, Hyderabad, Telangana, India |
+| Location | Manikonda, Hyderabad, Telangana, India |
 | Coverage | India-wide |
 | WhatsApp | [+91 8919265544](https://wa.me/918919265544) |
 | Email | pictureperfectphotographe@gmail.com |
@@ -178,7 +178,7 @@ Recommended easing: `cubic-bezier(0.22, 1, 0.36, 1)`. Respect `prefers-reduced-m
 - Semantic heading structure, descriptive alt text, keyboard navigation and visible focus states.
 - Responsive and accessible menus, accordions, filters, video controls and forms.
 - Aim for Core Web Vitals: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1 at the 75th percentile.
-- Unique SEO pages for actual services; Hyderabad/Madhapur business information and accurate structured data.
+- Unique SEO pages for actual services; Hyderabad/Manikonda business information and accurate structured data.
 - Track service-page visits, portfolio interactions, WhatsApp clicks, form submissions, qualified enquiries and confirmed bookings separately.
 - Protect enquiry data, prevent spam, and show a clear form confirmation.
 

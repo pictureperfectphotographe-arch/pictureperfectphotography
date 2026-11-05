@@ -1,6 +1,6 @@
-# Picture Perfect Photographe — Official Website
+# Picture Perfect Photography — Official Website
 
-> Contemporary editorial photography and cinematic filmmaking studio based in **Madhapur, Hyderabad**, serving couples and families across India since 2021.
+> Contemporary editorial photography and cinematic filmmaking studio based in **Manikonda, Hyderabad**, serving couples and families across India since 2021.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.4-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
@@ -120,19 +120,19 @@ src/
 
 ## 📍 Business Profile
 
-- **Brand:** Picture Perfect Photographe
+- **Brand:** Picture Perfect Photography
 - **Established:** 2021
-- **Base Studio:** Madhapur, Hyderabad, Telangana, India
+- **Base Studio:** Manikonda, Hyderabad, Telangana, India
 - **Travel Coverage:** Available Pan-India
 - **WhatsApp / Phone:** [+91 8919265544](https://wa.me/918919265544)
 - **Email:** [pictureperfectphotographe@gmail.com](mailto:pictureperfectphotographe@gmail.com)
 - **Instagram:** [@pictureperfectphotographe](https://www.instagram.com/pictureperfectphotographe/)
 - **YouTube:** [@Pictureperfectphotographe](https://www.youtube.com/@Pictureperfectphotographe)
-- **Google Business:** [Google Profile](https://share.google/tDO6SchxhahxFcaMf)
+- **Google Business:** [Google Profile](https://share.google/2zTzqZXhJE4oe5Ato)
 - **LinkedIn:** [Srujan Patha](https://www.linkedin.com/in/srujan-patha-2924533a7/)
 
 ---
 
 ## 📄 License
 
-© 2026 Picture Perfect Photographe. All rights reserved.
+© 2026 Picture Perfect Photography. All rights reserved.

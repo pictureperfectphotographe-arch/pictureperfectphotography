@@ -3,8 +3,8 @@ import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
 export const metadata = {
-  title: "Privacy Policy | Picture Perfect Photographe",
-  description: "Privacy policy, image copyright, and client data handling policies of Picture Perfect Photographe.",
+  title: "Privacy Policy | Picture Perfect Photography",
+  description: "Privacy policy, image copyright, and client data handling policies of Picture Perfect Photography.",
 };
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             PRIVACY POLICY
           </h1>
           <p className="text-[13px] text-[#737373] font-body mt-2">
-            Last updated: November 2026 • Picture Perfect Photographe, Madhapur, Hyderabad
+            Last updated: November 2026 • Picture Perfect Photography, Manikonda, Hyderabad
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
               1. Information We Collect
             </h2>
             <p>
-              When you enquire with Picture Perfect Photographe via our website, quotation form, or WhatsApp, we collect details necessary to provide you with an accurate quote and service plan. This includes your name, phone number, email address, event dates, event venues, and specific service preferences.
+              When you enquire with Picture Perfect Photography via our website, quotation form, or WhatsApp, we collect details necessary to provide you with an accurate quote and service plan. This includes your name, phone number, email address, event dates, event venues, and specific service preferences.
             </p>
           </section>
 

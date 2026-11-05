@@ -4,28 +4,28 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Picture Perfect Photographe | Wedding & Editorial Photography Hyderabad",
+  title: "Picture Perfect Photography | Wedding & Editorial Photography Hyderabad",
   description:
-    "Picture Perfect Photographe (Est. 2021, Madhapur, Hyderabad) crafts artistic wedding photography, cinematic wedding films, candid moments, pre-weddings, maternity & cradle ceremonies across India.",
+    "Picture Perfect Photography (Est. 2021, Manikonda, Hyderabad) crafts artistic wedding photography, cinematic wedding films, candid moments, pre-weddings, maternity & cradle ceremonies across India.",
   keywords: [
     "Wedding photography Hyderabad",
     "Best wedding photographers Hyderabad",
-    "Candid photography Madhapur",
+    "Candid photography Manikonda",
     "Pre-wedding shoot Hyderabad",
     "Cinematic wedding films Hyderabad",
     "Maternity photoshoot Hyderabad",
     "Cradle ceremony photography Hyderabad",
-    "Picture Perfect Photographe",
+    "Picture Perfect Photography",
   ],
-  authors: [{ name: "Picture Perfect Photographe" }],
-  creator: "Picture Perfect Photographe",
-  publisher: "Picture Perfect Photographe",
+  authors: [{ name: "Picture Perfect Photography" }],
+  creator: "Picture Perfect Photography",
+  publisher: "Picture Perfect Photography",
   metadataBase: new URL("https://pictureperfectphotographe.com"),
   openGraph: {
-    title: "Picture Perfect Photographe | Editorial Photography & Films",
+    title: "Picture Perfect Photography | Editorial Photography & Films",
     description:
       "Capturing genuine emotions and timeless stories. Weddings, Celebrations & Life Events in Hyderabad & Pan-India.",
-    siteName: "Picture Perfect Photographe",
+    siteName: "Picture Perfect Photography",
     locale: "en_IN",
     type: "website",
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/images/hero_wedding_garland.jpg",
         width: 1200,
         height: 800,
-        alt: "Picture Perfect Photographe Wedding Photography",
+        alt: "Picture Perfect Photography Wedding Photography",
       },
     ],
   },

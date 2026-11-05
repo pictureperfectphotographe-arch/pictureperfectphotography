@@ -4,9 +4,9 @@ import { siteConfig } from "@/data/site";
 import { Phone, Mail, MapPin, Globe } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us | Picture Perfect Photographe",
+  title: "Contact Us | Picture Perfect Photography",
   description:
-    "Get in touch with Picture Perfect Photographe in Madhapur, Hyderabad. Request a quotation for weddings, events, pre-weddings, films, or connect directly on WhatsApp.",
+    "Get in touch with Picture Perfect Photography in Manikonda, Hyderabad. Request a quotation for weddings, events, pre-weddings, films, or connect directly on WhatsApp.",
 };
 
 export default function ContactPage() {
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 Base Studio
               </span>
               <span className="font-display text-[18px] uppercase text-[#111111] block">
-                Madhapur, Hyderabad
+                Manikonda, Hyderabad
               </span>
             </div>
 

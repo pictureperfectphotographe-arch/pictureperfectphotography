@@ -138,7 +138,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin className="w-4 h-4 text-[#777777] shrink-0" />
-                <span>Madhapur, Hyderabad</span>
+                <span>Manikonda, Hyderabad</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Globe className="w-4 h-4 text-[#777777] shrink-0" />
@@ -152,14 +152,14 @@ export default function Footer() {
             <div className="font-display uppercase tracking-[-0.02em] leading-[0.88] text-[#777777] text-left text-[clamp(44px,13vw,62px)] md:text-[clamp(36px,4.8vw,46px)] lg:text-[clamp(32px,2.6vw,42px)] xl:text-[clamp(36px,2.9vw,48px)] select-none">
               <span className="block whitespace-nowrap">PICTURE</span>
               <span className="block whitespace-nowrap">PERFECT</span>
-              <span className="block whitespace-nowrap">PHOTOGRAPHE</span>
+              <span className="block whitespace-nowrap">PHOTOGRAPHY</span>
             </div>
           </div>
         </div>
 
         {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#777777] font-body gap-4">
-          <p>© 2026 Picture Perfect Photographe. All rights reserved.</p>
+          <p>© 2026 Picture Perfect Photography. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy

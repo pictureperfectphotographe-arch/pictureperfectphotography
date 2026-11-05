@@ -35,7 +35,7 @@ export default function LeadEnquiry() {
 
     // Construct direct WhatsApp message url for backup guarantee
     const waText = encodeURIComponent(
-      `Hello Picture Perfect Photographe!\n\nI would like to request a quote for an upcoming event:\n\n` +
+      `Hello Picture Perfect Photography!\n\nI would like to request a quote for an upcoming event:\n\n` +
       `• Name: ${formData.name}\n` +
       `• Phone: ${formData.phone}\n` +
       `• Event: ${formData.eventType}\n` +
@@ -102,7 +102,7 @@ export default function LeadEnquiry() {
                   THANK YOU, {formData.name.toUpperCase()}!
                 </h3>
                 <p className="text-[15px] text-[#B5B5B5] max-w-md mx-auto mb-6">
-                  Your enquiry has been received. Our lead coordinator in Madhapur, Hyderabad will review your event details and respond within 24 hours.
+                  Your enquiry has been received. Our lead coordinator in Manikonda, Hyderabad will review your event details and respond within 24 hours.
                 </p>
                 <a
                   href={`https://wa.me/918919265544?text=${encodeURIComponent(

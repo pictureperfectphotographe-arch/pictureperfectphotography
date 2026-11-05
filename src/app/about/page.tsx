@@ -5,9 +5,9 @@ import { siteConfig } from "@/data/site";
 import { ArrowUpRight, Award, Camera, Users, ShieldCheck } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Picture Perfect Photographe",
+  title: "About Us | Picture Perfect Photography",
   description:
-    "Learn about Picture Perfect Photographe, established in 2021 in Madhapur, Hyderabad. Discover our philosophy, capabilities, and pan-India coverage.",
+    "Learn about Picture Perfect Photography, established in 2021 in Manikonda, Hyderabad. Discover our philosophy, capabilities, and pan-India coverage.",
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
-            Established in 2021 in Madhapur, Hyderabad, Picture Perfect Photographe is an editorial photography and cinematic filmmaking studio dedicated to capturing genuine emotions, sacred rituals, and joyful family celebrations across India.
+            Established in 2021 in Manikonda, Hyderabad, Picture Perfect Photography is an editorial photography and cinematic filmmaking studio dedicated to capturing genuine emotions, sacred rituals, and joyful family celebrations across India.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 relative aspect-[4/5] bg-neutral-100 overflow-hidden shadow-xs">
               <Image
                 src="/images/offerings_photographer.jpg"
-                alt="Picture Perfect Photographe Camera Production Team"
+                alt="Picture Perfect Photography Camera Production Team"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

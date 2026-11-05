@@ -140,8 +140,8 @@ export default function Header() {
               <span>CHAT ON WHATSAPP</span>
             </a>
 
-            <div className="text-center text-[12px] text-[#707070] pt-2">
-              Madhapur, Hyderabad • Pan-India Coverage
+            <div className="text-center text-[12px] text-[#737373] pt-2">
+              Manikonda, Hyderabad • Pan-India Coverage
             </div>
           </div>
         </div>
