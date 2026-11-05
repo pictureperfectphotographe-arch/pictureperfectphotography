@@ -9,7 +9,7 @@ import LeadEnquiry from "@/components/sections/LeadEnquiry";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full bg-white">
+    <div className="flex flex-col w-full bg-[#FAF9F6]">
       {/* SECTION 02: Floating Collage Hero */}
       <HeroCollage />
 

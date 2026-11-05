@@ -17,7 +17,7 @@ interface ReviewsClientProps {
 
 export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#FAF9F6]">
       {/* Header Section */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
@@ -27,7 +27,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
             </span>
             <span className="text-[#D8D2CA]">•</span>
             {/* Google Rating Badge */}
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#FAF9F6] border border-[#D8D2CA] text-[11px] font-medium text-[#171717]">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-[#D8D2CA] text-[11px] font-medium text-[#171717]">
               <span className="font-semibold">{stats.rating.toFixed(1)}</span>
               <div className="flex items-center text-[#B8A27A]" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
@@ -79,7 +79,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
           <ReviewsCarousel reviews={reviews} />
 
           {/* Submission CTA */}
-          <div className="mt-20 p-8 md:p-12 bg-[#FAF9F6] border border-[#D8D2CA] text-center max-w-2xl mx-auto space-y-4">
+          <div className="mt-20 p-8 md:p-12 bg-white border border-[#D8D2CA] text-center max-w-2xl mx-auto space-y-4">
             <MessageSquare className="w-8 h-8 mx-auto text-[#171717] stroke-1" />
             <h3 className="font-display text-[24px] sm:text-[28px] uppercase tracking-tight text-[#171717]">
               HAVE WE PHOTOGRAPHED YOUR EVENT?

@@ -34,7 +34,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   });
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#FAF9F6]">
       {/* Top Breadcrumb */}
       <div className="border-b border-[#D8D2CA] py-4">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">

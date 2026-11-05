@@ -10,7 +10,7 @@ export default function FilmsPage() {
   const [activeFilm, setActiveFilm] = useState<FilmItem | null>(null);
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#FAF9F6]">
       {/* Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">

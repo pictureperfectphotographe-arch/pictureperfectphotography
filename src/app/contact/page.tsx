@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#FAF9F6]">
       {/* Editorial Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
@@ -30,7 +30,7 @@ export default function ContactPage() {
 
           {/* Quick Contact Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#D8D2CA]">
-            <div className="p-6 bg-[#FAF9F6] border border-[#D8D2CA] space-y-2">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
               <Phone className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Call / WhatsApp
@@ -43,7 +43,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="p-6 bg-[#FAF9F6] border border-[#D8D2CA] space-y-2">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
               <Mail className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Email Directly
@@ -56,7 +56,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="p-6 bg-[#FAF9F6] border border-[#D8D2CA] space-y-2">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
               <MapPin className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Base Studio
@@ -66,7 +66,7 @@ export default function ContactPage() {
               </span>
             </div>
 
-            <div className="p-6 bg-[#FAF9F6] border border-[#D8D2CA] space-y-2">
+            <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
               <Globe className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Coverage

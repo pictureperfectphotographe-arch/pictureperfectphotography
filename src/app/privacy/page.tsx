@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="w-full bg-white py-16 md:py-24">
+    <div className="w-full bg-[#FAF9F6] py-16 md:py-24">
       <div className="max-w-[840px] mx-auto px-6 md:px-12 space-y-10">
         <div>
           <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2 font-body">

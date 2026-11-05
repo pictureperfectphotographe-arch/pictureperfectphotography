@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#FAF9F6]">
       {/* Editorial Page Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">

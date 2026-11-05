@@ -31,8 +31,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-xs py-2.5 border-b border-[#D8D2CA]"
-          : "bg-white py-4"
+          ? "bg-[#FAF9F6]/95 backdrop-blur-md shadow-xs py-2.5 border-b border-[#D8D2CA]"
+          : "bg-[#FAF9F6] py-4"
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -96,7 +96,7 @@ export default function Header() {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[65px] bg-white z-40 px-6 py-8 flex flex-col justify-between md:hidden border-t border-[#D8D2CA] animate-fadeIn">
+        <div className="fixed inset-0 top-[65px] bg-[#FAF9F6] z-40 px-6 py-8 flex flex-col justify-between md:hidden border-t border-[#D8D2CA] animate-fadeIn">
           <div>
             <div className="flex items-center pb-6 border-b border-[#D8D2CA] mb-6">
               <Image

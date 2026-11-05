@@ -14,7 +14,7 @@ export default function OfferingsAccordion() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
+    <section className="w-full bg-[#FAF9F6] py-16 md:py-24 border-t border-[#D8D2CA]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Typographic Accordion (Span 7) */}

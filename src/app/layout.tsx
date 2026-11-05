@@ -49,10 +49,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body className="min-h-full flex flex-col bg-white text-[#171717] antialiased selection:bg-[#171717] selection:text-white">
+    <html lang="en" className="h-full bg-[#FAF9F6]">
+      <body className="min-h-full flex flex-col bg-[#FAF9F6] text-[#171717] antialiased selection:bg-[#171717] selection:text-white">
         <Header />
-        <main className="flex-1 w-full">{children}</main>
+        <main className="flex-1 w-full bg-[#FAF9F6]">{children}</main>
         <Footer />
       </body>
     </html>
