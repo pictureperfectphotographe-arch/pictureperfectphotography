@@ -23,11 +23,11 @@ export default function Home() {
       {/* SECTION 05: The Good Stuff (Featured Gallery) */}
       <FeaturedGallery />
 
-      {/* SECTION 06: Press Play on Love (Cinematic Films) */}
-      <CinematicFilms />
-
-      {/* SECTION 07: Fullscreen Wedding Film (Edge-to-Edge Cinematic Break) */}
+      {/* SECTION 06: Fullscreen Wedding Film (Edge-to-Edge Cinematic Break) */}
       <FullscreenWeddingFilm />
+
+      {/* SECTION 07: OUR FILMS — PRESS PLAY ON love (Cinematic Films) */}
+      <CinematicFilms />
 
       {/* SECTION 08: Your Day, Your Way (Offerings Accordion) */}
       <OfferingsAccordion />
