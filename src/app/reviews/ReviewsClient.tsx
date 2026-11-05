@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { GoogleReview } from "@/data/reviews";
-import { siteConfig } from "@/data/site";
 import { ArrowUpRight, Star, MessageSquare } from "lucide-react";
+import ReviewsCarousel from "@/components/sections/ReviewsCarousel";
 
 interface ReviewsClientProps {
   reviews: GoogleReview[];
@@ -16,10 +16,6 @@ interface ReviewsClientProps {
 }
 
 export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
-  const [visibleCount, setVisibleCount] = useState(3);
-  const visibleReviews = reviews.slice(0, visibleCount);
-  const hasMore = visibleCount < reviews.length;
-
   return (
     <div className="w-full bg-white">
       {/* Header Section */}
@@ -77,77 +73,10 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
         </div>
       </section>
 
-      {/* Genuine Google Reviews Grid */}
+      {/* Premium Horizontal Sliding Reviews Carousel */}
       <section className="py-16 md:py-24">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleReviews.map((item) => (
-              <article
-                key={item.id}
-                className="bg-white p-8 border border-[#E5E5E5] flex flex-col justify-between space-y-6 transition-all duration-300 hover:border-[#CCCCCC]"
-              >
-                <div>
-                  {/* Top: Actual Star Rating */}
-                  <div
-                    className="flex items-center space-x-1 text-[#111111] mb-6"
-                    aria-label={`${item.rating} out of 5 stars on Google`}
-                  >
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-4 h-4 ${
-                          i < item.rating
-                            ? "fill-current text-[#111111]"
-                            : "text-[#D0D0D0]"
-                        }`}
-                      />
-                    ))}
-                  </div>
-
-                  {/* Middle: Genuine Customer Review Text */}
-                  <blockquote className="font-editorial text-[18px] md:text-[20px] text-[#222222] leading-snug italic">
-                    &ldquo;{item.text}&rdquo;
-                  </blockquote>
-                </div>
-
-                {/* Bottom: Reviewer Name & Available Metadata */}
-                <div className="pt-5 border-t border-[#F0F0F0]">
-                  <p className="font-display text-[18px] uppercase tracking-tight text-[#111111]">
-                    {item.reviewerName}
-                  </p>
-                  <p className="text-[12px] text-[#707070] font-body mt-0.5">
-                    {item.eventOrContext} • {item.publishedAt}
-                  </p>
-                  {item.reviewerBadge && (
-                    <p className="text-[11px] text-[#999999] font-body mt-0.5">
-                      {item.reviewerBadge}
-                    </p>
-                  )}
-                  <a
-                    href={item.reviewUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-[11px] text-[#888888] hover:text-[#111111] mt-4 tracking-wider uppercase font-medium transition-colors group"
-                  >
-                    <span>READ ON GOOGLE</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          {/* Load More Reviews Control */}
-          {hasMore && (
-            <div className="mt-12 text-center">
-              <button
-                onClick={() => setVisibleCount((prev) => Math.min(prev + 3, reviews.length))}
-                className="inline-flex items-center gap-2 px-8 py-3 bg-white border border-[#DEDEDE] text-[#111111] text-[12px] font-medium tracking-wider uppercase hover:border-[#111111] hover:bg-[#FAFAFA] transition-all cursor-pointer"
-              >
-                <span>LOAD MORE REVIEWS ({reviews.length - visibleCount} MORE)</span>
-              </button>
-            </div>
-          )}
+          <ReviewsCarousel reviews={reviews} />
 
           {/* Submission CTA */}
           <div className="mt-20 p-8 md:p-12 bg-[#F8F8F8] border border-[#E5E5E5] text-center max-w-2xl mx-auto space-y-4">
