@@ -14,9 +14,9 @@ export default function ServicesPage() {
   return (
     <div className="w-full bg-white">
       {/* Header */}
-      <section className="py-16 md:py-24 border-b border-[#EFEFEF]">
+      <section className="py-16 md:py-24 border-b border-[#E5E5E5]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-4">
+          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
             OUR DISCIPLINES & SERVICES
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight max-w-4xl">
@@ -25,7 +25,7 @@ export default function ServicesPage() {
               milestones.
             </span>
           </h1>
-          <p className="font-body text-[16px] md:text-[18px] text-[#555555] max-w-2xl mt-6 leading-relaxed">
+          <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
             From multi-day Telugu wedding celebrations to intimate cradle ceremonies, our multidisciplinary team provides comprehensive photographic and cinematic documentation.
           </p>
         </div>

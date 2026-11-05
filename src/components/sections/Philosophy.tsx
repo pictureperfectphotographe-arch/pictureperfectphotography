@@ -6,12 +6,12 @@ import { ArrowRight } from "lucide-react";
 
 export default function Philosophy() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#EFEFEF]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Bold Editorial Headline */}
           <div className="lg:col-span-7">
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-4">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
               OUR PHILOSOPHY —
             </span>
             <h2 className="font-display text-[44px] sm:text-[56px] md:text-[68px] lg:text-[76px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em]">
@@ -35,7 +35,7 @@ export default function Philosophy() {
               <div>
                 <Link
                   href="/about"
-                  className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#DEDEDE] text-[#111111] transition-all duration-300 hover:border-[#111111] hover:bg-[#111111] hover:text-white"
+                  className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#E5E5E5] text-[#111111] transition-all duration-300 hover:border-[#111111] hover:bg-[#111111] hover:text-white"
                   aria-label="Learn more about our philosophy"
                 >
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />

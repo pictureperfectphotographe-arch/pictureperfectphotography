@@ -11,12 +11,12 @@ export default function CinematicFilms() {
   const [activeFilm, setActiveFilm] = useState<FilmItem | null>(null);
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#EFEFEF]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 md:mb-12">
           <div>
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-2">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-2">
               OUR FILMS
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em]">

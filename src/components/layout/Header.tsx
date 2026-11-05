@@ -57,8 +57,8 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`relative py-1 transition-colors duration-200 hover:text-black ${
-                  isActive ? "text-black font-semibold" : "text-[#111111]/80 hover:text-[#111111]"
+                className={`relative py-1 transition-colors duration-200 ${
+                  isActive ? "text-[#111111] font-semibold" : "text-[#737373] hover:text-[#111111]"
                 }`}
               >
                 {item.label}
@@ -112,7 +112,7 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={`font-display text-[26px] tracking-tight uppercase ${
-                    pathname === item.href ? "text-black underline underline-offset-8" : "text-[#111111]/80"
+                    pathname === item.href ? "text-[#111111] underline underline-offset-8" : "text-[#737373] hover:text-[#111111]"
                   }`}
                 >
                   {item.label}
@@ -121,7 +121,7 @@ export default function Header() {
             </nav>
           </div>
 
-          <div className="pt-8 border-t border-[#DEDEDE] space-y-4">
+          <div className="pt-8 border-t border-[#E5E5E5] space-y-4">
             <Link
               href="/contact"
               className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#111111] text-white text-[13px] font-medium tracking-wider uppercase rounded-sm"

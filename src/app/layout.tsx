@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Picture Perfect Photographe | Wedding & Editorial Photography Hyderabad",
   description:
-    "Picture Perfect Photographe (Est. 2016, Madhapur, Hyderabad) crafts artistic wedding photography, cinematic wedding films, candid moments, pre-weddings, maternity & cradle ceremonies across India.",
+    "Picture Perfect Photographe (Est. 2021, Madhapur, Hyderabad) crafts artistic wedding photography, cinematic wedding films, candid moments, pre-weddings, maternity & cradle ceremonies across India.",
   keywords: [
     "Wedding photography Hyderabad",
     "Best wedding photographers Hyderabad",

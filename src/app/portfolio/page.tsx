@@ -21,9 +21,9 @@ export default function PortfolioPage() {
   return (
     <div className="w-full bg-white">
       {/* Header */}
-      <section className="py-16 md:py-24 border-b border-[#EFEFEF]">
+      <section className="py-16 md:py-24 border-b border-[#E5E5E5]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-4">
+          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
             FEATURED PORTFOLIO
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight max-w-4xl">
@@ -32,7 +32,7 @@ export default function PortfolioPage() {
               emotions.
             </span>
           </h1>
-          <p className="font-body text-[16px] md:text-[18px] text-[#555555] max-w-2xl mt-6 leading-relaxed">
+          <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
             Explore authentic moments documented across Hyderabad, Telangana, and destination locations across India. Every photograph is captured with natural lighting and deliberate editorial composition.
           </p>
 
@@ -47,7 +47,7 @@ export default function PortfolioPage() {
                   className={`px-4 py-1.5 rounded-full text-[11px] font-medium tracking-[0.14em] uppercase transition-all duration-200 cursor-pointer ${
                     isActive
                       ? "bg-[#111111] text-white border border-[#111111]"
-                      : "bg-white text-[#111111] border border-[#DEDEDE] hover:border-[#111111]"
+                      : "bg-white text-[#111111] border border-[#E5E5E5] hover:border-[#111111]"
                   }`}
                 >
                   {cat}

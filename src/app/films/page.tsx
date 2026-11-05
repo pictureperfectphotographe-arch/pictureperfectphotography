@@ -13,9 +13,9 @@ export default function FilmsPage() {
   return (
     <div className="w-full bg-white">
       {/* Header */}
-      <section className="py-16 md:py-24 border-b border-[#EFEFEF]">
+      <section className="py-16 md:py-24 border-b border-[#E5E5E5]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-4">
+          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
             CINEMATIC WEDDING FILMS
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight max-w-4xl">
@@ -24,7 +24,7 @@ export default function FilmsPage() {
               motion.
             </span>
           </h1>
-          <p className="font-body text-[16px] md:text-[18px] text-[#555555] max-w-2xl mt-6 leading-relaxed">
+          <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
             Our filmmaking philosophy is rooted in cinematic narrative structure, authentic ambient soundscapes, and color science that evokes timeless emotion.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function FilmsPage() {
                 onClick={() => setActiveFilm(film)}
                 className="group flex flex-col cursor-pointer"
               >
-                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm border border-[#EBEBEB]">
+                <div className="relative aspect-video w-full overflow-hidden bg-neutral-900 shadow-sm border border-[#E5E5E5]">
                   <Image
                     src={film.thumbnail}
                     alt={film.title}

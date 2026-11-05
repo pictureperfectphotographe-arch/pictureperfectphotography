@@ -12,7 +12,7 @@
 | Field | Details |
 |---|---|
 | Brand | Picture Perfect Photographe |
-| Established | 2016 |
+| Established | 2021 |
 | Location | Madhapur, Hyderabad, Telangana, India |
 | Coverage | India-wide |
 | WhatsApp | [+91 8919265544](https://wa.me/918919265544) |
@@ -171,7 +171,7 @@ Recommended easing: `cubic-bezier(0.22, 1, 0.36, 1)`. Respect `prefers-reduced-m
 - Keep subjects visible when cropping (`object-fit: cover` with deliberate focal positions).
 - Serve responsive WebP/AVIF when appropriate and lazy-load below-the-fold assets.
 - Only publish project names, client photographs and testimonials with appropriate permission.
-- Never invent customer counts, project totals, team sizes, ratings or testimonials. **Established in 2016** and **India-wide coverage** are confirmed.
+- Never invent customer counts, project totals, team sizes, ratings or testimonials. **Established in 2021** and **India-wide coverage** are confirmed.
 
 ## 10. Accessibility, SEO and measurement
 

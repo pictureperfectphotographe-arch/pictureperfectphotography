@@ -36,7 +36,7 @@ export const siteConfig: SiteConfig = {
   name: "Picture Perfect Photographe",
   shortName: "PICTURE PERFECT",
   tagline: "Revisiting photography, cinematic films & exclusive coverage.",
-  established: 2016,
+  established: 2021,
   location: {
     city: "Hyderabad",
     area: "Madhapur",

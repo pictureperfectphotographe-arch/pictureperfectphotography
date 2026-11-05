@@ -9,29 +9,29 @@ import { InstagramIcon, YoutubeIcon, LinkedinIcon } from "@/components/ui/Social
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full bg-[#0D0D0D] text-white pt-16 md:pt-24 pb-8 border-t border-[#1C1C1C]">
+    <footer id="footer" className="w-full bg-[#111111] text-white pt-16 md:pt-24 pb-8 border-t border-[#222222]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-16 border-b border-[#222222]">
-          {/* Column 1: Brand Info & Socials (Span 4) */}
-          <div className="lg:col-span-4 flex flex-col justify-between">
-            <div>
-              <div className="mb-5">
+          {/* Column 1: Brand Info & Socials (Span 4) - Horizontally Centered Group */}
+          <div className="lg:col-span-4 flex flex-col items-center text-center justify-between">
+            <div className="flex flex-col items-center w-full">
+              <div className="mb-5 flex justify-center w-full">
                 <Image
                   src="/logo/PP-Logo-White-trimmed.png"
                   alt="Picture Perfect Photography"
                   width={160}
                   height={54}
-                  className="h-11 w-auto object-contain"
+                  className="h-11 w-auto object-contain mx-auto"
                 />
               </div>
-              <p className="text-[13px] md:text-[14px] text-[#888888] leading-relaxed max-w-sm mb-6 font-body">
+              <p className="text-[13px] md:text-[14px] text-[#B5B5B5] leading-relaxed max-w-sm mb-6 font-body text-center mx-auto">
                 {siteConfig.tagline} Based in Hyderabad, documenting authentic celebrations across India.
               </p>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center space-x-3 text-[#A0A0A0]">
+            {/* Social Links Centered */}
+            <div className="flex items-center justify-center space-x-3 text-[#B5B5B5] w-full">
               <a
                 href={siteConfig.socials.instagram}
                 target="_blank"
@@ -73,10 +73,10 @@ export default function Footer() {
 
           {/* Column 2: Quick Links (Span 2) */}
           <div className="lg:col-span-2">
-            <span className="block text-[11px] font-semibold tracking-[0.2em] text-[#777777] uppercase mb-4 font-body">
+            <span className="block text-[11px] font-semibold tracking-[0.2em] text-[#B5B5B5] uppercase mb-4 font-body">
               QUICK LINKS
             </span>
-            <ul className="space-y-2.5 text-[13px] text-[#A0A0A0] font-body">
+            <ul className="space-y-2.5 text-[13px] text-[#B5B5B5] font-body">
               <li>
                 <Link href="/" className="hover:text-white transition-colors">
                   Home
@@ -117,10 +117,10 @@ export default function Footer() {
 
           {/* Column 3: Contact Details (Span 3) */}
           <div className="lg:col-span-3">
-            <span className="block text-[11px] font-semibold tracking-[0.2em] text-[#777777] uppercase mb-4 font-body">
+            <span className="block text-[11px] font-semibold tracking-[0.2em] text-[#B5B5B5] uppercase mb-4 font-body">
               GET IN TOUCH
             </span>
-            <ul className="space-y-3 text-[13px] text-[#A0A0A0] font-body">
+            <ul className="space-y-3 text-[13px] text-[#B5B5B5] font-body">
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#777777] shrink-0" />
                 <a href={`tel:${siteConfig.contact.phone}`} className="hover:text-white transition-colors">
@@ -147,9 +147,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Oversized Editorial Brand Typography (Span 3) */}
+          {/* Column 4: Oversized Editorial Brand Typography (Span 3) - Visible and Intentional #777777 */}
           <div className="lg:col-span-3 flex flex-col justify-end pt-6 md:pt-0">
-            <div className="font-display uppercase tracking-[-0.02em] leading-[0.88] text-[#444444] text-left text-[clamp(44px,13vw,62px)] md:text-[clamp(36px,4.8vw,46px)] lg:text-[clamp(32px,2.6vw,42px)] xl:text-[clamp(36px,2.9vw,48px)]">
+            <div className="font-display uppercase tracking-[-0.02em] leading-[0.88] text-[#777777] text-left text-[clamp(44px,13vw,62px)] md:text-[clamp(36px,4.8vw,46px)] lg:text-[clamp(32px,2.6vw,42px)] xl:text-[clamp(36px,2.9vw,48px)] select-none">
               <span className="block whitespace-nowrap">PICTURE</span>
               <span className="block whitespace-nowrap">PERFECT</span>
               <span className="block whitespace-nowrap">PHOTOGRAPHE</span>
@@ -158,14 +158,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#666666] font-body gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#777777] font-body gap-4">
           <p>© 2026 Picture Perfect Photographe. All rights reserved.</p>
           <div className="flex items-center space-x-4">
-            <Link href="/privacy" className="hover:text-[#999999] transition-colors">
+            <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
             <span>•</span>
-            <Link href="/terms" className="hover:text-[#999999] transition-colors">
+            <Link href="/terms" className="hover:text-white transition-colors">
               Terms
             </Link>
             <span>•</span>

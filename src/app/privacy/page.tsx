@@ -12,13 +12,13 @@ export default function PrivacyPage() {
     <div className="w-full bg-white py-16 md:py-24">
       <div className="max-w-[840px] mx-auto px-6 md:px-12 space-y-10">
         <div>
-          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase block mb-2 font-body">
+          <span className="text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase block mb-2 font-body">
             CLIENT CONFIDENTIALITY & DATA
           </span>
           <h1 className="font-display text-[44px] md:text-[60px] uppercase tracking-tight text-[#111111] leading-tight">
             PRIVACY POLICY
           </h1>
-          <p className="text-[13px] text-[#707070] font-body mt-2">
+          <p className="text-[13px] text-[#737373] font-body mt-2">
             Last updated: November 2026 • Picture Perfect Photographe, Madhapur, Hyderabad
           </p>
         </div>

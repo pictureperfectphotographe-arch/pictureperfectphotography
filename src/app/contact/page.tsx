@@ -13,9 +13,9 @@ export default function ContactPage() {
   return (
     <div className="w-full bg-white">
       {/* Editorial Header */}
-      <section className="py-16 md:py-24 border-b border-[#EFEFEF]">
+      <section className="py-16 md:py-24 border-b border-[#E5E5E5]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-4">
+          <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-4">
             START THE CONVERSATION
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#111111] uppercase tracking-tight max-w-4xl">
@@ -24,15 +24,15 @@ export default function ContactPage() {
               story.
             </span>
           </h1>
-          <p className="font-body text-[16px] md:text-[18px] text-[#555555] max-w-2xl mt-6 leading-relaxed">
+          <p className="font-body text-[16px] md:text-[18px] text-[#737373] max-w-2xl mt-6 leading-relaxed">
             Whether you are planning a multi-day Telugu wedding, an intimate cradle ceremony, or a cinematic pre-wedding shoot, we would love to hear from you.
           </p>
 
           {/* Quick Contact Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#EAEAEA]">
-            <div className="p-6 bg-[#FAFAFA] border border-[#E5E5E5] space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#E5E5E5]">
+            <div className="p-6 bg-[#F7F7F7] border border-[#E5E5E5] space-y-2">
               <Phone className="w-5 h-5 text-[#111111]" />
-              <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
+              <span className="text-[11px] uppercase tracking-wider text-[#737373] block font-body">
                 Call / WhatsApp
               </span>
               <a
@@ -43,9 +43,9 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="p-6 bg-[#FAFAFA] border border-[#E5E5E5] space-y-2">
+            <div className="p-6 bg-[#F7F7F7] border border-[#E5E5E5] space-y-2">
               <Mail className="w-5 h-5 text-[#111111]" />
-              <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
+              <span className="text-[11px] uppercase tracking-wider text-[#737373] block font-body">
                 Email Directly
               </span>
               <a
@@ -56,9 +56,9 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="p-6 bg-[#FAFAFA] border border-[#E5E5E5] space-y-2">
+            <div className="p-6 bg-[#F7F7F7] border border-[#E5E5E5] space-y-2">
               <MapPin className="w-5 h-5 text-[#111111]" />
-              <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
+              <span className="text-[11px] uppercase tracking-wider text-[#737373] block font-body">
                 Base Studio
               </span>
               <span className="font-display text-[18px] uppercase text-[#111111] block">
@@ -66,9 +66,9 @@ export default function ContactPage() {
               </span>
             </div>
 
-            <div className="p-6 bg-[#FAFAFA] border border-[#E5E5E5] space-y-2">
+            <div className="p-6 bg-[#F7F7F7] border border-[#E5E5E5] space-y-2">
               <Globe className="w-5 h-5 text-[#111111]" />
-              <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
+              <span className="text-[11px] uppercase tracking-wider text-[#737373] block font-body">
                 Coverage
               </span>
               <span className="font-display text-[18px] uppercase text-[#111111] block">

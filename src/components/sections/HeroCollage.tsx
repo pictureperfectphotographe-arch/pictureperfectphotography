@@ -54,7 +54,7 @@ export default function HeroCollage() {
 
           {/* Top Right Metadata */}
           <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#111111] select-none text-right z-10 leading-tight">
-            <p>SINCE 2016</p>
+            <p>SINCE 2021</p>
           </div>
         </div>
 
@@ -99,12 +99,12 @@ export default function HeroCollage() {
         <div className="flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#111111] select-none pt-4 md:pt-6 z-10 leading-tight">
           <div>
             <p>HYDERABAD, INDIA /</p>
-            <p className="text-[#707070]">AVAILABLE PAN-INDIA</p>
+            <p className="text-[#737373]">AVAILABLE PAN-INDIA</p>
           </div>
           <div className="text-right">
             <p>PHOTOGRAPHY</p>
             <p>FILMS</p>
-            <p className="text-[#707070]">STORIES</p>
+            <p className="text-[#737373]">STORIES</p>
           </div>
         </div>
       </div>

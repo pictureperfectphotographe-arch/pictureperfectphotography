@@ -14,12 +14,12 @@ export default function OfferingsAccordion() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-[#EFEFEF]">
+    <section className="w-full bg-white py-16 md:py-24 border-t border-[#E5E5E5]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Typographic Accordion (Span 7) */}
           <div className="lg:col-span-7">
-            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#707070] uppercase mb-2">
+            <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#737373] uppercase mb-2">
               OUR OFFERINGS
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#111111] uppercase tracking-[-0.015em] mb-10">
@@ -30,7 +30,7 @@ export default function OfferingsAccordion() {
             </h2>
 
             {/* Accordion List */}
-            <div className="divide-y divide-[#DEDEDE] border-t border-b border-[#DEDEDE]">
+            <div className="divide-y divide-[#E5E5E5] border-t border-b border-[#E5E5E5]">
               {productionOfferings.map((item, idx) => {
                 const isOpen = openIndex === idx;
                 return (
@@ -41,7 +41,7 @@ export default function OfferingsAccordion() {
                       aria-expanded={isOpen}
                     >
                       <div className="flex items-baseline gap-4 md:gap-6">
-                        <span className="text-[12px] md:text-[13px] font-medium tracking-widest text-[#707070] font-body">
+                        <span className="text-[12px] md:text-[13px] font-medium tracking-widest text-[#737373] font-body">
                           {item.number}
                         </span>
                         <h3 className="font-display text-[22px] sm:text-[26px] md:text-[30px] uppercase text-[#111111] tracking-tight group-hover:text-neutral-700 transition-colors">
