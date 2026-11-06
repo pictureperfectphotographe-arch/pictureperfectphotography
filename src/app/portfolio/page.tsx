@@ -20,7 +20,7 @@ export default function PortfolioPage() {
     <div className="w-full bg-white">
       {/* Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             FEATURED PORTFOLIO
           </span>
@@ -58,7 +58,7 @@ export default function PortfolioPage() {
 
       {/* Grid */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
               <div

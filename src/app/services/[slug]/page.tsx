@@ -37,7 +37,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     <div className="w-full bg-[#FAF9F6]">
       {/* Top Breadcrumb */}
       <div className="border-b border-[#D8D2CA] py-4">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex items-center justify-between">
           <Link
             href="/services"
             className="inline-flex items-center gap-1.5 text-[12px] font-medium tracking-wider uppercase text-[#777777] hover:text-[#171717]"
@@ -53,7 +53,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       {/* Hero Section */}
       <section className="py-14 md:py-20 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7 space-y-6">
               <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block">
@@ -104,7 +104,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       {/* Deliverables & Deliverable Highlights */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="max-w-xl mb-12">
             <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2">
               DELIVERABLES & PROCESS
@@ -133,7 +133,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* Related Portfolio Work */}
       {relatedProjects.length > 0 && (
         <section className="py-16 md:py-24">
-          <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+          <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="flex items-end justify-between mb-10">
               <div>
                 <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-1">
@@ -177,7 +177,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       {/* Bottom Quote Banner */}
       <section className="py-16 bg-[#171717] text-white">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="font-display text-[32px] md:text-[40px] uppercase tracking-tight">
               PLANNING YOUR {service.title}?

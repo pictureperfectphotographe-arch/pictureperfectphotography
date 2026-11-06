@@ -9,7 +9,7 @@ import { servicesData } from "@/data/services";
 export default function ServiceDiscovery() {
   return (
     <section className="w-full bg-[#FAF9F6] py-16 md:py-24 border-t border-[#D8D2CA]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-8 md:mb-12">
           <span className="text-[11px] font-semibold tracking-[0.22em] text-[#171717] uppercase">
@@ -25,7 +25,7 @@ export default function ServiceDiscovery() {
         </div>
 
         {/* 5 Vertical Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 lg:gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 lg:gap-5 xl:gap-6">
           {servicesData.map((service) => (
             <Link
               key={service.id}
@@ -38,7 +38,7 @@ export default function ServiceDiscovery() {
                 alt={`${service.title} by Picture Perfect Photography`}
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1600px) 20vw, 320px"
               />
 
               {/* Gradient Overlay for legibility */}

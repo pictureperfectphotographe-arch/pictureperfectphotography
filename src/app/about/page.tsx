@@ -14,7 +14,7 @@ export default function AboutPage() {
     <div className="w-full bg-[#FAF9F6]">
       {/* Editorial Page Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             OUR STORY & CAPABILITIES
           </span>
@@ -32,7 +32,7 @@ export default function AboutPage() {
 
       {/* Philosophy & Team Section */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 relative aspect-[4/5] bg-neutral-100 overflow-hidden shadow-xs">
               <Image
@@ -93,7 +93,7 @@ export default function AboutPage() {
 
       {/* Production Standards */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="text-center max-w-xl mx-auto mb-14">
             <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2">
               PRODUCTION CAPABILITIES

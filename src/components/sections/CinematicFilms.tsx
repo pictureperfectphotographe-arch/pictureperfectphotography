@@ -11,7 +11,7 @@ export default function CinematicFilms() {
 
   return (
     <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 md:mb-14">
           <div>

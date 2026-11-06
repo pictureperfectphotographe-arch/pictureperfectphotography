@@ -41,7 +41,7 @@ export default function Header() {
           : "bg-[#FAF9F6] py-4 border-b border-[#D8D2CA] text-[#171717]"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-[1480px] mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="group flex items-center py-0.5">
           <Image

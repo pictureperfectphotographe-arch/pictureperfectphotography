@@ -28,7 +28,7 @@ const steps = [
 export default function ProcessTimeline() {
   return (
     <section className="w-full bg-[#FAF9F6] py-16 md:py-24 border-t border-[#D8D2CA]">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1480px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="mb-14 md:mb-20">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-2">
@@ -75,7 +75,7 @@ export default function ProcessTimeline() {
                 <h3 className="font-display text-[22px] md:text-[26px] tracking-tight uppercase text-[#171717] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-[14px] text-[#777777] font-body leading-relaxed max-w-[220px]">
+                <p className="text-[14px] text-[#777777] font-body leading-relaxed max-w-[260px]">
                   {step.description}
                 </p>
               </div>

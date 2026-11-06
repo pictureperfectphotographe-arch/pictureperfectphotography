@@ -15,7 +15,7 @@ export default function ServicesPage() {
     <div className="w-full bg-[#FAF9F6]">
       {/* Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             OUR DISCIPLINES & SERVICES
           </span>
@@ -33,7 +33,7 @@ export default function ServicesPage() {
 
       {/* Main Services Deep-Dive */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12 space-y-20">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-20">
           {servicesData.map((service, index) => {
             const isEven = index % 2 === 1;
             return (
@@ -114,7 +114,7 @@ export default function ServicesPage() {
 
       {/* Production Offerings List */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="max-w-xl mb-12">
             <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase block mb-2">
               EQUIPMENT & CAPABILITIES

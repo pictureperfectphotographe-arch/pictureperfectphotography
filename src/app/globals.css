@@ -68,6 +68,39 @@ body {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+/* Reusable Editorial Container Width Utility Classes */
+.container-editorial {
+  width: 100%;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-editorial {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-wide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 /* Selection and scrollbar */
 ::selection {
   background-color: #171717;

@@ -35,6 +35,17 @@ async function capture() {
 
   const page = await browser.newPage();
 
+  // Desktop 1920px
+  console.log('Navigating to http://localhost:3000 at 1920px...');
+  await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 });
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle0', timeout: 30000 });
+  await autoScroll(page);
+  await page.screenshot({
+    path: path.join(__dirname, 'screenshot_desktop_1920.png'),
+    fullPage: true
+  });
+  console.log('Saved screenshot_desktop_1920.png');
+
   // Desktop 1440px
   console.log('Navigating to http://localhost:3000 at 1440px...');
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
@@ -46,16 +57,16 @@ async function capture() {
   });
   console.log('Saved screenshot_desktop_1440.png');
 
-  // Mobile 390px
-  console.log('Navigating to http://localhost:3000 at 390px...');
-  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true });
+  // Laptop 1024px
+  console.log('Navigating to http://localhost:3000 at 1024px...');
+  await page.setViewport({ width: 1024, height: 768, deviceScaleFactor: 1 });
   await page.goto('http://localhost:3000', { waitUntil: 'networkidle0', timeout: 30000 });
   await autoScroll(page);
   await page.screenshot({
-    path: path.join(__dirname, 'screenshot_mobile_390.png'),
+    path: path.join(__dirname, 'screenshot_laptop_1024.png'),
     fullPage: true
   });
-  console.log('Saved screenshot_mobile_390.png');
+  console.log('Saved screenshot_laptop_1024.png');
 
   // Tablet 768px
   console.log('Navigating to http://localhost:3000 at 768px...');
@@ -67,6 +78,17 @@ async function capture() {
     fullPage: true
   });
   console.log('Saved screenshot_tablet_768.png');
+
+  // Mobile 390px
+  console.log('Navigating to http://localhost:3000 at 390px...');
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true });
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle0', timeout: 30000 });
+  await autoScroll(page);
+  await page.screenshot({
+    path: path.join(__dirname, 'screenshot_mobile_390.png'),
+    fullPage: true
+  });
+  console.log('Saved screenshot_mobile_390.png');
 
   await browser.close();
   console.log('All screenshots completed successfully!');

@@ -14,7 +14,7 @@ export default function ContactPage() {
     <div className="w-full bg-[#FAF9F6]">
       {/* Editorial Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             START THE CONVERSATION
           </span>

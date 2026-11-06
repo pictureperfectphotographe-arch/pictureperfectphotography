@@ -20,7 +20,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
     <div className="w-full bg-[#FAF9F6]">
       {/* Header Section */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase">
               CLIENT WORDS & EXPERIENCES
@@ -75,7 +75,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
 
       {/* Premium Horizontal Sliding Reviews Carousel */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <ReviewsCarousel reviews={reviews} />
 
           {/* Submission CTA */}

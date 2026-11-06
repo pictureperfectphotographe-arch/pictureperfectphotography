@@ -13,7 +13,7 @@ export default function FilmsPage() {
     <div className="w-full bg-[#FAF9F6]">
       {/* Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
             CINEMATIC WEDDING FILMS
           </span>
@@ -31,7 +31,7 @@ export default function FilmsPage() {
 
       {/* Video Grid - 2 columns on desktop, 1 on mobile */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {filmsData.map((film) => (
               <div
@@ -83,7 +83,7 @@ export default function FilmsPage() {
 
       {/* Filmmaking Approach */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-[#D8D2CA]">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12">
+        <div className="max-w-[1480px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-white border border-[#D8D2CA] space-y-3">
               <Film className="w-7 h-7 text-[#171717] stroke-1" />
