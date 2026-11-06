@@ -19,9 +19,9 @@ export default function CinematicFilms() {
               OUR FILMS
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
-              PRESS PLAY ON{" "}
+              LOVE, IN{" "}
               <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
-                love.
+                motion.
               </span>
             </h2>
           </div>
@@ -29,7 +29,7 @@ export default function CinematicFilms() {
           <div>
             <Link
               href="/films"
-              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
+              className="group inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.18em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
             >
               <span>WATCH ALL FILMS</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -38,12 +38,12 @@ export default function CinematicFilms() {
         </div>
 
         {/* Film Gallery Grid: 3 columns on Desktop, 2 on Tablet, 1 on Mobile */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 lg:gap-x-8 lg:gap-y-12">
           {filmsData.map((film) => {
             const isPlaying = playingFilmId === film.id;
 
             return (
-              <div key={film.id} className="flex flex-col">
+              <div key={film.id} className="flex flex-col group">
                 {/* 16:9 Video Box: Plays inline directly inside the thumbnail */}
                 {isPlaying ? (
                   <div className="relative aspect-video w-full overflow-hidden bg-black shadow-xs border border-[#D8D2CA]">
@@ -59,47 +59,49 @@ export default function CinematicFilms() {
                   <button
                     type="button"
                     onClick={() => setPlayingFilmId(film.id)}
-                    className="group relative aspect-video w-full overflow-hidden bg-neutral-900 cursor-pointer shadow-xs border border-[#D8D2CA] text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#171717]"
+                    className="relative aspect-video w-full overflow-hidden bg-neutral-900 cursor-pointer shadow-xs border border-[#D8D2CA] text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#171717]"
                     aria-label={`Play ${film.title}`}
                   >
                     <Image
                       src={film.thumbnail}
                       alt={film.title}
                       fill
+                      loading="eager"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
 
                     {/* Subtle Dark Gradient Overlay for Contrast */}
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors duration-300" />
 
-                    {/* Centered Translucent Play Button matching the Vows by Siddhu Soma screenshot */}
+                    {/* Centered Translucent Play Button */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/90 bg-black/25 backdrop-blur-xs flex items-center justify-center pl-0.5 text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-black/40 shadow-sm">
+                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/90 bg-black/35 backdrop-blur-xs flex items-center justify-center pl-0.5 text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-black/55 shadow-md">
                         <Play className="w-4 h-4 md:w-5 md:h-5 fill-white text-white" />
                       </div>
                     </div>
+
+                    {/* Duration Badge */}
+                    {film.duration && (
+                      <span className="absolute bottom-2.5 right-2.5 bg-black/75 backdrop-blur-xs px-2 py-0.5 text-[10px] text-white font-mono tracking-wider">
+                        {film.duration}
+                      </span>
+                    )}
                   </button>
                 )}
 
-                {/* Elegant Bodoni Moda Italic Film Title Underneath */}
-                <h3 className="font-editorial italic font-normal text-[20px] sm:text-[22px] md:text-[24px] text-[#171717] text-center mt-4 md:mt-5 tracking-tight leading-snug">
-                  {film.title}
-                </h3>
+                {/* Film Title & Category */}
+                <div className="mt-3.5 text-center">
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-[#777777] font-medium mb-1">
+                    {film.category || "Cinematic Wedding Film"}
+                  </span>
+                  <h3 className="font-editorial italic font-normal text-[20px] sm:text-[22px] md:text-[24px] text-[#171717] tracking-tight leading-snug">
+                    {film.title}
+                  </h3>
+                </div>
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom Centered Link matching the reference screenshot */}
-        <div className="mt-12 md:mt-16 text-center">
-          <Link
-            href="/films"
-            className="inline-flex items-center gap-1.5 text-[11px] md:text-[12px] font-semibold tracking-[0.2em] uppercase text-[#171717] border-b border-[#171717] pb-1 hover:text-[#777777] hover:border-[#777777] transition-colors"
-          >
-            <span>ENTER THE GALLERY</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </Link>
         </div>
       </div>
     </section>

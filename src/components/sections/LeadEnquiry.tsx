@@ -33,11 +33,9 @@ export default function LeadEnquiry() {
 
     setStatus("submitting");
 
-    // Simulate lead submission and save to local state / open WA option
+    // Simulate lead submission and save to local state
     setTimeout(() => {
       setStatus("success");
-      // If user desires immediate WhatsApp follow-up:
-      // window.open(waUrl, "_blank");
     }, 800);
   };
 
@@ -60,12 +58,12 @@ export default function LeadEnquiry() {
                 </span>
               </h2>
               <p className="font-body text-[15px] md:text-[16px] text-[#B5B5B5] leading-relaxed max-w-sm mb-8">
-                Tell us about your event and get a personalised quotation from our team.
+                Tell us about your event and get a personalised quotation from our creative team in Hyderabad.
               </p>
             </div>
 
             {/* Direct WhatsApp Pill */}
-            <div className="pt-6 border-t border-[#222222]">
+            <div className="pt-6 border-t border-[#2A2A2A]">
               <span className="block text-[11px] uppercase tracking-wider text-[#B5B5B5] mb-3">
                 Prefer immediate response?
               </span>
@@ -81,8 +79,8 @@ export default function LeadEnquiry() {
             </div>
           </div>
 
-          {/* Right Column: Clean Underline Form (Span 7) */}
-          <div className="lg:col-span-7 bg-[#1A1A1A] p-6 sm:p-10 border border-[#2E2E2E]">
+          {/* Right Column: Clean Premium Form (Span 7) */}
+          <div className="lg:col-span-7 bg-[#1A1A1A] p-6 sm:p-10 lg:p-12 border border-[#2E2E2E] shadow-xl">
             {status === "success" ? (
               <div className="py-12 text-center flex flex-col items-center justify-center animate-fadeIn">
                 <CheckCircle2 className="w-14 h-14 text-white mb-4 stroke-1" />
@@ -98,7 +96,7 @@ export default function LeadEnquiry() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black text-[12px] font-semibold tracking-wider uppercase hover:bg-neutral-200 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-black text-[12px] font-semibold tracking-wider uppercase hover:bg-neutral-200 transition-colors"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Connect Instantly on WhatsApp</span>
@@ -115,7 +113,7 @@ export default function LeadEnquiry() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                    <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                       Your Name *
                     </label>
                     <input
@@ -125,12 +123,12 @@ export default function LeadEnquiry() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="e.g. Sanjana Rao"
-                      className="w-full bg-transparent border-b border-[#444444] py-2 text-white placeholder-[#888888] text-[15px] focus:outline-hidden focus:border-white transition-colors"
+                      className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white placeholder-white/35 text-[15px] focus:outline-hidden transition-all duration-200"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                    <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                       Phone Number *
                     </label>
                     <input
@@ -140,33 +138,33 @@ export default function LeadEnquiry() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+91 98765 43210"
-                      className="w-full bg-transparent border-b border-[#444444] py-2 text-white placeholder-[#888888] text-[15px] focus:outline-hidden focus:border-white transition-colors"
+                      className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white placeholder-white/35 text-[15px] focus:outline-hidden transition-all duration-200"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                    <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                       Event Type *
                     </label>
                     <select
                       name="eventType"
                       value={formData.eventType}
                       onChange={handleChange}
-                      className="w-full bg-[#1A1A1A] border-b border-[#444444] py-2 text-white text-[15px] focus:outline-hidden focus:border-white transition-colors cursor-pointer"
+                      className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white text-[15px] focus:outline-hidden transition-all duration-200 cursor-pointer"
                     >
-                      <option value="Wedding">Wedding (Muhurtham & Reception)</option>
-                      <option value="Pre-Wedding">Pre-Wedding Shoot</option>
-                      <option value="Maternity">Maternity & Seemantham</option>
-                      <option value="Cradle Ceremony">Baby Cradle & Naming Ceremony</option>
-                      <option value="Event / Family">Family Event / Celebration</option>
-                      <option value="Cinematic Films">Cinematic Wedding Film</option>
+                      <option value="Wedding" className="bg-[#1A1A1A] text-white">Wedding (Muhurtham & Reception)</option>
+                      <option value="Pre-Wedding" className="bg-[#1A1A1A] text-white">Pre-Wedding Shoot</option>
+                      <option value="Maternity" className="bg-[#1A1A1A] text-white">Maternity & Seemantham</option>
+                      <option value="Cradle Ceremony" className="bg-[#1A1A1A] text-white">Baby Cradle & Naming Ceremony</option>
+                      <option value="Event / Family" className="bg-[#1A1A1A] text-white">Family Event / Celebration</option>
+                      <option value="Cinematic Films" className="bg-[#1A1A1A] text-white">Cinematic Wedding Film</option>
                     </select>
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                    <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                       Event Date *
                     </label>
                     <input
@@ -174,13 +172,13 @@ export default function LeadEnquiry() {
                       name="eventDate"
                       value={formData.eventDate}
                       onChange={handleChange}
-                      className="w-full bg-transparent border-b border-[#444444] py-2 text-white text-[15px] focus:outline-hidden focus:border-white transition-colors"
+                      className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white text-[15px] focus:outline-hidden transition-all duration-200 [color-scheme:dark]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                  <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                     Event Location *
                   </label>
                   <input
@@ -189,12 +187,12 @@ export default function LeadEnquiry() {
                     value={formData.eventLocation}
                     onChange={handleChange}
                     placeholder="e.g. Hyderabad, Secunderabad, or Destination"
-                    className="w-full bg-transparent border-b border-[#444444] py-2 text-white placeholder-[#888888] text-[15px] focus:outline-hidden focus:border-white transition-colors"
+                    className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white placeholder-white/35 text-[15px] focus:outline-hidden transition-all duration-200"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-medium tracking-wider uppercase text-[#B5B5B5] mb-1">
+                  <label className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-[#CCCCCC] mb-1.5">
                     Message / Special Requests
                   </label>
                   <textarea
@@ -203,20 +201,20 @@ export default function LeadEnquiry() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Tell us about your event scale, required services (photography, films, drone, albums), or questions..."
-                    className="w-full bg-transparent border-b border-[#444444] py-2 text-white placeholder-[#888888] text-[15px] focus:outline-hidden focus:border-white transition-colors resize-none"
+                    className="w-full bg-[#222222]/60 hover:bg-[#222222]/90 focus:bg-[#242424] px-3.5 py-2.5 border-b-2 border-[#444444] focus:border-white text-white placeholder-white/35 text-[15px] focus:outline-hidden transition-all duration-200 resize-none"
                   />
                 </div>
 
-                <div className="pt-4">
+                <div className="pt-3">
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-4 bg-white text-[#171717] font-semibold text-[13px] tracking-[0.14em] uppercase flex items-center justify-center gap-2 hover:bg-[#FAF9F6] transition-colors duration-200 cursor-pointer disabled:opacity-50"
+                    className="w-full py-4 bg-white text-[#171717] font-semibold text-[13px] tracking-[0.16em] uppercase flex items-center justify-center gap-2 hover:bg-[#FAF9F6] active:scale-[0.99] transition-all duration-200 cursor-pointer disabled:opacity-50 shadow-md"
                   >
                     <span>{status === "submitting" ? "SENDING ENQUIRY..." : "GET A QUOTE"}</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
-                  <p className="text-[11px] text-[#B5B5B5] text-center mt-3 font-body">
+                  <p className="text-[11px] text-[#A0A0A0] text-center mt-3 font-body">
                     We respect your privacy. No spam. Direct response from our creative directors.
                   </p>
                 </div>

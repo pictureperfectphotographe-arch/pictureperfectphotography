@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const puppeteer = require('puppeteer-core');
 const path = require('path');
+const fs = require('fs');
 
 const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 
@@ -8,17 +9,19 @@ async function autoScroll(page) {
   await page.evaluate(async () => {
     await new Promise((resolve) => {
       let totalHeight = 0;
-      const distance = 400;
+      const distance = 300;
       const timer = setInterval(() => {
         const scrollHeight = document.body.scrollHeight;
         window.scrollBy(0, distance);
         totalHeight += distance;
         if (totalHeight >= scrollHeight) {
           clearInterval(timer);
-          window.scrollTo(0, 0);
-          resolve();
+          setTimeout(() => {
+            window.scrollTo(0, 0);
+            resolve();
+          }, 800);
         }
-      }, 40);
+      }, 50);
     });
   });
   // Wait a short moment for images and fonts to settle
@@ -91,6 +94,21 @@ async function capture() {
   console.log('Saved screenshot_mobile_390.png');
 
   await browser.close();
+
+  // Also save matching after_ screenshots for comparison
+  const copies = [
+    ['screenshot_desktop_1920.png', 'after_desktop_1920.png'],
+    ['screenshot_desktop_1440.png', 'after_desktop_1440.png'],
+    ['screenshot_laptop_1024.png', 'after_laptop_1024.png'],
+    ['screenshot_tablet_768.png', 'after_tablet_768.png'],
+    ['screenshot_mobile_390.png', 'after_mobile_390.png']
+  ];
+  for (const [s, d] of copies) {
+    if (fs.existsSync(path.join(__dirname, s))) {
+      fs.copyFileSync(path.join(__dirname, s), path.join(__dirname, d));
+    }
+  }
+
   console.log('All screenshots completed successfully!');
 }
 

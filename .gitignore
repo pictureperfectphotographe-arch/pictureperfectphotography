@@ -38,6 +38,8 @@ yarn-error.log*
 
 # local artifacts
 screenshot_*.png
+before_*.png
+after_*.png
 extracted_images/
 
 # typescript

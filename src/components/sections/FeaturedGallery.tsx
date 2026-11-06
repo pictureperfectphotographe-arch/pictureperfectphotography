@@ -36,7 +36,7 @@ export default function FeaturedGallery() {
 
   return (
     <section className="w-full bg-white py-16 md:py-24 border-t border-[#D8D2CA]">
-     <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 xl:px-10">
+      <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 xl:px-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
           <div>
@@ -201,7 +201,7 @@ export default function FeaturedGallery() {
             </div>
 
             {/* Right Column (Span 3) */}
-            <div className="md:col-span-3 flex flex-col justify-between gap-4 lg:gap-5 h-full">
+            <div className="md:col-span-3 flex flex-col gap-5 lg:gap-6">
               {couplePink && (
                 <div
                   onClick={() => setSelectedProject(couplePink)}
@@ -216,19 +216,27 @@ export default function FeaturedGallery() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end p-4">
+                    <span className="text-white text-[12px] opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-wider font-medium">
+                      {couplePink.title}
+                    </span>
+                  </div>
                 </div>
               )}
 
-              {/* Typographic Block matching reference */}
-              <div className="py-6 px-4 md:py-10 border-t border-[#D8D2CA] flex flex-col justify-end">
+              {/* Editorial Statement matching reference */}
+              <div className="pt-6 pb-2 border-t border-[#D8D2CA] flex flex-col justify-start">
                 <span className="block w-6 h-[1.5px] bg-[#171717] mb-4" />
-                <h3 className="font-display text-[20px] md:text-[24px] lg:text-[28px] uppercase tracking-tight text-[#171717] leading-[1.05]">
+                <h3 className="font-display text-[22px] md:text-[24px] lg:text-[28px] uppercase tracking-tight text-[#171717] leading-[1.05]">
                   A COLLECTION
                   <br />
                   OF MOMENTS
                   <br />
                   THAT MATTER.
                 </h3>
+                <p className="font-body text-[13px] text-[#777777] mt-3 leading-relaxed">
+                  Every celebration documented with natural light, honest emotions, and intentional editorial composition.
+                </p>
               </div>
             </div>
           </div>
