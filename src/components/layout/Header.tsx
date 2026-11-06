@@ -67,24 +67,31 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`relative py-1 transition-colors duration-200 ${
+                className={`group relative py-1 transition-colors duration-200 focus-visible:outline-hidden ${
                   isTransparent
                     ? isActive
                       ? "text-white font-semibold"
-                      : "text-white/85 hover:text-white"
+                      : "text-white/85 hover:text-white focus-visible:text-white"
                     : isActive
                     ? "text-[#171717] font-semibold"
-                    : "text-[#777777] hover:text-[#171717]"
+                    : "text-[#777777] hover:text-[#171717] focus-visible:text-[#171717]"
                 }`}
               >
-                {item.label}
-                {isActive && (
+                <span>{item.label}</span>
+                <span
+                  aria-hidden="true"
+                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 flex items-center justify-center pointer-events-none"
+                >
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-[1.5px] ${
+                    className={`w-[5px] h-[5px] rounded-full transition-all duration-[250ms] ease-out motion-reduce:transition-none ${
                       isTransparent ? "bg-white" : "bg-[#171717]"
+                    } ${
+                      isActive
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-[3px] group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100 group-focus-visible:translate-y-0"
                     }`}
                   />
-                )}
+                </span>
               </Link>
             );
           })}
@@ -138,7 +145,7 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={`font-display text-[26px] tracking-tight uppercase ${
-                    pathname === item.href ? "text-[#171717] underline underline-offset-8" : "text-[#777777] hover:text-[#171717]"
+                    pathname === item.href ? "text-[#171717] font-semibold" : "text-[#777777] hover:text-[#171717]"
                   }`}
                 >
                   {item.label}
