@@ -77,20 +77,22 @@ export default function Header() {
                     : "text-[#777777] hover:text-[#171717] focus-visible:text-[#171717]"
                 }`}
               >
-                <span>{item.label}</span>
-                <span
-                  aria-hidden="true"
-                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 flex items-center justify-center pointer-events-none"
-                >
+                <span className="relative inline-block">
+                  {item.label}
                   <span
-                    className={`w-[5px] h-[5px] rounded-full transition-all duration-[250ms] ease-out motion-reduce:transition-none ${
-                      isTransparent ? "bg-white" : "bg-[#171717]"
-                    } ${
-                      isActive
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-[3px] group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100 group-focus-visible:translate-y-0"
-                    }`}
-                  />
+                    aria-hidden="true"
+                    className="absolute top-[calc(100%+5px)] left-1/2 -translate-x-1/2 flex items-center justify-center pointer-events-none"
+                  >
+                    <span
+                      className={`w-[4px] h-[4px] rounded-full transition-opacity duration-[250ms] ease-out motion-reduce:transition-none ${
+                        isTransparent ? "bg-white" : "bg-[#171717]"
+                      } ${
+                        isActive
+                          ? "opacity-100"
+                          : "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100"
+                      }`}
+                    />
+                  </span>
                 </span>
               </Link>
             );
