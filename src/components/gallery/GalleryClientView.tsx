@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Play, Quote } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Play } from "lucide-react";
 import { GalleryStory, GalleryPhoto } from "@/data/galleries";
 import { FilmItem } from "@/data/films";
 import GalleryLightbox from "@/components/ui/GalleryLightbox";
 import VideoModal from "@/components/ui/VideoModal";
+import EditorialReviewSection from "@/components/ui/EditorialReviewSection";
 
 interface GalleryClientViewProps {
   story: GalleryStory;
@@ -276,68 +277,9 @@ export default function GalleryClientView({
       </main>
 
       {/* E. Client Testimonial Section — AFTER ALL PHOTOGRAPHS */}
-      {/* Inspired directly by the bottom section of the Vows by Siddhu Soma screenshot:
-          Left: Editorial Serif Review + Attribution
-          Right: Natural Portrait of the Same Couple */}
+      {/* Editorial layout matching Reference Image 1 with minimal navigation and centered typography */}
       {story.testimonial && (
-        <section className="border-t border-[#D8D2CA] py-20 md:py-32 bg-[#FAF9F6]">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
-              {/* Left Column: Review Text */}
-              <div
-                className={
-                  story.testimonial.portrait
-                    ? "md:col-span-7 flex flex-col justify-center"
-                    : "md:col-span-10 md:col-start-2 text-center flex flex-col items-center"
-                }
-              >
-                <div className="text-[#B8A27A] mb-6">
-                  <Quote className="w-10 h-10 stroke-[1.5] opacity-80" />
-                </div>
-
-                <blockquote className="font-editorial text-[22px] sm:text-[26px] md:text-[32px] lg:text-[36px] text-[#171717] leading-[1.3] font-normal italic">
-                  &ldquo;{story.testimonial.quote}&rdquo;
-                </blockquote>
-
-                <div className="mt-8 pt-6 border-t border-[#D8D2CA] flex flex-col">
-                  <span className="font-display text-[18px] md:text-[20px] uppercase tracking-tight text-[#171717]">
-                    {story.testimonial.attribution}
-                  </span>
-                  {story.testimonial.context && (
-                    <span className="text-[12px] uppercase tracking-[0.18em] text-[#777777] mt-1 font-medium">
-                      {story.testimonial.context}
-                    </span>
-                  )}
-                  {story.testimonial.rating && (
-                    <div className="flex items-center gap-1 mt-2 text-[#B8A27A]">
-                      {[...Array(story.testimonial.rating)].map((_, i) => (
-                        <span key={i} className="text-sm">★</span>
-                      ))}
-                      <span className="text-[11px] uppercase tracking-widest text-[#777777] ml-2">
-                        5.0 VERIFIED GOOGLE REVIEW
-                      </span>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Right Column: Natural Couple Portrait */}
-              {story.testimonial.portrait && (
-                <div className="md:col-span-5 flex justify-center md:justify-end">
-                  <div className="relative w-full max-w-[420px] aspect-[3/4] bg-[#ECE8E1] overflow-hidden shadow-xs">
-                    <Image
-                      src={story.testimonial.portrait}
-                      alt={`${story.testimonial.attribution} couple portrait`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 35vw"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </section>
+        <EditorialReviewSection initialSlug={story.slug} />
       )}
 
       {/* F. Gallery Footer: Explore More Stories & Enquiry */}

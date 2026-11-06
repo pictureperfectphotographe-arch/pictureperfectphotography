@@ -4,6 +4,7 @@ import React from "react";
 import { GoogleReview } from "@/data/reviews";
 import { ArrowUpRight, Star, MessageSquare } from "lucide-react";
 import ReviewsCarousel from "@/components/sections/ReviewsCarousel";
+import EditorialReviewSection from "@/components/ui/EditorialReviewSection";
 
 interface ReviewsClientProps {
   reviews: GoogleReview[];
@@ -72,6 +73,9 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
           </div>
         </div>
       </section>
+
+      {/* Featured Editorial Review Section matching Image 1 Reference */}
+      <EditorialReviewSection />
 
       {/* Premium Horizontal Sliding Reviews Carousel */}
       <section className="py-16 md:py-24">
