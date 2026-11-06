@@ -24,7 +24,7 @@ export default function HeroCollage() {
       />
 
       {/* Top Zone: Metadata & Sky Wordmark */}
-      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pt-[80px] sm:pt-[84px] md:pt-[88px] flex flex-col">
+     <div className="relative z-10 w-full px-5 sm:px-8 lg:px-12 pt-[80px] sm:pt-[84px] md:pt-[88px] flex flex-col">
         {/* Top Metadata Row */}
         <div className="w-full flex items-start justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/95 drop-shadow-sm leading-tight">
           {/* Top Left Metadata */}
@@ -54,7 +54,7 @@ export default function HeroCollage() {
       </div>
 
       {/* Bottom Zone: Metadata Bottom Left & Bottom Right */}
-      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pb-8 sm:pb-9 md:pb-10 flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/95 drop-shadow-sm leading-tight">
+    <div className="relative z-10 w-full px-5 sm:px-8 lg:px-12 pb-8 sm:pb-9 md:pb-10 flex items-end justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/95 drop-shadow-sm leading-tight">
         {/* Bottom Left Metadata */}
         <div>
           <p>MANIKONDA, HYDERABAD /</p>
