@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { galleryStories, GalleryCategory } from "@/data/galleries";
+import { galleryStories, GalleryCategory, isCoupleStory } from "@/data/galleries";
 
 const categories: ("ALL" | GalleryCategory)[] = [
   "ALL",
@@ -91,7 +91,13 @@ export default function PortfolioPage() {
                   {/* Couple / Event Details BELOW the photograph */}
                   <div className="pt-5 flex items-start justify-between gap-4">
                     <div>
-                      <h2 className="font-display text-[22px] sm:text-[24px] uppercase tracking-tight text-[#171717] leading-tight transition-colors duration-200 group-hover:text-[#555555]">
+                      <h2
+                        className={
+                          isCoupleStory(story)
+                            ? "font-cormorant italic font-normal text-[26px] sm:text-[28px] text-[#171717] leading-tight transition-colors duration-200 group-hover:text-[#555555]"
+                            : "font-display text-[22px] sm:text-[24px] uppercase tracking-tight text-[#171717] leading-tight transition-colors duration-200 group-hover:text-[#555555]"
+                        }
+                      >
                         {story.title}
                       </h2>
                       <span className="block text-[11px] uppercase tracking-[0.18em] text-[#777777] font-medium mt-1">

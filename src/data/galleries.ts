@@ -54,16 +54,20 @@ export interface GalleryStory {
 }
 
 // -----------------------------------------------------------------------------
+export function isCoupleStory(story: { category: GalleryCategory; title: string }): boolean {
+  return story.category === "WEDDINGS" || story.category === "PRE-WEDDINGS" || story.title.includes("+");
+}
+
 // VERIFIED CURATED GALLERIES
 // Based exclusively on verified client projects, official films & Google Business reviews
 // -----------------------------------------------------------------------------
 
 export const galleryStories: GalleryStory[] = [
-  // 1. Akhila & Vepunder — Wedding Story (Has matching film + verified review by Vepunder Reddy)
+  // 1. Akhila + Vepunder — Wedding Story (Has matching film + verified review by Vepunder Reddy)
   {
     id: "gallery-akhila-vepunder",
     slug: "akhila-vepunder",
-    title: "Akhila & Vepunder",
+    title: "Akhila + Vepunder",
     category: "WEDDINGS",
     subtitle: "Wedding Story",
     coverImage: "/images/galleries/akhila-vepunder/cover.jpg",
@@ -678,7 +682,7 @@ export const galleryStories: GalleryStory[] = [
   {
     id: "gallery-sahithi-lalith",
     slug: "sahithi-lalith",
-    title: "Sahithi & Lalith",
+    title: "Sahithi + Lalith",
     category: "WEDDINGS",
     subtitle: "Wedding Story",
     coverImage: "/images/films/film_sahithi_lalith.jpg",
@@ -796,7 +800,7 @@ export const galleryStories: GalleryStory[] = [
   {
     id: "gallery-spoorthy-sudeer",
     slug: "spoorthy-sudeer",
-    title: "Spoorthy & Sudeer",
+    title: "Spoorthy + Sudeer",
     category: "WEDDINGS",
     subtitle: "Wedding Story",
     coverImage: "/images/films/film_spoorthy_sudeer.jpg",
@@ -911,11 +915,11 @@ export const galleryStories: GalleryStory[] = [
     },
   },
 
-  // 5. Pradeep & Sindhu — Wedding Story (Verified Google review by Pradeep Reddy)
+  // 5. Vasavi + Pradeep — Wedding Story (Verified Google review by Pradeep Reddy)
   {
     id: "gallery-pradeep-reddy",
     slug: "pradeep-reddy",
-    title: "Pradeep & Sindhu",
+    title: "Vasavi + Pradeep",
     category: "WEDDINGS",
     subtitle: "Wedding Story",
     coverImage: "/images/gallery_bride_saree.jpg",
@@ -952,7 +956,7 @@ export const galleryStories: GalleryStory[] = [
       {
         id: "pr-04",
         src: "/images/gallery_couple_large.jpg",
-        alt: "Pradeep & Sindhu elegant traditional portrait",
+        alt: "Vasavi + Pradeep elegant traditional portrait",
         aspect: "portrait",
       },
       {

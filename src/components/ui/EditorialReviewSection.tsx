@@ -40,7 +40,7 @@ export const verifiedEditorialReviews: EditorialReview[] = [
     heading: "“The photos turned out beautiful, capturing all the special moments.”",
     body: "Srujan and team did a great job at our wedding! They were easy to work with and made us feel comfortable. Everything was delivered on time, and we’re really happy with the results. We definitely recommend them!",
     portrait: "/images/gallery_couple_large.jpg",
-    portraitAlt: "Pradeep & Sindhu wedding couple portrait",
+    portraitAlt: "Vasavi + Pradeep wedding couple portrait",
     storySlug: "pradeep-reddy",
   },
   {

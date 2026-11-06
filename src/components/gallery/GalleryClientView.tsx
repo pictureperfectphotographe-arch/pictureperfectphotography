@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Play } from "lucide-react";
-import { GalleryStory, GalleryPhoto } from "@/data/galleries";
+import { GalleryStory, GalleryPhoto, isCoupleStory } from "@/data/galleries";
 import { FilmItem } from "@/data/films";
 import GalleryLightbox from "@/components/ui/GalleryLightbox";
 import VideoModal from "@/components/ui/VideoModal";
@@ -89,7 +89,13 @@ export default function GalleryClientView({
           {story.subtitle.toUpperCase()}
         </span>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <h1 className="font-display text-[44px] sm:text-[60px] md:text-[76px] lg:text-[88px] leading-[0.92] text-[#171717] uppercase tracking-tight">
+          <h1
+            className={
+              isCoupleStory(story)
+                ? "font-cormorant italic font-normal text-[46px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[1.02] text-[#171717] tracking-normal"
+                : "font-display text-[44px] sm:text-[60px] md:text-[76px] lg:text-[88px] leading-[0.92] text-[#171717] uppercase tracking-tight"
+            }
+          >
             {story.title}
           </h1>
 
@@ -349,7 +355,13 @@ export default function GalleryClientView({
                       </div>
                       <div className="pt-4 flex items-start justify-between">
                         <div>
-                          <h3 className="font-display text-[20px] uppercase text-[#171717] leading-tight">
+                          <h3
+                            className={
+                              isCoupleStory(rel)
+                                ? "font-cormorant italic font-normal text-[24px] sm:text-[26px] text-[#171717] leading-tight"
+                                : "font-display text-[20px] uppercase text-[#171717] leading-tight"
+                            }
+                          >
                             {rel.title}
                           </h3>
                           <span className="block text-[11px] uppercase tracking-wider text-[#777777] mt-0.5">
