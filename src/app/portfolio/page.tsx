@@ -2,27 +2,36 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { portfolioProjects, Project } from "@/data/projects";
-import Lightbox from "@/components/ui/Lightbox";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { galleryStories, GalleryCategory } from "@/data/galleries";
 
-const categories = ["ALL", "WEDDINGS", "PRE-WEDDINGS", "MATERNITY", "BABY", "EVENTS"] as const;
+const categories: ("ALL" | GalleryCategory)[] = [
+  "ALL",
+  "WEDDINGS",
+  "PRE-WEDDINGS",
+  "MATERNITY",
+  "BABY",
+  "EVENTS",
+];
 
 export default function PortfolioPage() {
-  const [activeFilter, setActiveFilter] = useState<string>("ALL");
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [activeFilter, setActiveFilter] = useState<"ALL" | GalleryCategory>("ALL");
 
-  const filteredProjects =
+  const filteredStories =
     activeFilter === "ALL"
-      ? portfolioProjects
-      : portfolioProjects.filter((p) => p.category === activeFilter);
+      ? galleryStories.filter((s) => s.visibility === "public")
+      : galleryStories.filter(
+          (s) => s.visibility === "public" && s.category === activeFilter
+        );
 
   return (
-    <div className="w-full bg-white">
-      {/* Header */}
+    <div className="w-full bg-[#FAF9F6]">
+      {/* Editorial Header */}
       <section className="py-16 md:py-24 border-b border-[#D8D2CA]">
         <div className="max-w-[1600px] mx-auto px-6 md:px-12">
           <span className="block text-[11px] font-semibold tracking-[0.22em] text-[#777777] uppercase mb-4">
-            FEATURED PORTFOLIO
+            CURATED STORIES
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             A CURATED ARCHIVE OF{" "}
@@ -31,10 +40,10 @@ export default function PortfolioPage() {
             </span>
           </h1>
           <p className="font-body text-[16px] md:text-[18px] text-[#777777] max-w-2xl mt-6 leading-relaxed">
-            Explore authentic moments documented across Hyderabad, Telangana, and destination locations across India. Every photograph is captured with natural lighting and deliberate editorial composition.
+            Every celebration documented as a unique photographic story. Explore authentic couple galleries, family milestones, and sacred ceremonies captured with natural light and deliberate editorial composition.
           </p>
 
-          {/* Filters */}
+          {/* Minimal Filter Pills */}
           <div className="flex flex-wrap items-center gap-2 mt-10">
             {categories.map((cat) => {
               const isActive = activeFilter === cat;
@@ -56,45 +65,67 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Grid */}
+      {/* Gallery Collections Grid: 3-column desktop, 2-column tablet, 1-column mobile */}
       <section className="py-16 md:py-24">
         <div className="max-w-[1600px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
-              <div
-                key={project.id}
-                onClick={() => setSelectedProject(project)}
-                className="group relative aspect-[4/3] bg-neutral-100 overflow-hidden cursor-pointer shadow-xs"
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-104"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-5 text-white transition-opacity duration-300">
-                  <span className="text-[10px] uppercase tracking-widest text-neutral-300 mb-1">
-                    {project.category} • {project.location}
-                  </span>
-                  <h3 className="font-display text-[20px] uppercase tracking-tight text-white leading-tight">
-                    {project.title}
-                  </h3>
-                  <p className="text-[12px] text-neutral-300 font-body line-clamp-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                    {project.description}
-                  </p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            {filteredStories.map((story, index) => (
+              <article key={story.id} className="group flex flex-col">
+                <Link
+                  href={`/portfolio/${story.slug}`}
+                  className="block focus:outline-hidden focus:ring-1 focus:ring-[#171717]"
+                  aria-label={`View story: ${story.title} - ${story.subtitle}`}
+                >
+                  {/* Clean Cover Photograph (No Title Overlays, Subtle Scale on Hover) */}
+                  <div className="relative w-full aspect-[4/5] bg-[#ECE8E1] overflow-hidden">
+                    <Image
+                      src={story.coverImage}
+                      alt={`${story.title} photography cover`}
+                      fill
+                      priority={index < 3}
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+
+                  {/* Couple / Event Details BELOW the photograph */}
+                  <div className="pt-5 flex items-start justify-between gap-4">
+                    <div>
+                      <h2 className="font-display text-[22px] sm:text-[24px] uppercase tracking-tight text-[#171717] leading-tight transition-colors duration-200 group-hover:text-[#555555]">
+                        {story.title}
+                      </h2>
+                      <span className="block text-[11px] uppercase tracking-[0.18em] text-[#777777] font-medium mt-1">
+                        {story.subtitle}
+                      </span>
+                    </div>
+
+                    <div className="pt-0.5">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] uppercase text-[#171717] transition-all duration-200 group-hover:text-[#777777] group-hover:translate-x-0.5 whitespace-nowrap">
+                        <span>VIEW STORY</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </article>
             ))}
           </div>
+
+          {filteredStories.length === 0 && (
+            <div className="py-20 text-center">
+              <p className="font-display text-[24px] uppercase text-[#171717]">
+                No stories found in this category
+              </p>
+              <button
+                onClick={() => setActiveFilter("ALL")}
+                className="mt-4 px-5 py-2 text-[11px] font-semibold tracking-[0.16em] uppercase bg-[#171717] text-white rounded-full hover:bg-[#333333] transition-colors cursor-pointer"
+              >
+                VIEW ALL STORIES
+              </button>
+            </div>
+          )}
         </div>
       </section>
-
-      {/* Full-screen Lightbox */}
-      <Lightbox
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
     </div>
   );
 }
