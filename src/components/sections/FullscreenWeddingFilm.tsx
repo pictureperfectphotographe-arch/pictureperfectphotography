@@ -32,7 +32,7 @@ export default function FullscreenWeddingFilm() {
         >
           {/* Natural High-Resolution Thumbnail Poster — No filters, no dark tints */}
           <Image
-            src="/images/films/film_akhila_vepunder.jpg"
+            src="/images/films/akhila-vepunder-wedding-thumbnail.jpg"
             alt="Akhila & Vepunder Wedding Video by Picture Perfect Photography"
             fill
             priority
