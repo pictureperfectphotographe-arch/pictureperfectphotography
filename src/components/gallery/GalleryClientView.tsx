@@ -133,9 +133,14 @@ export default function GalleryClientView({
                 <div
                   key={photo.id}
                   onClick={() => setLightboxIndex(globalIdx)}
-                  className={`group relative w-full ${getAspectClass(
-                    photo.aspect
-                  )} bg-[#ECE8E1] overflow-hidden cursor-pointer`}
+                  style={
+                    photo.width && photo.height
+                      ? { aspectRatio: `${photo.width} / ${photo.height}` }
+                      : undefined
+                  }
+                  className={`group relative w-full ${
+                    photo.width && photo.height ? "" : getAspectClass(photo.aspect)
+                  } bg-[#ECE8E1] overflow-hidden cursor-pointer`}
                 >
                   <Image
                     src={photo.src}
@@ -158,9 +163,14 @@ export default function GalleryClientView({
                 <div
                   key={photo.id}
                   onClick={() => setLightboxIndex(globalIdx)}
-                  className={`group relative w-full ${getAspectClass(
-                    photo.aspect
-                  )} bg-[#ECE8E1] overflow-hidden cursor-pointer`}
+                  style={
+                    photo.width && photo.height
+                      ? { aspectRatio: `${photo.width} / ${photo.height}` }
+                      : undefined
+                  }
+                  className={`group relative w-full ${
+                    photo.width && photo.height ? "" : getAspectClass(photo.aspect)
+                  } bg-[#ECE8E1] overflow-hidden cursor-pointer`}
                 >
                   <Image
                     src={photo.src}
@@ -183,9 +193,14 @@ export default function GalleryClientView({
                 <div
                   key={photo.id}
                   onClick={() => setLightboxIndex(globalIdx)}
-                  className={`group relative w-full ${getAspectClass(
-                    photo.aspect
-                  )} bg-[#ECE8E1] overflow-hidden cursor-pointer`}
+                  style={
+                    photo.width && photo.height
+                      ? { aspectRatio: `${photo.width} / ${photo.height}` }
+                      : undefined
+                  }
+                  className={`group relative w-full ${
+                    photo.width && photo.height ? "" : getAspectClass(photo.aspect)
+                  } bg-[#ECE8E1] overflow-hidden cursor-pointer`}
                 >
                   <Image
                     src={photo.src}
@@ -259,9 +274,14 @@ export default function GalleryClientView({
             <div
               key={photo.id}
               onClick={() => setLightboxIndex(idx)}
-              className={`group relative w-full ${getAspectClass(
-                photo.aspect
-              )} bg-[#ECE8E1] overflow-hidden cursor-pointer`}
+              style={
+                photo.width && photo.height
+                  ? { aspectRatio: `${photo.width} / ${photo.height}` }
+                  : undefined
+              }
+              className={`group relative w-full ${
+                photo.width && photo.height ? "" : getAspectClass(photo.aspect)
+              } bg-[#ECE8E1] overflow-hidden cursor-pointer`}
             >
               <Image
                 src={photo.src}

@@ -66,7 +66,7 @@ export const galleryStories: GalleryStory[] = [
     title: "Akhila & Vepunder",
     category: "WEDDINGS",
     subtitle: "Wedding Story",
-    coverImage: "/images/gallery_couple_large.jpg",
+    coverImage: "/images/galleries/akhila-vepunder/cover.jpg",
     coverAspect: "portrait",
     film: {
       youtubeId: "_vcd55hbiso",
@@ -78,413 +78,603 @@ export const galleryStories: GalleryStory[] = [
         "We recently hired Picture Perfect Photography for our wedding, and we are extremely happy with the results. The photography was beautiful, capturing every special moment perfectly. Their dedication, professionalism, and attention to detail were exceptional.",
       attribution: "Vepunder Reddy",
       context: "Wedding Photography · Hyderabad",
-      portrait: "/images/hero/wedding-hero-sru08831.jpg",
+      portrait: "/images/galleries/akhila-vepunder/cover.jpg",
       rating: 5,
     },
     visibility: "public",
     relatedSlugs: ["sahithi-lalith", "nithin-hasini", "spoorthy-sudeer"],
     curatedImages: [
       {
-        id: "av-01",
-        src: "/images/gallery_couple_large.jpg",
-        alt: "Akhila and Vepunder traditional wedding couple portrait",
-        aspect: "portrait",
+            id: "av-01",
+                        src: "/images/galleries/akhila-vepunder/CAP04008.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 1",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-02",
-        src: "/images/gallery_bride_saree.jpg",
-        alt: "Pelli Koothuru & Haldi Grace in traditional yellow silk",
-        aspect: "portrait",
+            id: "av-02",
+                        src: "/images/galleries/akhila-vepunder/CAP04101.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 2",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-03",
-        src: "/images/gallery_hands_ritual.jpg",
-        alt: "Jeelakarra Bellam and sacred Vedic marriage rites",
-        aspect: "square",
+            id: "av-03",
+                        src: "/images/galleries/akhila-vepunder/CAP04113.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 3",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-04",
-        src: "/images/gallery_mandap_venue.jpg",
-        alt: "Open-air floral mandap architecture and aisle",
-        aspect: "landscape",
+            id: "av-04",
+                        src: "/images/galleries/akhila-vepunder/CAP04143.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 4",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
       },
       {
-        id: "av-05",
-        src: "/images/hero/wedding-hero-sru08831.jpg",
-        alt: "Akhila and Vepunder grand ceremonial wedding moment",
-        aspect: "tall",
+            id: "av-05",
+                        src: "/images/galleries/akhila-vepunder/CAP04147.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 5",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-06",
-        src: "/images/hero_wedding_garland.jpg",
-        alt: "High-spirited Jaimala garland exchange and blessing",
-        aspect: "portrait",
+            id: "av-06",
+                        src: "/images/galleries/akhila-vepunder/CAP04230.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 6",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
       },
       {
-        id: "av-07",
-        src: "/images/films/film_akhila_vepunder.jpg",
-        alt: "Akhila & Vepunder candid muhurtham joy",
-        aspect: "landscape",
+            id: "av-07",
+                        src: "/images/galleries/akhila-vepunder/CAP04245.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 7",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-08",
-        src: "/images/service_weddings.jpg",
-        alt: "Traditional wedding blessing and floral petals shower",
-        aspect: "portrait",
+            id: "av-08",
+                        src: "/images/galleries/akhila-vepunder/CAP04256.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 8",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-09",
-        src: "/images/gallery_couple_pink.jpg",
-        alt: "Intimate twilight conversation portrait",
-        aspect: "portrait",
+            id: "av-09",
+                        src: "/images/galleries/akhila-vepunder/CAP04259.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 9",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-10",
-        src: "/images/gallery_sunset_tree.jpg",
-        alt: "Sunset golden hour silhouette beneath ancient branches",
-        aspect: "landscape",
+            id: "av-10",
+                        src: "/images/galleries/akhila-vepunder/CAP04261.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 10",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-11",
-        src: "/images/hero_sunset_silhouette.jpg",
-        alt: "Lakeside sunset silhouette reflection",
-        aspect: "landscape",
+            id: "av-11",
+                        src: "/images/galleries/akhila-vepunder/CAP04268.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 11",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-12",
-        src: "/images/offerings_photographer.jpg",
-        alt: "Deliberate editorial lighting and framing by Picture Perfect team",
-        aspect: "portrait",
+            id: "av-12",
+                        src: "/images/galleries/akhila-vepunder/CAP04276.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 12",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-13",
-        src: "/images/gallery_couple_large.jpg",
-        alt: "Akhila & Vepunder timeless candid laughter",
-        aspect: "square",
+            id: "av-13",
+                        src: "/images/galleries/akhila-vepunder/CAP04281.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 13",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-14",
-        src: "/images/gallery_hands_ritual.jpg",
-        alt: "Sacred fire and Vedic wedding vows",
-        aspect: "square",
+            id: "av-14",
+                        src: "/images/galleries/akhila-vepunder/SRU08767.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 14",
+            width: 1700,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-15",
-        src: "/images/gallery_mandap_venue.jpg",
-        alt: "Evening reception stage lighting and floral ambience",
-        aspect: "landscape",
+            id: "av-15",
+                        src: "/images/galleries/akhila-vepunder/SRU08769-2.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 15",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-16",
-        src: "/images/gallery_bride_saree.jpg",
-        alt: "Bridal jewellery and silk saree texture detail",
-        aspect: "portrait",
+            id: "av-16",
+                        src: "/images/galleries/akhila-vepunder/SRU08769.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 16",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-17",
-        src: "/images/hero/wedding-hero-sru08831.jpg",
-        alt: "Editorial bride and groom entrance",
-        aspect: "tall",
+            id: "av-17",
+                        src: "/images/galleries/akhila-vepunder/SRU08796.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 17",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
       },
       {
-        id: "av-18",
-        src: "/images/films/film_akhila_vepunder.jpg",
-        alt: "Akhila and Vepunder joyful garland celebration",
-        aspect: "landscape",
+            id: "av-18",
+                        src: "/images/galleries/akhila-vepunder/SRU08805.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 18",
+            width: 1046,
+            height: 1308,
+            aspect: "portrait"
       },
       {
-        id: "av-19",
-        src: "/images/hero_wedding_garland.jpg",
-        alt: "Family blessings during sacred muhurtham",
-        aspect: "portrait",
+            id: "av-19",
+                        src: "/images/galleries/akhila-vepunder/SRU08806.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 19",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
       },
       {
-        id: "av-20",
-        src: "/images/service_weddings.jpg",
-        alt: "Candid emotional moment with parents",
-        aspect: "portrait",
+            id: "av-20",
+                        src: "/images/galleries/akhila-vepunder/SRU08808.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 20",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-21",
-        src: "/images/gallery_couple_pink.jpg",
-        alt: "Evening reception celebration portrait",
-        aspect: "portrait",
+            id: "av-21",
+                        src: "/images/galleries/akhila-vepunder/SRU08809.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 21",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
       {
-        id: "av-22",
-        src: "/images/gallery_sunset_tree.jpg",
-        alt: "Golden hour reflection and serene landscape",
-        aspect: "landscape",
+            id: "av-22",
+                        src: "/images/galleries/akhila-vepunder/SRU08817.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 22",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
       },
-    ],
+      {
+            id: "av-23",
+                        src: "/images/galleries/akhila-vepunder/SRU08818.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 23",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-24",
+                        src: "/images/galleries/akhila-vepunder/SRU08831.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 24",
+            width: 2200,
+            height: 1466,
+            aspect: "landscape"
+      },
+      {
+            id: "av-25",
+                        src: "/images/galleries/akhila-vepunder/SRU08850.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 25",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-26",
+                        src: "/images/galleries/akhila-vepunder/SRU08852.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 26",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-27",
+                        src: "/images/galleries/akhila-vepunder/SRU08880.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 27",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-28",
+                        src: "/images/galleries/akhila-vepunder/SRU08902.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 28",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-29",
+                        src: "/images/galleries/akhila-vepunder/SRU08903.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 29",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-30",
+                        src: "/images/galleries/akhila-vepunder/SRU08910.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 30",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-31",
+                        src: "/images/galleries/akhila-vepunder/SRU08911.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 31",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-32",
+                        src: "/images/galleries/akhila-vepunder/SRU08912.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 32",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-33",
+                        src: "/images/galleries/akhila-vepunder/SRU08917.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 33",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-34",
+                        src: "/images/galleries/akhila-vepunder/SRU08922.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 34",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-35",
+                        src: "/images/galleries/akhila-vepunder/SRU08929.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 35",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-36",
+                        src: "/images/galleries/akhila-vepunder/SRU09051.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 36",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      }
+],
     clientGallery: {
-      totalPhotos: 248,
+      totalPhotos: 36,
       downloadEnabled: true,
-      accessPin: "VEPUNDER2024",
+      accessPin: "AKHILA2026",
       subcollections: [
         {
-          name: "Haldi & Pelli Koothuru",
+          name: "Wedding Ceremony & Muhurtham",
           photos: [
-            {
-              id: "cg-av-h1",
-              src: "/images/gallery_bride_saree.jpg",
-              alt: "Pelli Koothuru haldi ritual ceremony",
-              aspect: "portrait",
-              subcollection: "Haldi & Pelli Koothuru",
-            },
-            {
-              id: "cg-av-h2",
-              src: "/images/gallery_hands_ritual.jpg",
-              alt: "Turmeric pastes and blessing hands",
-              aspect: "square",
-              subcollection: "Haldi & Pelli Koothuru",
-            },
-            {
-              id: "cg-av-h3",
-              src: "/images/gallery_mandap_venue.jpg",
-              alt: "Haldi open-air floral backdrop",
-              aspect: "landscape",
-              subcollection: "Haldi & Pelli Koothuru",
-            },
-            {
-              id: "cg-av-h4",
-              src: "/images/hero_wedding_garland.jpg",
-              alt: "Family celebration and yellow silks",
-              aspect: "portrait",
-              subcollection: "Haldi & Pelli Koothuru",
-            },
-            {
-              id: "cg-av-h5",
-              src: "/images/gallery_couple_large.jpg",
-              alt: "Haldi candid laughter with siblings",
-              aspect: "portrait",
-              subcollection: "Haldi & Pelli Koothuru",
-            },
-          ],
-        },
-        {
-          name: "Muhurtham & Sacred Rites",
-          photos: [
-            {
-              id: "cg-av-m1",
-              src: "/images/hero/wedding-hero-sru08831.jpg",
-              alt: "Grand wedding muhurtham ceremony",
-              aspect: "tall",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-            {
-              id: "cg-av-m2",
-              src: "/images/gallery_hands_ritual.jpg",
-              alt: "Jeelakarra Bellam sacred moment",
-              aspect: "square",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-            {
-              id: "cg-av-m3",
-              src: "/images/hero_wedding_garland.jpg",
-              alt: "Mangalsutra dharana and vows",
-              aspect: "portrait",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-            {
-              id: "cg-av-m4",
-              src: "/images/service_weddings.jpg",
-              alt: "Talambralu sacred rice shower",
-              aspect: "portrait",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-            {
-              id: "cg-av-m5",
-              src: "/images/films/film_akhila_vepunder.jpg",
-              alt: "Candid emotional smiles at mandap",
-              aspect: "landscape",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-            {
-              id: "cg-av-m6",
-              src: "/images/gallery_mandap_venue.jpg",
-              alt: "Mandap architectural overview",
-              aspect: "landscape",
-              subcollection: "Muhurtham & Sacred Rites",
-            },
-          ],
-        },
-        {
-          name: "Reception & Portraits",
-          photos: [
-            {
-              id: "cg-av-r1",
-              src: "/images/gallery_couple_large.jpg",
-              alt: "Reception couple formal editorial",
-              aspect: "portrait",
-              subcollection: "Reception & Portraits",
-            },
-            {
-              id: "cg-av-r2",
-              src: "/images/gallery_couple_pink.jpg",
-              alt: "Evening cocktail portraits",
-              aspect: "portrait",
-              subcollection: "Reception & Portraits",
-            },
-            {
-              id: "cg-av-r3",
-              src: "/images/gallery_sunset_tree.jpg",
-              alt: "Post-wedding sunset session",
-              aspect: "landscape",
-              subcollection: "Reception & Portraits",
-            },
-            {
-              id: "cg-av-r4",
-              src: "/images/hero_sunset_silhouette.jpg",
-              alt: "Lakeside twilight silhouette",
-              aspect: "landscape",
-              subcollection: "Reception & Portraits",
-            },
-          ],
+      {
+            id: "av-01",
+                        src: "/images/galleries/akhila-vepunder/CAP04008.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 1",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-02",
+                        src: "/images/galleries/akhila-vepunder/CAP04101.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 2",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-03",
+                        src: "/images/galleries/akhila-vepunder/CAP04113.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 3",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-04",
+                        src: "/images/galleries/akhila-vepunder/CAP04143.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 4",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-05",
+                        src: "/images/galleries/akhila-vepunder/CAP04147.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 5",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-06",
+                        src: "/images/galleries/akhila-vepunder/CAP04230.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 6",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-07",
+                        src: "/images/galleries/akhila-vepunder/CAP04245.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 7",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-08",
+                        src: "/images/galleries/akhila-vepunder/CAP04256.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 8",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-09",
+                        src: "/images/galleries/akhila-vepunder/CAP04259.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 9",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-10",
+                        src: "/images/galleries/akhila-vepunder/CAP04261.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 10",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-11",
+                        src: "/images/galleries/akhila-vepunder/CAP04268.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 11",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-12",
+                        src: "/images/galleries/akhila-vepunder/CAP04276.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 12",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-13",
+                        src: "/images/galleries/akhila-vepunder/CAP04281.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 13",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-14",
+                        src: "/images/galleries/akhila-vepunder/SRU08767.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 14",
+            width: 1700,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-15",
+                        src: "/images/galleries/akhila-vepunder/SRU08769-2.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 15",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-16",
+                        src: "/images/galleries/akhila-vepunder/SRU08769.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 16",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-17",
+                        src: "/images/galleries/akhila-vepunder/SRU08796.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 17",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-18",
+                        src: "/images/galleries/akhila-vepunder/SRU08805.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 18",
+            width: 1046,
+            height: 1308,
+            aspect: "portrait"
+      },
+      {
+            id: "av-19",
+                        src: "/images/galleries/akhila-vepunder/SRU08806.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 19",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-20",
+                        src: "/images/galleries/akhila-vepunder/SRU08808.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 20",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-21",
+                        src: "/images/galleries/akhila-vepunder/SRU08809.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 21",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-22",
+                        src: "/images/galleries/akhila-vepunder/SRU08817.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 22",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-23",
+                        src: "/images/galleries/akhila-vepunder/SRU08818.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 23",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-24",
+                        src: "/images/galleries/akhila-vepunder/SRU08831.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 24",
+            width: 2200,
+            height: 1466,
+            aspect: "landscape"
+      },
+      {
+            id: "av-25",
+                        src: "/images/galleries/akhila-vepunder/SRU08850.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 25",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-26",
+                        src: "/images/galleries/akhila-vepunder/SRU08852.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 26",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-27",
+                        src: "/images/galleries/akhila-vepunder/SRU08880.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 27",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-28",
+                        src: "/images/galleries/akhila-vepunder/SRU08902.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 28",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-29",
+                        src: "/images/galleries/akhila-vepunder/SRU08903.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 29",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-30",
+                        src: "/images/galleries/akhila-vepunder/SRU08910.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 30",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-31",
+                        src: "/images/galleries/akhila-vepunder/SRU08911.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 31",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-32",
+                        src: "/images/galleries/akhila-vepunder/SRU08912.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 32",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-33",
+                        src: "/images/galleries/akhila-vepunder/SRU08917.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 33",
+            width: 2200,
+            height: 1467,
+            aspect: "landscape"
+      },
+      {
+            id: "av-34",
+                        src: "/images/galleries/akhila-vepunder/SRU08922.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 34",
+            width: 1760,
+            height: 2200,
+            aspect: "portrait"
+      },
+      {
+            id: "av-35",
+                        src: "/images/galleries/akhila-vepunder/SRU08929.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 35",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      },
+      {
+            id: "av-36",
+                        src: "/images/galleries/akhila-vepunder/SRU09051.jpg",
+            alt: "Akhila & Vepunder wedding ceremony photograph 36",
+            width: 1467,
+            height: 2200,
+            aspect: "tall"
+      }
+],
         },
       ],
     },
   },
-
-  // 2. Nithin & Hasini — Pre-Wedding Story (Has matching official film in repo)
-  {
-    id: "gallery-nithin-hasini",
-    slug: "nithin-hasini",
-    title: "Nithin & Hasini",
-    category: "PRE-WEDDINGS",
-    subtitle: "Pre-Wedding Story",
-    coverImage: "/images/films/film_nithin_hasini.jpg",
-    coverAspect: "landscape",
-    film: {
-      youtubeId: "6HtRofXsyUE",
-      title: "Nithin & Hasini's Pre Wedding",
-      duration: "1:28",
-    },
-    // No fabricated review: only real client reviews used
-    visibility: "public",
-    relatedSlugs: ["akhila-vepunder", "spoorthy-sudeer", "sahithi-lalith"],
-    curatedImages: [
-      {
-        id: "nh-01",
-        src: "/images/films/film_nithin_hasini.jpg",
-        alt: "Nithin & Hasini pre-wedding cinematic frame",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-02",
-        src: "/images/gallery_sunset_tree.jpg",
-        alt: "Golden hour sunset under ancient banyan branches",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-03",
-        src: "/images/gallery_couple_pink.jpg",
-        alt: "Pastel twilight editorial portrait in Shamshabad",
-        aspect: "portrait",
-      },
-      {
-        id: "nh-04",
-        src: "/images/hero_sunset_silhouette.jpg",
-        alt: "Dramatic heritage fort sunset silhouette",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-05",
-        src: "/images/service_preweddings.jpg",
-        alt: "Intimate relaxed candid laughter",
-        aspect: "portrait",
-      },
-      {
-        id: "nh-06",
-        src: "/images/hero_couple_top_left.jpg",
-        alt: "Romantic close-up gaze under ambient light",
-        aspect: "portrait",
-      },
-      {
-        id: "nh-07",
-        src: "/images/films/film_nithin_hasini.jpg",
-        alt: "Sunset glow embracing the couple",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-08",
-        src: "/images/gallery_couple_pink.jpg",
-        alt: "Soft evening breezes and natural interaction",
-        aspect: "portrait",
-      },
-      {
-        id: "nh-09",
-        src: "/images/gallery_sunset_tree.jpg",
-        alt: "Wide landscape perspective at Gandipet Lake",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-10",
-        src: "/images/service_preweddings.jpg",
-        alt: "Serene lakeside whispers",
-        aspect: "portrait",
-      },
-      {
-        id: "nh-11",
-        src: "/images/hero_sunset_silhouette.jpg",
-        alt: "Twilight dusk skyline",
-        aspect: "landscape",
-      },
-      {
-        id: "nh-12",
-        src: "/images/hero_couple_top_left.jpg",
-        alt: "Golden hour warm embrace",
-        aspect: "portrait",
-      },
-    ],
-    clientGallery: {
-      totalPhotos: 120,
-      downloadEnabled: true,
-      accessPin: "HASINI2024",
-      subcollections: [
-        {
-          name: "Lakeside Golden Hour",
-          photos: [
-            {
-              id: "cg-nh-1",
-              src: "/images/films/film_nithin_hasini.jpg",
-              alt: "Lakeside golden hour walk",
-              aspect: "landscape",
-              subcollection: "Lakeside Golden Hour",
-            },
-            {
-              id: "cg-nh-2",
-              src: "/images/gallery_sunset_tree.jpg",
-              alt: "Banyan tree shadows",
-              aspect: "landscape",
-              subcollection: "Lakeside Golden Hour",
-            },
-          ],
-        },
-        {
-          name: "Twilight Editorial",
-          photos: [
-            {
-              id: "cg-nh-3",
-              src: "/images/gallery_couple_pink.jpg",
-              alt: "Twilight pastel dress portrait",
-              aspect: "portrait",
-              subcollection: "Twilight Editorial",
-            },
-            {
-              id: "cg-nh-4",
-              src: "/images/hero_sunset_silhouette.jpg",
-              alt: "Dusk silhouette by the water",
-              aspect: "landscape",
-              subcollection: "Twilight Editorial",
-            },
-          ],
-        },
-      ],
-    },
-  },
-
-  // 3. Sahithi & Lalith — Wedding Story (Has matching official film in repo)
+  // 2. Sahithi & Lalith
   {
     id: "gallery-sahithi-lalith",
     slug: "sahithi-lalith",
