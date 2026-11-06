@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroCollage() {
   return (
-    <section className="relative w-full h-[100svh] min-h-[620px] sm:min-h-[680px] md:min-h-[720px] -mt-[72px] md:-mt-[80px] overflow-hidden flex flex-col justify-between select-none">
+    <section className="relative w-full h-[100svh] min-h-[620px] sm:min-h-[680px] md:min-h-[720px] overflow-hidden flex flex-col justify-between select-none">
       {/* Background Fullscreen Landscape Wedding Photograph (SRU08831) */}
       <Image
         src="/images/hero/wedding-hero-sru08831.jpg"
@@ -24,7 +24,7 @@ export default function HeroCollage() {
       />
 
       {/* Top Zone: Header clearance & Top Corner Metadata */}
-      <div className="relative z-10 w-full px-5 sm:px-8 lg:px-12 pt-[84px] sm:pt-[92px] md:pt-[100px]">
+      <div className="relative z-10 w-full px-5 sm:px-8 lg:px-12 pt-[88px] sm:pt-[96px] md:pt-[104px]">
         <div className="w-full flex items-start justify-between text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase text-white/95 drop-shadow-sm leading-tight">
           {/* Top Left Metadata */}
           <div>

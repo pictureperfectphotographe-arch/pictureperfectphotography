@@ -33,7 +33,9 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+      className={`${
+        isHome ? "fixed top-0 left-0 right-0" : "sticky top-0"
+      } z-50 w-full transition-colors duration-300 ${
         isTransparent
           ? "bg-transparent py-4 text-white border-b border-transparent"
           : scrolled
