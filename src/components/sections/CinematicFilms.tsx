@@ -20,7 +20,7 @@ export default function CinematicFilms() {
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
               LOVE, IN{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#B4777C]">
                 motion.
               </span>
             </h2>
@@ -29,7 +29,7 @@ export default function CinematicFilms() {
           <div>
             <Link
               href="/films"
-              className="group inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.18em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
+              className="group inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.18em] text-[#171717] uppercase hover:text-[#57000F] transition-colors"
             >
               <span>WATCH ALL FILMS</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

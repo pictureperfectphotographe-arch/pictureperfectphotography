@@ -21,7 +21,7 @@ export default function ServicesPage() {
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             CRAFTED FOR YOUR{" "}
-            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
+            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px] text-[#B4777C]">
               milestones.
             </span>
           </h1>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[13px] text-[#444444] font-body">
                       {service.features.map((feature) => (
                         <li key={feature} className="flex items-center gap-2">
-                          <Check className="w-4 h-4 text-[#171717] shrink-0 stroke-[2]" />
+                          <Check className="w-4 h-4 text-[#57000F] shrink-0 stroke-[2]" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -92,14 +92,14 @@ export default function ServicesPage() {
                   <div className="pt-2 flex items-center gap-4">
                     <Link
                       href={`/services/${service.slug}`}
-                      className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#171717] text-white text-[11px] font-medium tracking-wider uppercase hover:bg-neutral-800 transition-colors"
+                      className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#57000F] text-white text-[11px] font-medium tracking-wider uppercase hover:bg-[#43000C] transition-colors"
                     >
                       <span>VIEW DETAILS</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-wider uppercase text-[#171717] hover:underline"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-wider uppercase text-[#57000F] hover:text-[#43000C]"
                     >
                       <span>REQUEST QUOTE</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />

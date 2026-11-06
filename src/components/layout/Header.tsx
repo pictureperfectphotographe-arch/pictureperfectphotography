@@ -105,8 +105,8 @@ export default function Header() {
             href="/contact"
             className={`inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full border text-[12px] font-medium tracking-[0.1em] uppercase transition-all duration-300 ${
               isTransparent
-                ? "border-white text-white hover:bg-white hover:text-[#171717]"
-                : "border-[#171717] text-[#171717] hover:bg-[#171717] hover:text-white"
+                ? "border-white text-white hover:bg-[#57000F] hover:border-[#57000F] hover:text-white"
+                : "bg-[#57000F] border-[#57000F] text-white hover:bg-[#43000C]"
             }`}
           >
             <span>GET A QUOTE</span>
@@ -159,7 +159,7 @@ export default function Header() {
           <div className="pt-8 border-t border-[#D8D2CA] space-y-4">
             <Link
               href="/contact"
-              className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#171717] text-white text-[13px] font-medium tracking-wider uppercase rounded-sm"
+              className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#57000F] hover:bg-[#43000C] text-white text-[13px] font-medium tracking-wider uppercase rounded-sm transition-colors"
             >
               <span>GET A QUOTE</span>
               <ArrowUpRight className="w-4 h-4" />

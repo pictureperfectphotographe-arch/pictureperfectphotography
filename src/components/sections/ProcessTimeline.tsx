@@ -36,7 +36,7 @@ export default function ProcessTimeline() {
           </span>
           <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
             FOUR STEPS TO{" "}
-            <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
+            <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#B4777C]">
               forever.
             </span>
           </h2>
@@ -66,7 +66,7 @@ export default function ProcessTimeline() {
             {steps.map((step) => (
               <div key={step.number} className="flex flex-col items-start pt-2">
                 {/* Step Indicator Dot */}
-                <div className="w-3 h-3 rounded-full bg-[#171717] ring-4 ring-white mb-6" />
+                <div className="w-3 h-3 rounded-full bg-[#57000F] ring-4 ring-white mb-6" />
 
                 {/* Step Number & Title */}
                 <span className="text-[11px] font-semibold tracking-[0.2em] text-[#777777] uppercase mb-1 font-body">

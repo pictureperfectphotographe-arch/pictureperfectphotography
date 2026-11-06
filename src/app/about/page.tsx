@@ -20,7 +20,7 @@ export default function AboutPage() {
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             DOCUMENTING LIFE WITH{" "}
-            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
+            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px] text-[#B4777C]">
               soul.
             </span>
           </h1>

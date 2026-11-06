@@ -35,7 +35,7 @@ export default function PortfolioPage() {
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             A CURATED ARCHIVE OF{" "}
-            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
+            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px] text-[#B4777C]">
               emotions.
             </span>
           </h1>
@@ -53,8 +53,8 @@ export default function PortfolioPage() {
                   onClick={() => setActiveFilter(cat)}
                   className={`px-4 py-1.5 rounded-full text-[11px] font-medium tracking-[0.14em] uppercase transition-all duration-200 cursor-pointer ${
                     isActive
-                      ? "bg-[#171717] text-white border border-[#171717]"
-                      : "bg-white text-[#171717] border border-[#D8D2CA] hover:border-[#171717]"
+                      ? "bg-[#57000F] text-white border border-[#57000F]"
+                      : "bg-white text-[#171717] border border-[#D8D2CA] hover:border-[#57000F] hover:text-[#57000F]"
                   }`}
                 >
                   {cat}
@@ -106,9 +106,9 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="pt-0.5">
-                      <span className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] uppercase text-[#171717] transition-all duration-200 group-hover:text-[#777777] group-hover:translate-x-0.5 whitespace-nowrap">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] uppercase text-[#171717] transition-all duration-200 group-hover:text-[#57000F] group-hover:translate-x-0.5 whitespace-nowrap">
                         <span>VIEW STORY</span>
-                        <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-[#57000F]" />
                       </span>
                     </div>
                   </div>

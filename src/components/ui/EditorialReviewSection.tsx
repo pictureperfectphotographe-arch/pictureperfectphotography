@@ -183,7 +183,7 @@ export default function EditorialReviewSection({
               >
                 <button
                   onClick={handlePrev}
-                  className="group p-2 text-[#171717] hover:text-[#777777] transition-colors focus:outline-hidden cursor-pointer"
+                  className="group p-2 text-[#171717] hover:text-[#57000F] transition-colors focus:outline-hidden cursor-pointer"
                   aria-label="Previous review"
                 >
                   <ArrowLeft className="w-5 h-5 stroke-[1.25] transition-transform duration-200 group-hover:-translate-x-0.5" />
@@ -195,7 +195,7 @@ export default function EditorialReviewSection({
 
                 <button
                   onClick={handleNext}
-                  className="group p-2 text-[#171717] hover:text-[#777777] transition-colors focus:outline-hidden cursor-pointer"
+                  className="group p-2 text-[#171717] hover:text-[#57000F] transition-colors focus:outline-hidden cursor-pointer"
                   aria-label="Next review"
                 >
                   <ArrowRight className="w-5 h-5 stroke-[1.25] transition-transform duration-200 group-hover:translate-x-0.5" />
