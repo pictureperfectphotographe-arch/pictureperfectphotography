@@ -45,7 +45,7 @@ export default function FeaturedGallery() {
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em]">
               THE GOOD{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#B4777C]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
                 stuff.
               </span>
             </h2>
@@ -54,7 +54,7 @@ export default function FeaturedGallery() {
           <div>
             <Link
               href="/portfolio"
-              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#57000F] transition-colors"
+              className="group inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.16em] text-[#171717] uppercase hover:text-[#777777] transition-colors"
             >
               <span>EXPLORE FULL GALLERY</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -72,8 +72,8 @@ export default function FeaturedGallery() {
                 onClick={() => setActiveFilter(cat)}
                 className={`px-4 py-1.5 rounded-full text-[11px] font-medium tracking-[0.14em] uppercase transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-[#57000F] text-white border border-[#57000F]"
-                    : "bg-white text-[#171717] border border-[#D8D2CA] hover:border-[#57000F] hover:text-[#57000F]"
+                    ? "bg-[#171717] text-white border border-[#171717]"
+                    : "bg-white text-[#171717] border border-[#D8D2CA] hover:border-[#171717]"
                 }`}
               >
                 {cat}

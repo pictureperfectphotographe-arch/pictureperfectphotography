@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full bg-[#FAF9F6]">
-      <body className="min-h-full flex flex-col bg-[#FAF9F6] text-[#171717] antialiased selection:bg-[#57000F] selection:text-white">
+      <body className="min-h-full flex flex-col bg-[#FAF9F6] text-[#171717] antialiased selection:bg-[#171717] selection:text-white">
         <Header />
         <main className="flex-1 w-full bg-[#FAF9F6]">{children}</main>
         <Footer />

@@ -52,9 +52,9 @@ export default function LeadEnquiry() {
               <h2 className="font-display text-[48px] sm:text-[60px] md:text-[72px] lg:text-[80px] leading-[0.92] text-white uppercase tracking-[-0.015em] mb-6">
                 YOUR STORY,
                 <br />
-                <span className="font-editorial lowercase italic font-normal text-[52px] sm:text-[66px] md:text-[80px] lg:text-[88px] text-[#B4777C] inline-flex items-center gap-2">
+                <span className="font-editorial lowercase italic font-normal text-[52px] sm:text-[66px] md:text-[80px] lg:text-[88px] text-white inline-flex items-center gap-2">
                   next?
-                  <ArrowUpRight className="w-10 h-10 md:w-14 md:h-14 stroke-[1.5] text-[#B4777C] inline-block -mt-2" />
+                  <ArrowUpRight className="w-10 h-10 md:w-14 md:h-14 stroke-[1.5] text-white inline-block -mt-2" />
                 </span>
               </h2>
               <p className="font-body text-[15px] md:text-[16px] text-[#B5B5B5] leading-relaxed max-w-sm mb-8">
@@ -209,7 +209,7 @@ export default function LeadEnquiry() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-4 bg-[#57000F] hover:bg-[#43000C] text-white font-semibold text-[13px] tracking-[0.16em] uppercase flex items-center justify-center gap-2 active:scale-[0.99] transition-all duration-200 cursor-pointer disabled:opacity-50 shadow-md"
+                    className="w-full py-4 bg-white text-[#171717] font-semibold text-[13px] tracking-[0.16em] uppercase flex items-center justify-center gap-2 hover:bg-[#FAF9F6] active:scale-[0.99] transition-all duration-200 cursor-pointer disabled:opacity-50 shadow-md"
                   >
                     <span>{status === "submitting" ? "SENDING ENQUIRY..." : "GET A QUOTE"}</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

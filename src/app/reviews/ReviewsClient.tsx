@@ -30,7 +30,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
             {/* Google Rating Badge */}
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-[#D8D2CA] text-[11px] font-medium text-[#171717]">
               <span className="font-semibold">{stats.rating.toFixed(1)}</span>
-              <div className="flex items-center text-[#B4777C]" aria-hidden="true">
+              <div className="flex items-center text-[#B8A27A]" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-3 h-3 fill-current" />
                 ))}
@@ -41,7 +41,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
 
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             TRUST EARNED THROUGH{" "}
-            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px] text-[#B4777C]">
+            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
               memories.
             </span>
           </h1>
@@ -56,7 +56,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
               href={stats.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#57000F] text-white text-[12px] font-medium tracking-wider uppercase hover:bg-[#43000C] transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#171717] text-white text-[12px] font-medium tracking-wider uppercase hover:bg-neutral-800 transition-colors"
             >
               <span>VIEW GOOGLE REVIEWS</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -65,7 +65,7 @@ export default function ReviewsClient({ reviews, stats }: ReviewsClientProps) {
               href={stats.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#171717] border border-[#D8D2CA] text-[12px] font-medium tracking-wider uppercase hover:border-[#57000F] hover:text-[#57000F] transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#171717] border border-[#D8D2CA] text-[12px] font-medium tracking-wider uppercase hover:border-[#171717] transition-colors"
             >
               <span>LEAVE A GOOGLE REVIEW</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

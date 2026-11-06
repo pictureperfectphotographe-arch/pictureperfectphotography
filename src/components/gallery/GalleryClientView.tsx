@@ -113,7 +113,7 @@ export default function GalleryClientView({
                   category: "Cinematic Film",
                 })
               }
-              className="inline-flex items-center gap-2 px-4 py-2 border border-[#57000F] text-[#57000F] hover:bg-[#57000F] hover:text-white transition-all text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full cursor-pointer self-start md:self-auto mb-2"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-[#171717] text-[#171717] hover:bg-[#171717] hover:text-white transition-all text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full cursor-pointer self-start md:self-auto mb-2"
               aria-label={`Watch cinematic film for ${story.title}`}
             >
               <Play className="w-3 h-3 fill-current" />
@@ -315,7 +315,7 @@ export default function GalleryClientView({
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-12 border-b border-[#D8D2CA]">
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.18em] uppercase text-[#171717] hover:text-[#57000F] transition-colors"
+              className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.18em] uppercase text-[#171717] hover:text-[#777777] transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>RETURN TO ALL PORTFOLIO STORIES</span>
@@ -323,7 +323,7 @@ export default function GalleryClientView({
 
             <Link
               href="/contact"
-              className="px-6 py-3 bg-[#57000F] text-white text-[11px] font-semibold tracking-[0.18em] uppercase rounded-full hover:bg-[#43000C] transition-colors inline-flex items-center gap-2"
+              className="px-6 py-3 bg-[#171717] text-white text-[11px] font-semibold tracking-[0.18em] uppercase rounded-full hover:bg-[#333333] transition-colors inline-flex items-center gap-2"
             >
               <span>ENQUIRE ABOUT YOUR EVENT</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

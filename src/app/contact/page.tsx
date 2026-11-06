@@ -20,7 +20,7 @@ export default function ContactPage() {
           </span>
           <h1 className="font-display text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] text-[#171717] uppercase tracking-tight max-w-4xl">
             LET&apos;S TALK ABOUT YOUR{" "}
-            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px] text-[#B4777C]">
+            <span className="font-editorial lowercase italic font-normal text-[56px] sm:text-[76px] md:text-[96px]">
               story.
             </span>
           </h1>
@@ -31,7 +31,7 @@ export default function ContactPage() {
           {/* Quick Contact Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-[#D8D2CA]">
             <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
-              <Phone className="w-5 h-5 text-[#57000F]" />
+              <Phone className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Call / WhatsApp
               </span>
@@ -44,7 +44,7 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
-              <Mail className="w-5 h-5 text-[#57000F]" />
+              <Mail className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Email Directly
               </span>
@@ -57,7 +57,7 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
-              <MapPin className="w-5 h-5 text-[#57000F]" />
+              <MapPin className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Base Studio
               </span>
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 bg-white border border-[#D8D2CA] space-y-2">
-              <Globe className="w-5 h-5 text-[#57000F]" />
+              <Globe className="w-5 h-5 text-[#171717]" />
               <span className="text-[11px] uppercase tracking-wider text-[#777777] block font-body">
                 Coverage
               </span>

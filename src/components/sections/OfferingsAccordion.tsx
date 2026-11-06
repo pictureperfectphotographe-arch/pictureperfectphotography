@@ -24,7 +24,7 @@ export default function OfferingsAccordion() {
             </span>
             <h2 className="font-display text-[42px] sm:text-[54px] md:text-[68px] leading-[0.92] text-[#171717] uppercase tracking-[-0.015em] mb-10">
               YOUR DAY,{" "}
-              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#B4777C]">
+              <span className="font-editorial text-[44px] sm:text-[56px] md:text-[72px] lowercase font-normal italic tracking-normal text-[#171717]">
                 your way.
               </span>
             </h2>
@@ -50,9 +50,9 @@ export default function OfferingsAccordion() {
                       </div>
                       <div className="p-1 rounded-full text-[#171717] transition-transform duration-300">
                         {isOpen ? (
-                          <Minus className="w-5 h-5 text-[#57000F]" />
+                          <Minus className="w-5 h-5 text-[#171717]" />
                         ) : (
-                          <Plus className="w-5 h-5 text-[#171717] group-hover:text-[#57000F] group-hover:scale-110" />
+                          <Plus className="w-5 h-5 text-[#171717] group-hover:scale-110" />
                         )}
                       </div>
                     </button>
@@ -63,7 +63,7 @@ export default function OfferingsAccordion() {
                         <p className="mb-4">{item.description}</p>
                         <Link
                           href={`/services#${item.slug}`}
-                          className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wider uppercase text-[#57000F] hover:text-[#43000C]"
+                          className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wider uppercase text-[#171717] hover:underline"
                         >
                           <span>Explore Details</span>
                           <ArrowUpRight className="w-3.5 h-3.5" />

@@ -20,7 +20,7 @@ export default function Philosophy() {
               EMOTIONAL.
               <br />
               TIMELESS{" "}
-              <span className="font-editorial text-[48px] sm:text-[62px] md:text-[76px] lg:text-[84px] lowercase font-normal italic tracking-normal text-[#B4777C]">
+              <span className="font-editorial text-[48px] sm:text-[62px] md:text-[76px] lg:text-[84px] lowercase font-normal italic tracking-normal text-[#171717]">
                 stories.
               </span>
             </h2>
@@ -35,7 +35,7 @@ export default function Philosophy() {
               <div>
                 <Link
                   href="/about"
-                  className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#D8D2CA] text-[#171717] transition-all duration-300 hover:border-[#57000F] hover:bg-[#57000F] hover:text-white"
+                  className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#D8D2CA] text-[#171717] transition-all duration-300 hover:border-[#171717] hover:bg-[#171717] hover:text-white"
                   aria-label="Learn more about our philosophy"
                 >
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
