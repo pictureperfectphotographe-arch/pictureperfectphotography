@@ -249,7 +249,7 @@ export default function StoriesInMotion() {
                       muted={isMuted}
                       playsInline
                       loop
-                      preload={isActive ? "auto" : "metadata"}
+                      preload={isActive ? "auto" : Math.abs(index - activeIndex) <= 1 ? "metadata" : "none"}
                       onError={() => handleVideoError(reel.id)}
                       className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
                         isCurrentlyPlaying ? "opacity-100" : "opacity-0"
