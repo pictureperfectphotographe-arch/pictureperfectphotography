@@ -175,9 +175,9 @@ export default function StoriesInMotion() {
       className="relative w-full bg-[#52060F] text-[#FAF9F6] py-[24px] sm:py-[36px] lg:py-[48px] overflow-hidden border-y border-[#FAF9F6]/15 select-none"
     >
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative">
-        {/* Main Section Heading: Cormorant Garamond SemiBold Italic (600) */}
+        {/* Main Section Heading: Rouge Script (Google Fonts) */}
         <div className="mb-[24px] sm:mb-[28px] md:mb-[32px]">
-          <h2 className="font-cormorant font-semibold italic text-[38px] md:text-[52px] lg:text-[72px] leading-[1.08] tracking-tight text-[#FAF9F6] text-center">
+          <h2 className="font-rouge font-normal text-[54px] md:text-[72px] lg:text-[90px] leading-[1.1] tracking-normal text-[#FAF9F6] text-center">
             STORIES IN MOTION
           </h2>
         </div>
@@ -204,11 +204,11 @@ export default function StoriesInMotion() {
             <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.75]" />
           </button>
 
-          {/* Horizontal Scrolling Carousel: 9:16 Vertical Video Frames */}
+          {/* Horizontal Scrolling Carousel: Enlarged 9:16 Vertical Video Frames */}
           <div
             ref={carouselRef}
             onScroll={handleScroll}
-            className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-2 px-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+            className="flex gap-4 md:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory py-2 px-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
           >
             {reelsData.map((reel: ReelItem, index: number) => {
               const isActive = index === activeIndex;
@@ -222,7 +222,7 @@ export default function StoriesInMotion() {
                     cardRefs.current[index] = el;
                   }}
                   onClick={() => handleCardClick(index)}
-                  className={`group relative aspect-[9/16] w-[78vw] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] shrink-0 snap-center sm:snap-start rounded-xl sm:rounded-2xl overflow-hidden bg-black/40 border border-[#FAF9F6]/15 shadow-xl cursor-pointer transition-all duration-500 ${
+                  className={`group relative aspect-[9/16] w-[80vw] max-w-[340px] sm:w-[250px] md:w-[260px] lg:w-[280px] xl:w-[300px] shrink-0 snap-center sm:snap-start rounded-xl sm:rounded-2xl overflow-hidden bg-black/40 border border-[#FAF9F6]/15 shadow-xl cursor-pointer transition-all duration-500 ${
                     isActive ? "ring-1 ring-[#FAF9F6]/30 scale-[1.01]" : "opacity-85 hover:opacity-100"
                   }`}
                   aria-label={`${reel.title} wedding reel`}
@@ -233,7 +233,7 @@ export default function StoriesInMotion() {
                     alt={`${reel.title} by Picture Perfect Photography`}
                     fill
                     quality={92}
-                    sizes="(max-width: 640px) 78vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 250px, (max-width: 1024px) 260px, 300px"
                     priority={index < 2}
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
