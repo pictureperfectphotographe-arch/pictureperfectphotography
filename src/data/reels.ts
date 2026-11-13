@@ -17,7 +17,7 @@ export const reelsData: ReelItem[] = [
     couple: "Akhila & Vepunder",
     category: "Traditional Telugu Wedding",
     poster: "/images/galleries/akhila-vepunder/CAP04230.jpg",
-    videoSrc: "/videos/reels/reel-01.mp4.mp4",
+    videoSrc: "/videos/reels/reel-01.mp4",
     duration: "0:12",
   },
   {
@@ -26,7 +26,7 @@ export const reelsData: ReelItem[] = [
     couple: "Akhila & Vepunder",
     category: "Muhurtham Rituals",
     poster: "/images/galleries/akhila-vepunder/SRU08767.jpg",
-    videoSrc: "/videos/reels/reel-02.mp4.mov",
+    videoSrc: "/videos/reels/reel-02.mp4",
     duration: "0:46",
   },
   {
@@ -35,7 +35,7 @@ export const reelsData: ReelItem[] = [
     couple: "Akhila & Vepunder",
     category: "Bridal Editorial",
     poster: "/images/galleries/akhila-vepunder/CAP04256.jpg",
-    videoSrc: "/videos/reels/reel-03.mp4.mp4",
+    videoSrc: "/videos/reels/reel-03.mp4",
     duration: "0:33",
   },
   {

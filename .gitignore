@@ -43,10 +43,9 @@ after_*.png
 extracted_images/
 /Portfolio/
 
-# large local video files
-public/videos/reels/*.mp4
-public/videos/reels/*.mov
-public/videos/*.mp4
+# raw uncompressed camera masters (>50MB)
+public/videos/reels/*.mp4.mp4
+public/videos/reels/*.mp4.mov
 
 # typescript
 *.tsbuildinfo
