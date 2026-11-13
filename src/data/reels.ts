@@ -9,14 +9,14 @@ export interface ReelItem {
 }
 
 // Approved Picture Perfect Photography wedding reels data structure
-// Connected directly to user's uploaded reels in public/videos/reels/
+// Each reel references its matching web-optimized MP4 video and video-extracted poster
 export const reelsData: ReelItem[] = [
   {
     id: "reel-01",
     title: "Vows of Eternity",
     couple: "Akhila & Vepunder",
     category: "Traditional Telugu Wedding",
-    poster: "/images/galleries/akhila-vepunder/CAP04230.jpg",
+    poster: "/images/reels/reel-01.webp",
     videoSrc: "/videos/reels/reel-01.mp4",
     duration: "0:12",
   },
@@ -25,7 +25,7 @@ export const reelsData: ReelItem[] = [
     title: "Sacred Jeelakarra Bellam",
     couple: "Akhila & Vepunder",
     category: "Muhurtham Rituals",
-    poster: "/images/galleries/akhila-vepunder/SRU08767.jpg",
+    poster: "/images/reels/reel-02.webp",
     videoSrc: "/videos/reels/reel-02.mp4",
     duration: "0:46",
   },
@@ -34,32 +34,8 @@ export const reelsData: ReelItem[] = [
     title: "The Royal Wedding Portraits",
     couple: "Akhila & Vepunder",
     category: "Bridal Editorial",
-    poster: "/images/galleries/akhila-vepunder/CAP04256.jpg",
+    poster: "/images/reels/reel-03.webp",
     videoSrc: "/videos/reels/reel-03.mp4",
     duration: "0:33",
-  },
-  {
-    id: "reel-04",
-    title: "Candid Laughter & Joy",
-    couple: "Akhila & Vepunder",
-    category: "Candid Moments",
-    poster: "/images/galleries/akhila-vepunder/SRU08805.jpg",
-    duration: "0:25",
-  },
-  {
-    id: "reel-05",
-    title: "Forever & Always",
-    couple: "Akhila & Vepunder",
-    category: "Wedding Celebration",
-    poster: "/images/galleries/akhila-vepunder/SRU08902.jpg",
-    duration: "0:30",
-  },
-  {
-    id: "reel-06",
-    title: "Bridal Splendour & Jewellery",
-    couple: "Akhila & Vepunder",
-    category: "Details & Elegance",
-    poster: "/images/galleries/akhila-vepunder/CAP04147.jpg",
-    duration: "0:22",
   },
 ];
