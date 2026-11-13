@@ -172,11 +172,11 @@ export default function StoriesInMotion() {
     <section
       ref={sectionRef}
       aria-label="Stories in Motion — Autoplay Wedding Reels"
-      className="relative w-full bg-[#570D1C] text-[#FAF9F6] py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden border-y border-[#FAF9F6]/15 select-none"
+      className="relative w-full bg-[#52060F] text-[#FAF9F6] py-[24px] sm:py-[36px] lg:py-[48px] overflow-hidden border-y border-[#FAF9F6]/15 select-none"
     >
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative">
         {/* Main Section Heading: Cormorant Garamond SemiBold Italic (600) */}
-        <div className="mb-10 sm:mb-14 md:mb-16">
+        <div className="mb-[24px] sm:mb-[28px] md:mb-[32px]">
           <h2 className="font-cormorant font-semibold italic text-[38px] md:text-[52px] lg:text-[72px] leading-[1.08] tracking-tight text-[#FAF9F6] text-center">
             STORIES IN MOTION
           </h2>
