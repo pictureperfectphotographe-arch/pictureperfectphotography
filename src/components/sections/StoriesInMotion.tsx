@@ -172,13 +172,13 @@ export default function StoriesInMotion() {
     <section
       ref={sectionRef}
       aria-label="Stories in Motion — Autoplay Wedding Reels"
-      className="relative w-full bg-[#52060F] text-[#FAF9F6] py-[24px] sm:py-[36px] lg:py-[48px] overflow-hidden border-y border-[#FAF9F6]/15 select-none"
+      className="relative w-full bg-[#52060F] text-[#FAF9F6] py-[24px] sm:py-[36px] lg:py-[44px] overflow-hidden border-y border-[#FAF9F6]/15 select-none"
     >
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative">
-        {/* Main Section Heading: Rouge Script (Google Fonts) */}
-        <div className="mb-[24px] sm:mb-[28px] md:mb-[32px]">
-          <h2 className="font-rouge font-normal text-[54px] md:text-[72px] lg:text-[90px] leading-[1.1] tracking-normal text-[#FAF9F6] text-center">
-            STORIES IN MOTION
+      <div className="w-[95vw] mx-auto relative">
+        {/* Main Section Heading: Cormorant Garamond SemiBold Normal (Title Case) */}
+        <div className="mb-[24px] sm:mb-[28px] md:mb-[30px]">
+          <h2 className="font-cormorant font-semibold not-italic text-[42px] md:text-[58px] lg:text-[76px] leading-[1.1] tracking-[-0.02em] text-[#FAF9F6] text-center select-none">
+            Stories In Motion
           </h2>
         </div>
 
@@ -189,7 +189,7 @@ export default function StoriesInMotion() {
             type="button"
             onClick={handlePrev}
             aria-label="Previous wedding reel"
-            className="absolute -left-3 sm:-left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/75 backdrop-blur-md text-[#FAF9F6] border border-[#FAF9F6]/25 shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#FAF9F6]"
+            className="absolute left-2 sm:left-3 lg:left-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/80 backdrop-blur-md text-[#FAF9F6] border border-[#FAF9F6]/25 shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#FAF9F6]"
           >
             <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.75]" />
           </button>
@@ -199,12 +199,12 @@ export default function StoriesInMotion() {
             type="button"
             onClick={handleNext}
             aria-label="Next wedding reel"
-            className="absolute -right-3 sm:-right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/75 backdrop-blur-md text-[#FAF9F6] border border-[#FAF9F6]/25 shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#FAF9F6]"
+            className="absolute right-2 sm:right-3 lg:right-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/80 backdrop-blur-md text-[#FAF9F6] border border-[#FAF9F6]/25 shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#FAF9F6]"
           >
             <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.75]" />
           </button>
 
-          {/* Horizontal Scrolling Carousel: Enlarged 9:16 Vertical Video Frames */}
+          {/* Horizontal Scrolling Carousel: Expanded 9:16 Vertical Video Frames */}
           <div
             ref={carouselRef}
             onScroll={handleScroll}
@@ -222,7 +222,7 @@ export default function StoriesInMotion() {
                     cardRefs.current[index] = el;
                   }}
                   onClick={() => handleCardClick(index)}
-                  className={`group relative aspect-[9/16] w-[80vw] max-w-[340px] sm:w-[250px] md:w-[260px] lg:w-[280px] xl:w-[300px] shrink-0 snap-center sm:snap-start rounded-xl sm:rounded-2xl overflow-hidden bg-black/40 border border-[#FAF9F6]/15 shadow-xl cursor-pointer transition-all duration-500 ${
+                  className={`group relative aspect-[9/16] w-[80vw] max-w-[340px] sm:w-[260px] md:w-[280px] lg:w-[300px] xl:w-[320px] 2xl:w-[335px] shrink-0 snap-center sm:snap-start rounded-xl sm:rounded-2xl overflow-hidden bg-black/40 border border-[#FAF9F6]/15 shadow-xl cursor-pointer transition-all duration-500 ${
                     isActive ? "ring-1 ring-[#FAF9F6]/30 scale-[1.01]" : "opacity-85 hover:opacity-100"
                   }`}
                   aria-label={`${reel.title} wedding reel`}
@@ -233,7 +233,7 @@ export default function StoriesInMotion() {
                     alt={`${reel.title} by Picture Perfect Photography`}
                     fill
                     quality={92}
-                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 250px, (max-width: 1024px) 260px, 300px"
+                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 260px, (max-width: 1024px) 280px, (max-width: 1536px) 320px, 335px"
                     priority={index < 2}
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
