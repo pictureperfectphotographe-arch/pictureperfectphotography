@@ -1,5 +1,6 @@
 import HeroCollage from "@/components/sections/HeroCollage";
 import Philosophy from "@/components/sections/Philosophy";
+import StoriesInMotion from "@/components/sections/StoriesInMotion";
 import ServiceDiscovery from "@/components/sections/ServiceDiscovery";
 import FeaturedGallery from "@/components/sections/FeaturedGallery";
 import CinematicFilms from "@/components/sections/CinematicFilms";
@@ -16,6 +17,9 @@ export default function Home() {
 
       {/* SECTION 03: Editorial Brand Philosophy */}
       <Philosophy />
+
+      {/* STORIES IN MOTION: Autoplay Wedding Reels */}
+      <StoriesInMotion />
 
       {/* SECTION 04: Explore Our Services */}
       <ServiceDiscovery />
